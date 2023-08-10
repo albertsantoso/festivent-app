@@ -1,0 +1,18 @@
+.black {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.black:hover {
+    background-color: #404040;
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.white:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}

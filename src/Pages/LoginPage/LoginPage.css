@@ -1,0 +1,39 @@
+.LoginPage {
+    background-image: url("./../../Assets/Images/concert_login.jpg");
+}
+
+.LoginPage .login-section {
+    background: rgb(255, 255, 255);
+}
+
+.LoginPage .login-form form button {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    box-shadow: 0px 12px 27px -14px rgba(0, 0, 0, 0);
+    animation: gradient 2s ease infinite;
+    transition: 0.15s ease-in-out;
+}
+
+.LoginPage .login-form form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 27px -14px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.LoginPage .login-form form input {
+    border: 2px solid rgba(75, 85, 99, 1);
+}
+.LoginPage .login-form form input:focus {
+    border: 2px solid rgba(75, 85, 99, 0.4);
+}

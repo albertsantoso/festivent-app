@@ -1,0 +1,19 @@
+.DropdownNavbarMenu {
+    position: relative;
+}
+
+.DropdownNavbarMenu .menu-dropdown {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+.DropdownNavbarMenu .menu-dropdown ul li {
+    margin: 8px 0;
+}
+
+.DropdownNavbarMenu > .dropdown-toggle:hover > .menu-dropdown {
+    display: inline;
+}

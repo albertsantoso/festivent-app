@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+.App {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.ff-inter {
+    font-family: "Inter", sans-serif;
+}
+
+.ff-space-g {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.mycontainer {
+    padding: 0 30px;
+    max-width: 1246px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Jumbotron .jumbotron-title h1 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.bg-gradient-animation-1 {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
