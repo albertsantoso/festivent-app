@@ -2,9 +2,14 @@
 import { AiTwotoneCalendar } from "react-icons/ai"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PrimaryButton from "../../Components/PrimaryButton";
+import { useState } from "react";
 // import { IoLocation } from "react-icons/io"
 
+
 export default function EventDetailPage() {
+    const [openModal, setOpenModal] = useState("");
+    const props = { openModal, setOpenModal };
+
     return (
         <>
             <div className="EventDetailPage">
@@ -121,23 +126,24 @@ export default function EventDetailPage() {
                                     </div>
 
                                     <div className="event-details-aside col-span-2 ml-12">
-                                        <div className="price-get-tickets-container bg-gradient-animation-1  drop-shadow-lg rounded-lg sticky top-[114px] bottom-auto">
-                                            <div className="price-get-tickets-inner flex flex-col p-6 text-white">
+                                        <div className="price-get-tickets-container bg-neutral-100 drop-shadow-lg rounded-lg sticky top-[114px] bottom-auto">
+                                            <div className="price-get-tickets-inner flex flex-col p-6 text-neutral-700">
                                                 <div className="price-bar flex justify-between items-end">
-                                                    <h2 className="font-semibold text-xl">Price</h2>
+                                                    <h2 className="font-semibold text-xl ">Price</h2>
                                                     <span className="flex items-end">
-                                                        <h3 className="mr-2 font-semibold line-through decoration-2">$399</h3>
+                                                        <h3 className="mr-2 font-semibold line-through decoration-2 text-red-500">$399</h3>
                                                         <h3 className="font-bold text-xl">$299</h3>
                                                     </span>
                                                 </div>
                                                 <div className="buy-tickets-wrapper mt-8">
                                                     {/* <button type="submit" value="" name=""
                                                         className="bg-gradient-to-r from-yellow-50 to-pink-50 w-full py-4 ">Buy Tickets Now</button> */}
-                                                    <PrimaryButton buttonText={"Get tickets now"} bgColor={"black"} width={"full"} />
+                                                    <PrimaryButton textColor={"white"} buttonText={"Get tickets now"} bgColor={"bg-gradient-animation-1"} width={"full"} />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div >
                         </main >
