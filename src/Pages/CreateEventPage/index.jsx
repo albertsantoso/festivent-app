@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { FaSearch } from "react-icons/fa"
+import PrimaryButton from "../../Components/PrimaryButton";
 
 export default function CreateEvent() {
 
@@ -142,6 +143,12 @@ export default function CreateEvent() {
                                     </div>
                                 </div>
                             </section>
+
+                            <div className="action-button">
+                                <div className="action-button">
+                                    <PrimaryButton buttonText={"Create event"} bgColor={"black"} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
