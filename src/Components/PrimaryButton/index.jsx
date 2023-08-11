@@ -6,13 +6,14 @@ export default function PrimaryButton({
     textColor,
     width,
     handleFunction,
+    customStyle
 }) {
     return (
         <>
             <div className="PrimaryButton">
                 <button
                     onClick={handleFunction}
-                    className={`rounded-lg px-[12px] py-[8px] w-${width} duration-200 min-w-max ${bgColor} text-${textColor}`}
+                    className={`rounded-lg px-[12px] py-[8px] w-${width} duration-150 ${bgColor} text-${textColor} ${customStyle}`}
                 >
                     {buttonText}
                 </button>

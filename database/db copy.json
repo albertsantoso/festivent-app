@@ -1,0 +1,134 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Summer Music Festival",
+            "dateTime": "2023-08-20 18:00",
+            "venue": "Beachside Park, 123 Seaside Blvd, Cityville",
+            "price": 30.0,
+            "organizer": "Music Vibes Productions"
+        },
+        {
+            "id": 2,
+            "title": "Tech Expo 2023",
+            "dateTime": "2023-09-10 09:30",
+            "venue": "Tech Center Arena, 456 Innovation Ave, Techtopia",
+            "price": 25.0,
+            "organizer": "TechPros Events"
+        },
+        {
+            "id": 3,
+            "title": "International Food Fair",
+            "dateTime": "2023-10-05 12:00",
+            "venue": "City Plaza, 789 Tasty Street, Foodtown",
+            "price": 10.0,
+            "organizer": "Foodies United"
+        },
+        {
+            "id": 4,
+            "title": "Artisans' Showcase",
+            "dateTime": "2023-11-15 14:00",
+            "venue": "Artisan Market, 101 Crafty Lane, Artville",
+            "price": 15.0,
+            "organizer": "Crafters Guild"
+        },
+        {
+            "id": 5,
+            "title": "Winter Wonderland Gala",
+            "dateTime": "2023-12-20 19:00",
+            "venue": "Grand Ballroom, 777 Festive Rd, Celebration City",
+            "price": 50.0,
+            "organizer": "Festive Events Co."
+        },
+        {
+            "id": 6,
+            "title": "Tech Summit 2024",
+            "dateTime": "2024-01-10 10:00",
+            "venue": "Innovate Hub, 888 Futuristic Ave, Innovationtown",
+            "price": 40.0,
+            "organizer": "TechForward Conferences"
+        },
+        {
+            "id": 7,
+            "title": "Health and Wellness Retreat",
+            "dateTime": "2024-02-05 08:30",
+            "venue": "Serenity Resort, 555 Tranquility Rd, Relaxationville",
+            "price": 100.0,
+            "organizer": "Tranquil Escapes"
+        },
+        {
+            "id": 8,
+            "title": "Spring Fashion Show",
+            "dateTime": "2024-03-15 17:00",
+            "venue": "Fashion Mall, 222 Chic Blvd, Styletown",
+            "price": 20.0,
+            "organizer": "Chic Trends Productions"
+        },
+        {
+            "id": 9,
+            "title": "Green Living Expo",
+            "dateTime": "2024-04-20 10:00",
+            "venue": "Eco Convention Center, 333 Sustainability Ave, Greentown",
+            "price": 5.0,
+            "organizer": "Sustainable Solutions"
+        },
+        {
+            "id": 10,
+            "title": "Sports Fanatics Rally",
+            "dateTime": "2024-05-25 13:00",
+            "venue": "Sports Arena, 444 Stadium Rd, Sportsville",
+            "price": 10.0,
+            "organizer": "Ultimate Sports Events"
+        },
+        {
+            "id": 11,
+            "title": "International Film Festival",
+            "dateTime": "2024-06-10 16:30",
+            "venue": "City Cinema, 666 Movie St, Filmtown",
+            "price": 15.0,
+            "organizer": "Film Enthusiasts Club"
+        },
+        {
+            "id": 12,
+            "title": "Culinary Adventure Tour",
+            "dateTime": "2024-07-05 11:00",
+            "venue": "Gourmet Alley, 999 Tasty Treats Lane, Foodville",
+            "price": 25.0,
+            "organizer": "Food Explorers"
+        }
+    ],
+    "event_categories": [
+        {
+            "name": "Music & Entertainment",
+            "id": 1
+        },
+        {
+            "name": "Arts and Culture",
+            "id": 2
+        },
+        {
+            "name": "Business",
+            "id": 3
+        },
+        {
+            "name": "Education",
+            "id": 4
+        },
+        {
+            "name": "Healthcare",
+            "id": 5
+        },
+        {
+            "name": "Comedy",
+            "id": 6
+        },
+        {
+            "name": "Holiday",
+            "id": 7
+        },
+        {
+            "name": "Technology",
+            "id": 8
+        }
+    ]
+}

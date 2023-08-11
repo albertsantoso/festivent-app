@@ -164,10 +164,10 @@ export default function CreateEvent() {
                                                 htmlFor="event_image"
                                                 className="font-semibold mb-2"
                                             >
-                                                Image{" "}
+                                                Image
                                                 <sup className="font-bold text-red-500">
                                                     *
-                                                </sup>{" "}
+                                                </sup>
                                             </label>
                                             <input
                                                 type="text"
