@@ -164,10 +164,10 @@ export default function CreateEvent() {
                                                 htmlFor="event_image"
                                                 className="font-semibold mb-2"
                                             >
-                                                Image{" "}
+                                                Image
                                                 <sup className="font-bold text-red-500">
                                                     *
-                                                </sup>{" "}
+                                                </sup>
                                             </label>
                                             <input
                                                 type="text"
@@ -394,7 +394,7 @@ export default function CreateEvent() {
 
                             <hr className="my-12 mb-14 border-t-2 drop-shadow-sm" />
 
-                            <section className="date-time-container">
+                            <section className="date-time-container mb-12">
                                 <div className="date-time-wrapper flex flex-col items-start">
                                     <div className="date-time-heading mb-4">
                                         <div className="section-title date-time-title text-left w-[700px]">
@@ -505,15 +505,16 @@ export default function CreateEvent() {
                                 </div>
                             </section>
 
-                            <div className="action-button">
-                                <div className="action-button">
+                            <section className="action-button">
+                                <div className="action-button-wrapper w-[720px]">
                                     <PrimaryButton
                                         handleFunction={onCreate}
                                         buttonText={"Create event"}
                                         bgColor={"black"}
+                                        width={"full"}
                                     />
                                 </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </section>
