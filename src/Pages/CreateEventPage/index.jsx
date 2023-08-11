@@ -7,12 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function CreateEvent() {
     const [eventCategories, setEventCategories] = useState(null);
-    const [eventDetails, setEventDetails] = useState({
-        image: "",
-        discount: 0,
-        max: 0,
-        count: 0,
-    });
     const navigate = useNavigate();
     const inputTitle = useRef();
     const inputImage = useRef();
@@ -42,6 +36,7 @@ export default function CreateEvent() {
 
     const onCreate = async () => {
         try {
+            const id = localStorage.getItem("idLogin");
             if (inputTitle.current.value === "") {
                 return toast.error("Please provide the title for your event");
             }
@@ -79,16 +74,13 @@ export default function CreateEvent() {
             if (!inputTimeEnd.current.value) {
                 return toast.error("Date and time is required");
             }
-            setEventDetails({
-                ...eventDetails,
+            const eventDetails = {
                 title: inputTitle.current.value,
                 image: inputImage.current.value || "",
                 summary: inputSummary.current.value,
                 description: inputDescription.current.value,
                 price: inputPrice.current.value,
-                discount: inputDiscount.current.value || 0,
-                max: inputMaxUse.current.value || 0,
-                category: inputCategory.current.value,
+                event_category: inputCategory.current.value,
                 location: inputLocation.current.value,
                 city: inputCity.current.value,
                 datetime_start: [
@@ -99,11 +91,21 @@ export default function CreateEvent() {
                     inputDateEnd.current.value,
                     inputTimeEnd.current.value,
                 ],
-            });
+                discount: inputDiscount.current.value || 0,
+                count: 0,
+                max: inputMaxUse.current.value || 0,
+                userId: id,
+            };
             // Post ke db
+            const res = await axios.post(
+                "http://localhost:5000/events",
+                eventDetails
+            );
+            console.log("res", res);
             toast.success("Event created!");
+
             setTimeout(() => {
-                navigate("/");
+                navigate(`/event/${res.data.id}`);
             }, 1000);
         } catch (error) {
             console.log(error);
@@ -113,9 +115,6 @@ export default function CreateEvent() {
     useEffect(() => {
         getEvents();
     }, []);
-    useEffect(() => {
-        console.log(eventDetails);
-    }, [eventDetails]);
 
     return (
         <>
