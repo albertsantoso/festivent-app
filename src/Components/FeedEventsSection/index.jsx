@@ -27,23 +27,19 @@ export default function FeedEventsSection() {
 
                 <div className="feed-events-container grid grid-cols-4 gap-4 md:grid-cols-4">
                     {events?.map((event, index) => {
+                        const date = new Date(event.datetime_start[0])
+                        const dayMonthDate = date.toLocaleDateString(undefined, {
+                            weekday: 'short', month: 'long', day: 'numeric'
+                        })
                         return (
                             <>
                                 <Link to={`/event/${event.id}`}>
-                                    <EventCard
-                                        key={index}
+                                    <EventCard key={index}
+                                        image={event.image}
                                         title={`${event.title}`}
-                                        dateTime={`${event.datetime_start[0]} at ${event.datetime_start[1]} `}
-                                        venue={`${event.venue}`}
-                                        price={`${event.price.toLocaleString(
-                                            "en-US",
-                                            {
-                                                style: "currency",
-                                                currency: "USD",
-                                            }
-                                        )}`}
-                                        maker={`${event.organizer}`}
-                                    />
+                                        dateTime={dayMonthDate}
+                                        venue={`${event.location}`}
+                                        price={event.price === 0 ? "Free" : `${event.price.toLocaleString("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 })}`} />
                                 </Link>
                             </>
                         );

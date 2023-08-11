@@ -69,7 +69,7 @@ export default function LoginPage() {
                                         <div className="form-group mt-2">
                                             <button
                                                 type="submit"
-                                                className={`rounded-lg py-3 px-4 w-full`}
+                                                className={`rounded-lg py-3 px-4 w-full hover:scale-105 active:scale-100`}
                                                 onClick={() =>
                                                     dispatch(
                                                         onLogin(

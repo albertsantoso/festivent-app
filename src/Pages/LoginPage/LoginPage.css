@@ -6,7 +6,7 @@
     background: rgb(255, 255, 255);
 }
 
-.LoginPage .login-form form button {
+.LoginPage .login-form button {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 500% 500%;
     box-shadow: 0px 12px 27px -14px rgba(0, 0, 0, 0);
@@ -14,8 +14,7 @@
     transition: 0.15s ease-in-out;
 }
 
-.LoginPage .login-form form button:hover {
-    transform: translateY(-4px);
+.LoginPage .login-form button:hover {
     box-shadow: 0px 12px 27px -14px rgba(0, 0, 0, 0.6);
 }
 

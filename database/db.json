@@ -48,6 +48,13 @@
       "password": "abc1234",
       "ref_points": 0,
       "id": 7
+    },
+    {
+      "fullname": "Albert Santoso",
+      "email": "albert@gmail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 8
     }
   ],
   "events": [
