@@ -1,11 +1,15 @@
-import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png"
-import PrimaryButton from "../PrimaryButton"
-import DropdownNavbarMenu from "../DropdownNavbarMenu"
-import { Link } from "react-router-dom"
-import "./Navbar.css"
-
+import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png";
+import PrimaryButton from "../PrimaryButton";
+import DropdownNavbarMenu from "../DropdownNavbarMenu";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { useDispatch, useSelector } from "react-redux";
+import { onLogout } from "../../Redux/Features/Users";
 
 export default function Navbar() {
+    const email = useSelector((state) => state.users.email);
+    const dispatch = useDispatch();
+
     return (
         <>
             <section className="Navbar fixed w-full z-50">
@@ -15,10 +19,12 @@ export default function Navbar() {
                             <div className="navbar-left">
                                 <div className="navbar-logo">
                                     <Link to={"/"}>
-                                        <img src={FestiventLogoBlack}
+                                        <img
+                                            src={FestiventLogoBlack}
                                             alt=""
                                             srcset=""
-                                            className="md:max-w-[150px] md:min-w-[150px] w-[30px]" />
+                                            className="md:max-w-[150px] md:min-w-[150px] w-[30px]"
+                                        />
                                     </Link>
                                 </div>
                             </div>
@@ -47,14 +53,32 @@ export default function Navbar() {
                                 <div className="navbar-actions flex gap-2">
                                     <div className="action-create-event">
                                         <Link to={"/create"}>
-                                            <PrimaryButton buttonText="Create an Event" bgColor="white" textColor="black" />
+                                            <PrimaryButton
+                                                buttonText="Create an Event"
+                                                bgColor="white"
+                                                textColor="black"
+                                            />
                                         </Link>
                                     </div>
-                                    <div className="action-login">
-                                        <Link to={"/login"}>
-                                            <PrimaryButton buttonText="Log in" bgColor="black" textColor="white" />
-                                        </Link>
-                                    </div>
+                                    {email ? (
+                                        //! TAILWIND
+                                        <div
+                                            className="cursor-pointer"
+                                            onClick={() => dispatch(onLogout())}
+                                        >
+                                            {email}
+                                        </div>
+                                    ) : (
+                                        <div className="action-login">
+                                            <Link to={"/login"}>
+                                                <PrimaryButton
+                                                    buttonText="Log in"
+                                                    bgColor="black"
+                                                    textColor="white"
+                                                />
+                                            </Link>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -62,5 +86,5 @@ export default function Navbar() {
                 </nav>
             </section>
         </>
-    )
+    );
 }
