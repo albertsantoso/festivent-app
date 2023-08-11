@@ -10,6 +10,7 @@ export default function FeedEventsSection() {
     const onFetchEvents = async () => {
         try {
             const { data } = await axios.get(`http://localhost:5000/events`)
+            console.log(data);
             setEvents(data)
         } catch (error) {
             console.log(error);
@@ -28,14 +29,21 @@ export default function FeedEventsSection() {
                 <div className="feed-events-container grid grid-cols-4 gap-4 md:grid-cols-4">
                     {
                         events?.map((event, index) => {
+                            const date = new Date(event.datetime_start[0])
+                            const dayMonthDate = date.toLocaleDateString(undefined, {
+                                weekday: 'short', month: 'long', day: 'numeric'
+                            })
+
+                            // console.log(date);
                             return (
                                 <>
                                     <Link>
                                         <EventCard key={index}
+                                            image={event.image}
                                             title={`${event.title}`}
-                                            dateTime={`${event.dateTime}`}
-                                            venue={`${event.venue}`}
-                                            price={`${event.price.toLocaleString("en-US", { style: "currency", currency: "USD" })}`}
+                                            dateTime={dayMonthDate}
+                                            venue={`${event.location}`}
+                                            price={event.price === 0 ? "Free" : `${event.price.toLocaleString("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 })}`}
                                             maker={`${event.organizer}`} />
                                     </Link>
                                 </>
