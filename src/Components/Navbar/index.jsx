@@ -52,13 +52,32 @@ export default function Navbar() {
                             <div className="navbar-right">
                                 <div className="navbar-actions flex gap-2">
                                     <div className="action-create-event">
-                                        <Link to={"/create"}>
-                                            <PrimaryButton
-                                                buttonText="Create an Event"
-                                                bgColor="white"
-                                                textColor="black"
-                                            />
-                                        </Link>
+                                        {email ? (
+                                            <Link to={"/create"}>
+                                                <PrimaryButton
+                                                    buttonText="Create an Event"
+                                                    bgColor="white"
+                                                    textColor="black"
+                                                />
+                                            </Link>
+                                        ) : (
+                                            <>
+                                                <Link
+                                                    onClick={() =>
+                                                        alert(
+                                                            "Please login first"
+                                                        )
+                                                    }
+                                                    to={"/login"}
+                                                >
+                                                    <PrimaryButton
+                                                        buttonText="Create an Event"
+                                                        bgColor="white"
+                                                        textColor="black"
+                                                    />
+                                                </Link>
+                                            </>
+                                        )}
                                     </div>
                                     {email ? (
                                         //! TAILWIND

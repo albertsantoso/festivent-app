@@ -18,12 +18,12 @@ function App() {
     const email = useSelector((state) => state.users.email);
 
     useEffect(() => {
-        dispatch(checkLogin);
+        dispatch(checkLogin());
     }, []);
 
-    useEffect(() => {
-        dispatch(checkLogin);
-    }, [email]);
+    // useEffect(() => {
+    //     dispatch(checkLogin);
+    // }, [email]);
 
     return (
         <>
