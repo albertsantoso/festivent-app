@@ -32,7 +32,10 @@ function App() {
                     <Route path="/signup" element={<SignupPage />} />
                     <Route path="/event/:id" element={<EventDetailPage />} />
                     <Route path="/create" element={<CreateEvent />} />
-                    <Route path="/events" element={<AllEventsPageFiltering />} />
+                    <Route
+                        path="/events"
+                        element={<AllEventsPageFiltering />}
+                    />
                     <Route path="/dashboard" element={<UserDashboard />} />
                 </Routes>
                 <Footer />

@@ -1,113 +1,156 @@
-import axios from "axios"
-import { useEffect, useState } from "react"
-
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function UserDashboard() {
-    const [createdEvents, setCreatedEvents] = useState([])
-    const [eventIds, setEventIds] = useState([])
+    const [createdEvents, setCreatedEvents] = useState([]);
+    const [dataUser, setDataUser] = useState([]);
+    const [registered, setRegistered] = useState([]);
 
-    const [registeredEvents, setRegisteredEvents] = useState([])
-    const [registeredRefCode, setRegisteredRefCode] = useState([])
+    const loggedinUserId = Number(localStorage.getItem("idLogin"));
 
-    const [registered, setRegistered] = useState({})
-
-    const [isDone, setIsDone] = useState(false)
-
-    const loggedinUserId = localStorage.getItem("idLogin")
+    const getDataUser = async () => {
+        const { data } = await axios.get(
+            `http://localhost:5000/users/${loggedinUserId}`
+        );
+        setDataUser(data);
+    };
 
     const getCreatedEvent = async () => {
-        const { data } = await axios.get(`http://localhost:5000/events?userId=${loggedinUserId}`)
-        setCreatedEvents(data)
-    }
+        const { data } = await axios.get(
+            `http://localhost:5000/events?userId=${loggedinUserId}`
+        );
+        setCreatedEvents(data);
+    };
 
-    const getEventIds = async () => {
-        const { data } = await axios.get(`http://localhost:5000/tickets?userId=${loggedinUserId}`)
+    const getRegistered = async () => {
+        const tempRegistered = [];
+        const eventIdRefCode = [];
+        const res = await axios.get(
+            `http://localhost:5000/ref_code?userId=${loggedinUserId}`
+        );
+        const registeredRefCode = res.data;
 
-        data?.map((value) => {
-            eventIds.push(value.eventId);
-        })
-    }
+        const { data } = await axios.get(
+            "http://localhost:5000/tickets?_expand=event"
+        );
 
-    const getRegisteredEvents = async () => {
-        const tempEvents = []
+        const registeredEvents = [];
 
-        eventIds?.map(async (value) => {
-            const { data } = await axios.get(`http://localhost:5000/events/${value}`)
-            tempEvents.push(data)
-        })
+        data.map((v) => {
+            if (v.userId === loggedinUserId) {
+                registeredEvents.push(v);
+            }
+        });
 
-        setRegisteredEvents(tempEvents)
-    }
+        registeredRefCode.map((v) => {
+            eventIdRefCode.push(v.eventId);
+        });
 
-    const getRegisteredRefCode = async () => {
-        const { data } = await axios.get(`http://localhost:5000/ref_code?userId=${loggedinUserId}`)
-        setRegisteredRefCode(data)
-    }
-
-    const getRegistered = () => {
-        const tempRegistered = []
-        const eventIdRefCode = []
-
-        registeredRefCode?.map((value) => {
-            eventIdRefCode.push(value.eventId)
-        })
-
-        registeredEvents?.map((value, index) => {
-            if (eventIdRefCode.includes(value.eventId)) {
-                let refCode = 0
-                let eId = value.eventId
+        registeredEvents.map((value, index) => {
+            if (eventIdRefCode.includes(value.event.id)) {
+                let refCode = 0;
+                let eId = value.event.id;
                 registeredRefCode?.map((value2) => {
                     if (value2.eventId === eId) {
-                        refCode = value2.code
+                        refCode = value2.code;
                     }
-                })
-                tempRegistered.push({ ...value, ref_code: Number(refCode) })
+                });
+                tempRegistered.push({ ...value, ref_code: Number(refCode) });
             } else {
-                tempRegistered.push({ ...value, ref_code: 0 })
+                tempRegistered.push({ ...value, ref_code: 0 });
             }
-        })
+        });
 
-        setRegistered(tempRegistered)
-    }
-
-    useEffect(() => {
-        getRegisteredRefCode()
-        getCreatedEvent()
-        getEventIds()
-        getRegisteredEvents()
-        setIsDone(true)
-        // console.log(eventIds);
-    }, [])
+        setRegistered(tempRegistered);
+    };
 
     useEffect(() => {
-        getRegistered()
-        console.log("1", registeredRefCode);
-        console.log("2", registeredEvents);
-        console.log("3", createdEvents);
-        console.log("4", eventIds);
-    }, [isDone])
-
-    useEffect(() => { getRegisteredEvents() }, [eventIds])
-
-    // useEffect(() => {
-    //     // getRegistered()
-    // }, [registeredRefCode])
-
-    useEffect(() => {
-        console.log(registered);
-    }, [registered])
+        getDataUser();
+        getRegistered();
+        getCreatedEvent();
+    }, []);
 
     return (
         <>
             <div className="UserDashboard">
                 <div className="user-dashboard-container py-[220px]">
-                    <div className="user-dashboard-wrapper">
-                        <button onClick={() => setIsDone(false)}>
-                            FALSE
-                        </button>
+                    <div>Your points: {dataUser.ref_points}</div>
+                    <div>
+                        <div className="text-xl font-bold">Created Events</div>
+                        {createdEvents?.map((v) => {
+                            return (
+                                <>
+                                    <div className="flex">
+                                        <div className="w-[300px]">
+                                            <img
+                                                className="w-[300px] h-[100px]"
+                                                src={`${v.image}`}
+                                                alt=""
+                                            />
+                                            <div>{v.title}</div>
+                                            <div>{v.datetime_start[0]}</div>
+                                            <Link
+                                                className="w-[300px]"
+                                                to={`/event/${v.id}`}
+                                            >
+                                                Go to event
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </>
+                            );
+                        })}
+                    </div>
+                    <div>
+                        <div className="text-xl font-bold">
+                            Registered Events
+                        </div>
+                        {registered?.map((v) => {
+                            return (
+                                <>
+                                    <div className="flex">
+                                        <div className="w-[300px]">
+                                            <img
+                                                className="w-[300px] h-[100px]"
+                                                src={`${v.event.image}`}
+                                                alt=""
+                                            />
+                                            <div>{v.event.title}</div>
+                                            <div>
+                                                {v.event.datetime_start[0]}
+                                            </div>
+                                            {v.ref_code ? (
+                                                <div>
+                                                    Your code: {v.ref_code}
+                                                </div>
+                                            ) : null}
+                                            <Link
+                                                className="w-[300px]"
+                                                to={`/event/${v.id}`}
+                                            >
+                                                Go to event
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </>
+                            );
+                        })}
+                        {registered?.map((v) => {
+                            return (
+                                <>
+                                    <div className="flex gap-4">
+                                        <div>{v.event.title}</div>
+                                        {v.ref_code ? (
+                                            <div>{v.ref_code}</div>
+                                        ) : null}
+                                    </div>
+                                </>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
