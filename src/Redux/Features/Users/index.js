@@ -4,6 +4,7 @@ import { toast } from "react-hot-toast";
 const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = {
+    username: "",
     email: "",
     fullname: ""
 };
@@ -17,7 +18,6 @@ export const userSlice = createSlice({
             initialState.email = action.payload;
         },
         setFullname: (initialState, action) => {
-            console.log("🚀 ~ file: index.js:20 ~ action:", action)
             initialState.fullname = action.payload;
         }
     },
@@ -60,6 +60,7 @@ export const onLogout = () => async (dispatch) => {
         localStorage.removeItem("idLogin");
         const res = "";
         dispatch(setEmail(res));
+        dispatch(setFullname(res));
     } catch (error) {
         console.log(error);
     }

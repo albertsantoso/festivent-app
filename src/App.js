@@ -21,6 +21,10 @@ function App() {
         dispatch(checkLogin());
     }, []);
 
+    // useEffect(() => {
+    //     dispatch(checkLogin());
+    // }, [email]);
+
     return (
         <>
             <div className="App">

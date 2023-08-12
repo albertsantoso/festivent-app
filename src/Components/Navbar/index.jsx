@@ -1,3 +1,5 @@
+"use client";
+
 import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png";
 import PrimaryButton from "../PrimaryButton";
 import DropdownNavbarMenu from "../DropdownNavbarMenu";
@@ -9,6 +11,7 @@ import DropdownItemsWithIcon from "../AccountDropdown";
 
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
+    const username = useSelector((state) => state.users.username);
     const dispatch = useDispatch();
 
 

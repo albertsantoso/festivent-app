@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function CreateEvent() {
     const [eventCategories, setEventCategories] = useState(null);
+    const [eventCities, setEventCities] = useState(null);
     const navigate = useNavigate();
     const inputTitle = useRef();
     const inputImage = useRef();
@@ -25,8 +26,12 @@ export default function CreateEvent() {
 
     const getEventCategories = async () => {
         try {
-            const { data } = await axios.get("http://localhost:5000/event_categories");
-            setEventCategories(data);
+            const res = await axios.get(
+                "http://localhost:5000/event_categories"
+            );
+            const res2 = await axios.get("http://localhost:5000/event_cities");
+            setEventCategories(res.data);
+            setEventCities(res2.data);
         } catch (error) {
             alert(error);
         }
@@ -155,8 +160,8 @@ export default function CreateEvent() {
                                                 name="event_summary"
                                                 id="event_summary"
                                                 ref={inputSummary}
-                                                placeholder="Please put in your image url."
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                placeholder="Please give a brief summary for your event"
+                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -168,8 +173,8 @@ export default function CreateEvent() {
                                                 name="event_description"
                                                 id="event_description"
                                                 ref={inputDescription}
-                                                placeholder="Please put in your image url."
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                placeholder="Describe your event"
+                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -181,13 +186,20 @@ export default function CreateEvent() {
                                                 name="event_price"
                                                 id="event_price"
                                                 ref={inputPrice}
-                                                placeholder="Please put in your image url."
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                placeholder="Put 0 if your event is free"
+                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
-                                            <label htmlFor="event_discount" className="font-semibold mb-2">
-                                                Discount <sup className="font-bold text-red-500">*</sup>{" "}
+                                            <label
+                                                htmlFor="event_discount"
+                                                className="font-semibold mb-2"
+                                            >
+                                                Discount from using referall
+                                                code{" "}
+                                                <sup className="font-bold text-red-500">
+                                                    *
+                                                </sup>{" "}
                                             </label>
                                             <input
                                                 type="number"
@@ -195,7 +207,9 @@ export default function CreateEvent() {
                                                 id="event_discount"
                                                 ref={inputDiscount}
                                                 placeholder="%"
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                min={0}
+                                                max={90}
+                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -208,7 +222,8 @@ export default function CreateEvent() {
                                                 id="event_maxuse"
                                                 ref={inputMaxUse}
                                                 placeholder="uses"
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                min={0}
+                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -267,13 +282,18 @@ export default function CreateEvent() {
                                                 <option value="" disabled selected>
                                                     Select City
                                                 </option>
-                                                {eventCategories?.map((value, index) => {
-                                                    return (
-                                                        <option key={index} value={value.id}>
-                                                            {value.name}
-                                                        </option>
-                                                    );
-                                                })}
+                                                {eventCities?.map(
+                                                    (value, index) => {
+                                                        return (
+                                                            <option
+                                                                key={index}
+                                                                value={value.id}
+                                                            >
+                                                                {value.name}
+                                                            </option>
+                                                        );
+                                                    }
+                                                )}
                                             </select>
                                         </div>
                                     </div>
