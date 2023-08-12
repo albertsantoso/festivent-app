@@ -26,9 +26,7 @@ export default function AllEventsPageFiltering() {
 
     const getEventCategories = async () => {
         try {
-            const { data } = await axios.get(
-                "http://localhost:5000/event_categories"
-            );
+            const { data } = await axios.get("http://localhost:5000/event_categories");
             setCategories(data);
         } catch (error) {
             alert(error);
@@ -37,9 +35,7 @@ export default function AllEventsPageFiltering() {
 
     const getCities = async () => {
         try {
-            const { data } = await axios.get(
-                "http://localhost:5000/event_cities"
-            );
+            const { data } = await axios.get("http://localhost:5000/event_cities");
             setCities(data);
         } catch (error) {
             alert(error);
@@ -89,9 +85,7 @@ export default function AllEventsPageFiltering() {
                         return v.city === filters[1];
                     });
                     const temp3 = temp2.filter((v) => {
-                        return v.title
-                            .toLowerCase()
-                            .includes(filters[2].toLowerCase());
+                        return v.title.toLowerCase().includes(filters[2].toLowerCase());
                     });
                     return setFilteredData(temp3);
                 }
@@ -102,9 +96,7 @@ export default function AllEventsPageFiltering() {
             }
             if (filters[2]) {
                 const temp2 = temp1.filter((v) => {
-                    return v.title
-                        .toLowerCase()
-                        .includes(filters[2].toLowerCase());
+                    return v.title.toLowerCase().includes(filters[2].toLowerCase());
                 });
                 return setFilteredData(temp2);
             }
@@ -121,9 +113,7 @@ export default function AllEventsPageFiltering() {
                         return v.event_category === filters[0];
                     });
                     const temp3 = temp2.filter((v) => {
-                        return v.title
-                            .toLowerCase()
-                            .includes(filters[2].toLowerCase());
+                        return v.title.toLowerCase().includes(filters[2].toLowerCase());
                     });
                     return setFilteredData(temp3);
                 }
@@ -134,9 +124,7 @@ export default function AllEventsPageFiltering() {
             }
             if (filters[2]) {
                 const temp2 = temp1.filter((v) => {
-                    return v.title
-                        .toLowerCase()
-                        .includes(filters[2].toLowerCase());
+                    return v.title.toLowerCase().includes(filters[2].toLowerCase());
                 });
                 return setFilteredData(temp2);
             }
@@ -178,21 +166,15 @@ export default function AllEventsPageFiltering() {
                 <div className="filtering-page-container py-[140px] ">
                     <div className="filtering-page-wrapper mycontainer">
                         <div className="section-header mb-8">
-                            <h1 className="font-bold ff-space-g text-6xl text-left">
-                                Explore events
-                            </h1>
+                            <h1 className="font-bold ff-space-g text-6xl text-left">Explore events</h1>
                         </div>
-                        <section className="section-filters-container flex gap-2 ">
+                        <section className="section-filters-container flex gap-2 mb-8">
                             <div className="filter-group category-filter">
                                 <select
-                                    onChange={() =>
-                                        onFilterCategories(
-                                            inputFilter1.current.value
-                                        )
-                                    }
+                                    onChange={() => onFilterCategories(inputFilter1.current.value)}
                                     name="city"
                                     id="city"
-                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4"
+                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
                                     ref={inputFilter1}
                                 >
                                     <option value="" disabled selected>
@@ -201,10 +183,7 @@ export default function AllEventsPageFiltering() {
                                     {categories?.map((value) => {
                                         return (
                                             <>
-                                                <option
-                                                    value={value.id}
-                                                    key={value.id}
-                                                >
+                                                <option value={value.id} key={value.id}>
                                                     {value.name}
                                                 </option>
                                             </>
@@ -214,14 +193,10 @@ export default function AllEventsPageFiltering() {
                             </div>
                             <div className="filter-group city-filter">
                                 <select
-                                    onChange={() =>
-                                        onFilterCities(
-                                            inputFilter2.current.value
-                                        )
-                                    }
+                                    onChange={() => onFilterCities(inputFilter2.current.value)}
                                     name="city"
                                     id="city"
-                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4"
+                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
                                     ref={inputFilter2}
                                 >
                                     <option value="" disabled selected>
@@ -230,10 +205,7 @@ export default function AllEventsPageFiltering() {
                                     {cities?.map((value) => {
                                         return (
                                             <>
-                                                <option
-                                                    value={value.id}
-                                                    key={value.id}
-                                                >
+                                                <option value={value.id} key={value.id}>
                                                     {value.name}
                                                 </option>
                                             </>
@@ -242,121 +214,85 @@ export default function AllEventsPageFiltering() {
                                 </select>
                             </div>
                             <div className="filter-group search-filter w-full relative flex items-center">
-                                <FaSearch
-                                    className="absolute left-[18px]"
-                                    size={20}
-                                />
+                                <FaSearch className="absolute left-[18px]" size={20} />
                                 <input
-                                    onChange={() =>
-                                        onSearch(inputFilter3.current.value)
-                                    }
+                                    onChange={() => onSearch(inputFilter3.current.value)}
                                     type="text"
                                     className="w-full rounded-lg text-xl pl-12 font-semibold border-2 border-neutral-300 h-full"
                                     ref={inputFilter3}
                                 />
                             </div>
+                            <div className="">
+                                <button onClick={() => onClear()} className="rounded-lg font-medium border-2 border-neutral-300 h-full w-[120px] hover:bg-neutral-50 active:bg-neutral-100">
+                                    Clear Filter
+                                </button>
+                            </div>
                         </section>
-                        <div className="flex justify-start mt-2 mb-8">
-                            <button
-                                onClick={() => onClear()}
-                                className="rounded-lg  font-light border-2 border-neutral-300 p-2"
-                            >
-                                Clear Filter
-                            </button>
-                        </div>
                         <section className="feed-events-container">
                             <div className="feed-events-wrapper grid gap-6 md:grid-cols-4">
                                 {filteredData.length === 0 && !filtersChanged
                                     ? events?.map((event) => {
-                                          const date = new Date(
-                                              event.datetime_start[0]
-                                          );
-                                          const dayMonthDate =
-                                              date.toLocaleDateString(
-                                                  undefined,
-                                                  {
-                                                      weekday: "short",
-                                                      month: "long",
-                                                      day: "numeric",
-                                                  }
-                                              );
+                                        const date = new Date(event.datetime_start[0]);
+                                        const dayMonthDate = date.toLocaleDateString(undefined, {
+                                            weekday: "short",
+                                            month: "long",
+                                            day: "numeric",
+                                        });
 
-                                          return (
-                                              <>
-                                                  <Link
-                                                      to={`/event/${event.id}`}
-                                                  >
-                                                      <EventCard
-                                                          key={event.id}
-                                                          image={event.image}
-                                                          title={`${event.title}`}
-                                                          dateTime={
-                                                              dayMonthDate
-                                                          }
-                                                          venue={`${event.location}`}
-                                                          price={
-                                                              event.price === 0
-                                                                  ? "Free"
-                                                                  : `${event.price.toLocaleString(
-                                                                        "id-ID",
-                                                                        {
-                                                                            style: "currency",
-                                                                            currency:
-                                                                                "IDR",
-                                                                            minimumFractionDigits: 0,
-                                                                        }
-                                                                    )}`
-                                                          }
-                                                      />
-                                                  </Link>
-                                              </>
-                                          );
-                                      })
+                                        return (
+                                            <>
+                                                <Link to={`/event/${event.id}`}>
+                                                    <EventCard
+                                                        key={event.id}
+                                                        image={event.image}
+                                                        title={`${event.title}`}
+                                                        dateTime={dayMonthDate}
+                                                        venue={`${event.location}`}
+                                                        price={
+                                                            event.price === 0
+                                                                ? "Free"
+                                                                : `${event.price.toLocaleString("id-ID", {
+                                                                    style: "currency",
+                                                                    currency: "IDR",
+                                                                    minimumFractionDigits: 0,
+                                                                })}`
+                                                        }
+                                                    />
+                                                </Link>
+                                            </>
+                                        );
+                                    })
                                     : filteredData?.map((event) => {
-                                          const date = new Date(
-                                              event.datetime_start[0]
-                                          );
-                                          const dayMonthDate =
-                                              date.toLocaleDateString(
-                                                  undefined,
-                                                  {
-                                                      weekday: "short",
-                                                      month: "long",
-                                                      day: "numeric",
-                                                  }
-                                              );
+                                        const date = new Date(event.datetime_start[0]);
+                                        const dayMonthDate = date.toLocaleDateString(undefined, {
+                                            weekday: "short",
+                                            month: "long",
+                                            day: "numeric",
+                                        });
 
-                                          return (
-                                              <>
-                                                  <Link
-                                                      to={`/event/${event.id}`}
-                                                  >
-                                                      <EventCard
-                                                          key={event.id}
-                                                          image={event.image}
-                                                          title={`${event.title}`}
-                                                          dateTime={
-                                                              dayMonthDate
-                                                          }
-                                                          venue={`${event.location}`}
-                                                          price={
-                                                              event.price === 0
-                                                                  ? "Free"
-                                                                  : `${event.price.toLocaleString(
-                                                                        "id-ID",
-                                                                        {
-                                                                            style: "currency",
-                                                                            currency:
-                                                                                "IDR",
-                                                                            minimumFractionDigits: 0,
-                                                                        }
-                                                                    )}`
-                                                          }
-                                                      />
-                                                  </Link>
-                                              </>
-                                          );
-                                      })}
+                                        return (
+                                            <>
+                                                <Link to={`/event/${event.id}`}>
+                                                    <EventCard
+                                                        key={event.id}
+                                                        image={event.image}
+                                                        title={`${event.title}`}
+                                                        dateTime={dayMonthDate}
+                                                        venue={`${event.location}`}
+                                                        price={
+                                                            event.price === 0
+                                                                ? "Free"
+                                                                : `${event.price.toLocaleString("id-ID", {
+                                                                    style: "currency",
+                                                                    currency: "IDR",
+                                                                    minimumFractionDigits: 0,
+                                                                })}`
+                                                        }
+                                                    />
+                                                </Link>
+                                            </>
+                                        );
+                                    })}
                             </div>
                         </section>
                     </div>

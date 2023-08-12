@@ -161,7 +161,7 @@ export default function CreateEvent() {
                                                 id="event_summary"
                                                 ref={inputSummary}
                                                 placeholder="Please give a brief summary for your event"
-                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -174,7 +174,7 @@ export default function CreateEvent() {
                                                 id="event_description"
                                                 ref={inputDescription}
                                                 placeholder="Describe your event"
-                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -187,7 +187,7 @@ export default function CreateEvent() {
                                                 id="event_price"
                                                 ref={inputPrice}
                                                 placeholder="Put 0 if your event is free"
-                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -209,7 +209,7 @@ export default function CreateEvent() {
                                                 placeholder="%"
                                                 min={0}
                                                 max={90}
-                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -223,7 +223,7 @@ export default function CreateEvent() {
                                                 ref={inputMaxUse}
                                                 placeholder="uses"
                                                 min={0}
-                                                className="bg-neutral-100 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -381,8 +381,7 @@ export default function CreateEvent() {
 
                             <section className="action-button">
                                 <div className="action-button-wrapper w-[720px]">
-                                    <PrimaryButton handleFunction={onCreate} buttonText={"Create event"} textColor={"white"} bgColor={"bg-gradient-animation-1"} width={"full"} customStyle={"hover:scale-[1.02] active:scale-100 py-12"}
-                                    />
+                                    <button onClick={onCreate} className={"bg-gradient-animation-1 hover:scale-[1.02] active:scale-[.99] w-full h-[60px] text-white font-bold rounded-lg duration-150"}>Create event!</button>
                                 </div>
                             </section>
                         </div>
