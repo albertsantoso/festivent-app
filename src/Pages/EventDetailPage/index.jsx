@@ -7,7 +7,6 @@ import { FaCreditCard } from "react-icons/fa";
 import { RiPaypalFill } from "react-icons/ri";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { LegendToggleOutlined } from "@mui/icons-material";
 
 export default function EventDetailPage() {
     const [openModal, setOpenModal] = useState(undefined);
@@ -15,12 +14,18 @@ export default function EventDetailPage() {
     const { id } = useParams();
     const [event, setEvent] = useState(null);
     const userId = localStorage.getItem("idLogin")
-    const [date, setDate] = useState(null)
+    const [price, setPrice] = useState("")
+
+    const [dateStart, setDateStart] = useState(null)
+    const [dateEnd, setDateEnd] = useState(null)
+
+    const [dMY, setDMY] = useState(null)
+
+    // const price = `${event.price.toLocaleString("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 })}`
 
     const getDataLoggedInUser = async () => {
         try {
             const { data } = await axios.get(`http://localhost:5000/users/${userId}`)
-            console.log(data);
             setLoggedInUser(data)
         } catch (error) {
             console.log("🚀 ~ file: index.jsx:32 ~ getDataLoggedInUser ~ error:", error)
@@ -44,13 +49,26 @@ export default function EventDetailPage() {
 
     useEffect(() => {
         if (event) {
-            const date = new Date(event.datetime_start[0])
-            const dayMonthDate = date.toLocaleDateString(undefined, {
+            const dateStart = new Date(event.datetime_start[0]).toLocaleDateString(undefined, {
+                weekday: 'short', month: 'long', day: 'numeric'
+            })
+            const dateEnd = new Date(event.datetime_end[0]).toLocaleDateString(undefined, {
+                weekday: 'short', month: 'long', day: 'numeric'
+            })
+
+            const dayMonthDate = new Date(event.datetime_start[0]).toLocaleDateString(undefined, {
                 weekday: 'long', year: "numeric", month: 'long', day: 'numeric'
             })
-            setDate(dayMonthDate)
+
+
+            const idrPrice = `${event.price.toLocaleString("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 })}`;
+            setPrice(idrPrice)
+
+            setDateStart(dateStart)
+            setDateEnd(dateEnd)
+            setDMY(dayMonthDate)
         }
-    }, [event])
+    }, [event, price])
 
     const FlowbiteCustomThemeContent = {
         root: {
@@ -89,7 +107,7 @@ export default function EventDetailPage() {
                                             <div className="event-details-main-heading main-inner ff-space-g">
                                                 <section className="event-details-head mb-12">
                                                     <div id="time" className="font-semibold text-2xl text-neutral-700 mb-2">
-                                                        {date}
+                                                        {dateStart}
                                                     </div>
                                                     <div className="event-details-title font-bold text-6xl mb-6">
                                                         <h1>{event.title}</h1>
@@ -137,7 +155,7 @@ export default function EventDetailPage() {
                                                                     <div className="detail-time-date-details">
                                                                         <p className="font-medium text-sm">
                                                                             <span>
-                                                                                {event.datetime_start[0]}·{event.datetime_start[1]}-{event.datetime_end[0]}·{event.datetime_end[1]}
+                                                                                {dateStart} · {event.datetime_start[1]} - <br /> {dateEnd} · {event.datetime_end[1]}
                                                                             </span>
                                                                         </p>
                                                                     </div>
@@ -194,7 +212,7 @@ export default function EventDetailPage() {
                                                     <div className="price-bar flex justify-between items-end">
                                                         <h2 className="font-semibold text-xl ">Price</h2>
                                                         <span className="flex items-end">
-                                                            <h3 className="font-bold text-xl">{event.price}</h3>
+                                                            <h3 className="font-bold text-xl">{event.price === 0 ? "Free" : price}</h3>
                                                         </span>
                                                     </div>
                                                     <div className="buy-tickets-wrapper mt-8">
@@ -215,9 +233,6 @@ export default function EventDetailPage() {
                                         {
                                             loggedInUser ?
                                                 (<>
-
-
-
                                                     <Modal show={openModal === "default1"} size={"2xl"} onClose={() => setOpenModal(undefined)} theme={FlowbiteCustomThemeContent}>
                                                         <Modal.Header>
                                                             <h1 className="ff-space-g font-bold text-2xl">
@@ -370,10 +385,9 @@ export default function EventDetailPage() {
                                                                                                         type="checkbox"
                                                                                                         name="use_point"
                                                                                                         id="use_point"
-                                                                                                        className="border-2 border-neutral-300 font-medium w-[20px] h-[20px]"
-                                                                                                        value={loggedInUser.fullname}
+                                                                                                        className="border-2 rounded-md border-neutral-300 font-medium w-[20px] h-[20px]"
                                                                                                     />
-                                                                                                    <label htmlFor="use_points" className="font-medium">Use points</label>
+                                                                                                    <label htmlFor="use_point" className="font-medium">Use points</label>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -381,7 +395,7 @@ export default function EventDetailPage() {
                                                                                     <section className="place-order">
                                                                                         <div className="place-order-container">
                                                                                             <div className="form-modal-group flex items-center gap-2 mb-4">
-                                                                                                <input type="checkbox" name="tnc" id="tnc" className="border-2 border-neutral-300 font-medium" />
+                                                                                                <input type="checkbox" name="tnc" id="tnc" className="border-2 rounded-md border-neutral-300 font-medium w-[20px] h-[20px]" />
                                                                                                 <label htmlFor="tnc" className="font-medium text-sm">
                                                                                                     By selecting Place Order, I agree to the Festivent Terms of Service
                                                                                                 </label>
@@ -415,16 +429,16 @@ export default function EventDetailPage() {
                                                                                     <div className="order-summary-calc ">
                                                                                         <div className="summary-calc grid grid-rows-6">
                                                                                             <div className="summary flex justify-between">
-                                                                                                <span>1 x eTicket</span> <span>{event.price}</span>
+                                                                                                <span>1 x eTicket</span> <span>{price}</span>
                                                                                             </div>
                                                                                             <div className="summary flex justify-between">
-                                                                                                <span>1 x eTicket</span> <span>{event.price}</span>
+                                                                                                <span>1 x eTicket</span> <span>{price}</span>
                                                                                             </div>
                                                                                             <div className="summary flex justify-between">
-                                                                                                <span>1 x eTicket</span> <span>{event.price}</span>
+                                                                                                <span>1 x eTicket</span> <span>{price}</span>
                                                                                             </div>
                                                                                             <div className="total flex justify-between border-t-2 pt-4">
-                                                                                                <strong>Total</strong> <strong>{event.price}</strong>
+                                                                                                <strong>Total</strong> <strong>{price}</strong>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -433,20 +447,20 @@ export default function EventDetailPage() {
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </Modal.Body>
-                                                    </Modal>
+                                                            </div >
+                                                        </Modal.Body >
+                                                    </Modal >
                                                     <Modal dismissible show={openModal === "final"} size={"6xl"} onClose={() => setOpenModal(undefined)} theme={FlowbiteCustomThemeContent}>
                                                         <Modal.Body className="p-12">
                                                             <div className="modal-body-container">
                                                                 <div className="modal-panel-wrapper ff-inter text-center">
-                                                                    <h1 className="text-4xl font-bold ff-space-g bg-green-400 py-8 rounded-lg mb-12 text-white">Successfully Registered</h1>
-                                                                    <h2 className="text-2xl font-medium">{loggedInUser.fullname}</h2>
-                                                                    <h3>for <span className="text-2xl font-medium">{event.title}</span></h3>
-                                                                    <h3 className="mb-12">on <span className="text-2xl font-medium ">{date}</span> </h3>
+                                                                    <h1 className="text-6xl font-bold ff-space-g bg-green-400 py-8 rounded-lg mb-12 text-white">Successfully Registered</h1>
+                                                                    <h2 className="text-4xl font-bold mb-4">{loggedInUser.fullname}</h2>
+                                                                    <h3 className="mb-2 font-bold">for <span className="text-4xl font-bold">{event.title}</span></h3>
+                                                                    <h3 className="mb-12 font-bold">on <span className="text-2xl font-bold ">{dMY}</span> </h3>
                                                                     <h3 className="text-xl font-medium mb-2">Here is your referral code:</h3>
-                                                                    <h1 className="text-7xl font-medium mb-12">{123154654981}</h1>
-                                                                    <h2 className="font-medium text-2xl">See you on the event! Thank you!</h2>
+                                                                    <h1 className="text-6xl font-bold mb-12">{123154654981}</h1>
+                                                                    <h2 className="font-bold text-xl">See you on the event! Thank you!</h2>
                                                                 </div>
                                                             </div>
                                                         </Modal.Body>
@@ -456,12 +470,12 @@ export default function EventDetailPage() {
                                                 :
                                                 null
                                         }
-                                    </div>
-                                </div>
-                            </main>
-                        </div>
-                    </section>
-                </div>
+                                    </div >
+                                </div >
+                            </main >
+                        </div >
+                    </section >
+                </div >
             )}
         </>
     );

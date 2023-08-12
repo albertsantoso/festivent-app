@@ -4,9 +4,11 @@ export default function EventCard({ image, title, dateTime, venue, price, maker 
     return (
         <>
             <div className="EventCard">
-                <div className="event-card">
+                <div className="event-card rounded-lg">
                     <div className="event-card-container shadow-card drop-shadow-lg hover:drop-shadow-2xl md:h-[420px] bg-white rounded-lg  hover:scale-105 duration-150">
-                        <div className="event-thumbnail max-h-[200px]">
+                        <div className="event-thumbnail max-h-[200px] bg-neutral-200 rounded-t-lg relative"
+                            style={{ background: `url(${image})`, backgroundSize: "cover", WebkitBackdropFilter: "sepia(100)" }}
+                        >
                             <img src={image} className="object-contain h-[200px] m-auto" alt="" />
                         </div>
                         <div className="event-meta px-4 py-6">
