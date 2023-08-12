@@ -22,6 +22,7 @@ export default function EventDetailPage() {
     const [isRegistered, setIsRegistered] = useState(false);
     const [discountRefCode, setDiscountRefCode] = useState(0);
     const [statusRefCode, setStatusRefCode] = useState("");
+    const [refCodeUsed, setRefCodeUsed] = useState(false);
     const [usePoints, setUsePoints] = useState(0);
     const [newRefCode, setNewRefCode] = useState(0);
     const [refCodeOwner, setRefCodedOwner] = useState(null);
@@ -67,8 +68,10 @@ export default function EventDetailPage() {
                 const diskon = event.price * (event.discount / 100);
                 setStatusRefCode("code found");
                 setRefCodedOwner(v.userId);
+                setRefCodeUsed(true);
                 return setDiscountRefCode(diskon);
             } else {
+                setRefCodeUsed(false);
                 setDiscountRefCode(0);
                 setRefCodedOwner(null);
                 setStatusRefCode("code is not found");
@@ -162,6 +165,13 @@ export default function EventDetailPage() {
             userId: Number(userId),
             price: fp,
         };
+        let pointAkhir = 0;
+        if (usePoints - (event.price - discountRefCode) > 0) {
+            pointAkhir = usePoints - (event.price - discountRefCode);
+        } else if (usePoints - (event.price - discountRefCode) <= 0) {
+            pointAkhir = 0;
+        }
+
         const randomNumber = generateRandomNumber();
         setNewRefCode(randomNumber);
         const dataRef = {
@@ -172,11 +182,13 @@ export default function EventDetailPage() {
         await axios.post("http://localhost:5000/tickets", ticket);
         await axios.post("http://localhost:5000/ref_code", dataRef);
         await axios.patch(`http://localhost:5000/users/${userId}`, {
-            ref_points: Number(loggedInUser.ref_points - usePoints),
+            ref_points: Number(pointAkhir),
         });
-        await axios.patch(`http://localhost:5000/events/${id}`, {
-            count: Number(event.count) + 1,
-        });
+        if (refCodeUsed) {
+            await axios.patch(`http://localhost:5000/events/${id}`, {
+                count: Number(event.count) + 1,
+            });
+        }
         if (refCodeOwner) {
             const res = await axios.get(
                 `http://localhost:5000/users/${refCodeOwner}`
@@ -904,9 +916,13 @@ export default function EventDetailPage() {
                                                                                                 Points
                                                                                             </span>{" "}
                                                                                             <span>
-                                                                                                {
-                                                                                                    usePoints
-                                                                                                }
+                                                                                                {usePoints -
+                                                                                                    (event.price -
+                                                                                                        discountRefCode) >
+                                                                                                0
+                                                                                                    ? event.price -
+                                                                                                      discountRefCode
+                                                                                                    : usePoints}
                                                                                             </span>
                                                                                         </div>
                                                                                         <div className="total flex justify-between border-t-2 pt-4">
@@ -916,7 +932,12 @@ export default function EventDetailPage() {
                                                                                             <strong>
                                                                                                 {event.price -
                                                                                                     discountRefCode -
-                                                                                                    usePoints}
+                                                                                                    usePoints >
+                                                                                                0
+                                                                                                    ? event.price -
+                                                                                                      discountRefCode -
+                                                                                                      usePoints
+                                                                                                    : 0}
                                                                                             </strong>
                                                                                         </div>
                                                                                     </div>
