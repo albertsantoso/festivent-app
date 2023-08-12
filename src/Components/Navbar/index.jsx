@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { onLogout } from "../../Redux/Features/Users";
-import { Dropdown } from "flowbite-react";
-import { HiCog, HiLogout, HiViewGrid } from "react-icons/hi";
+import DropdownItemsWithIcon from "../AccountDropdown";
 
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
     const username = useSelector((state) => state.users.username);
     const dispatch = useDispatch();
+
 
     return (
         <>
@@ -37,19 +37,12 @@ export default function Navbar() {
                             <div className="navbar-middle">
                                 <ul className="navbar-menus flex gap-10">
                                     <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Events" />
+                                        <Link to={"/events"}>
+                                            <span className="font-semibold">Explore</span>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Events" />
-                                    </li>
-                                    <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Events" />
-                                    </li>
-                                    <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Events" />
-                                    </li>
-                                    <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Events" />
+                                        <DropdownNavbarMenu menuTitle="Categories" />
                                     </li>
                                 </ul>
                             </div>
@@ -85,42 +78,8 @@ export default function Navbar() {
                                         )}
                                     </div>
                                     {email ? (
-                                        <>
-                                            <Dropdown label={`${username}`}>
-                                                <Dropdown.Header>
-                                                    {/* <span className="block text-sm">
-                                                        Bonnie Green
-                                                    </span> */}
-                                                    <span className="block truncate text-sm font-medium">
-                                                        {email}
-                                                    </span>
-                                                </Dropdown.Header>
-                                                <Dropdown.Item
-                                                    icon={HiViewGrid}
-                                                >
-                                                    <Link>Dashboard</Link>
-                                                </Dropdown.Item>
-                                                <Dropdown.Item icon={HiCog}>
-                                                    Settings
-                                                </Dropdown.Item>
-                                                <Dropdown.Divider />
-                                                <Dropdown.Item icon={HiLogout}>
-                                                    <div
-                                                        onClick={() =>
-                                                            dispatch(onLogout())
-                                                        }
-                                                    >
-                                                        Sign out
-                                                    </div>
-                                                </Dropdown.Item>
-                                            </Dropdown>
-                                            {/* <div
-                                            className="cursor-pointer"
-                                            onClick={() => dispatch(onLogout())}
-                                            >
-                                            {email}
-                                        </div> */}
-                                        </>
+                                        //! TAILWIND
+                                        <DropdownItemsWithIcon handleFunctionLogout={() => dispatch(onLogout())} />
                                     ) : (
                                         <div className="action-login">
                                             <Link to={"/login"}>
@@ -136,8 +95,8 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                </nav>
-            </section>
+                </nav >
+            </section >
         </>
     );
 }

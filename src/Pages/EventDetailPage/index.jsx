@@ -156,6 +156,7 @@ export default function EventDetailPage() {
         await axios.post("http://localhost:5000/tickets", ticket);
         setStatusDone(true);
     };
+
     const onPlaceOrder = async () => {
         setOpenModal("final");
         const fp = event.price - usePoints - discountRefCode;
@@ -381,7 +382,7 @@ export default function EventDetailPage() {
                                                         <span className="flex items-end">
                                                             <h3 className="font-bold text-xl">
                                                                 {event.price ===
-                                                                0
+                                                                    0
                                                                     ? "Free"
                                                                     : event.price}
                                                             </h3>
@@ -553,7 +554,7 @@ export default function EventDetailPage() {
                                                                                 <section className="place-order">
                                                                                     <div className="place-order-container flex gap-2 justify-end">
                                                                                         {event.price ===
-                                                                                        0 ? (
+                                                                                            0 ? (
                                                                                             <>
                                                                                                 <PrimaryButton
                                                                                                     handleFunction={
@@ -729,7 +730,7 @@ export default function EventDetailPage() {
                                                                                                     code
                                                                                                 </label>
                                                                                                 {event.count >=
-                                                                                                event.max ? (
+                                                                                                    event.max ? (
                                                                                                     <>
                                                                                                         <div className="flex gap-4">
                                                                                                             <input
@@ -937,8 +938,11 @@ export default function EventDetailPage() {
                                                     dismissible
                                                     show={openModal === "final"}
                                                     size={"6xl"}
-                                                    onClose={() =>
+                                                    onClose={() => {
                                                         setOpenModal(undefined)
+                                                        window.location.reload(false)
+                                                    }
+
                                                     }
                                                     theme={
                                                         FlowbiteCustomThemeContent
@@ -971,7 +975,7 @@ export default function EventDetailPage() {
                                                                     </span>{" "}
                                                                 </h3>
                                                                 {event.price ===
-                                                                0 ? null : (
+                                                                    0 ? null : (
                                                                     <>
                                                                         <h3 className="text-xl font-medium mb-2">
                                                                             Here

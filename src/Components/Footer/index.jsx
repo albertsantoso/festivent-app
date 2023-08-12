@@ -27,11 +27,11 @@ export default function Footer() {
     return (
         <>
             <div className="Footer border-t-2 p-[60px]">
-                <div className="footer-container mycontainer bg-white">
+                <div className="footer-container mycontainer container bg-white">
                     <div className="footer-body flex">
                         <div className="download-column w-full text-left">
                             <h3 className="font-bold text-lg mb-4">Download the app</h3>
-                            <div className="download-input w-[400px] flex items-center justify-between relative">
+                            <div className="download-input w-[400px] hidden items-center justify-between relative md:flex">
                                 <form action="" className="w-full">
                                     <div>
                                         <input

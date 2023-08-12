@@ -3,15 +3,16 @@
 }
 
 .DropdownNavbarMenu .menu-dropdown {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 30px;
+    padding-top: 20px;
+    top: 16px;
+    left: -200px;
     display: none;
+    width: 500px;
 }
 
-.DropdownNavbarMenu .menu-dropdown ul li {
-    margin: 8px 0;
+.DropdownNavbarMenu .menu-dropdown ul {
+    box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.2);
 }
 
 .DropdownNavbarMenu > .dropdown-toggle:hover > .menu-dropdown {

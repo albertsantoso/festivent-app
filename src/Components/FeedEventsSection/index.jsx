@@ -3,6 +3,7 @@ import SectionHeading from "../SectionHeading";
 import { useEffect, useState } from "react";
 import EventCard from "../EventCard";
 import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa"
 
 export default function FeedEventsSection() {
     const [events, setEvents] = useState(null);
@@ -25,7 +26,7 @@ export default function FeedEventsSection() {
             <section className="mycontainer">
                 <SectionHeading sectionTitle="Upcoming Events" />
 
-                <div className="feed-events-container grid grid-cols-4 gap-4 md:grid-cols-4">
+                <div className="feed-events-container grid gap-6 md:grid-cols-4">
                     {events?.map((event, index) => {
                         const date = new Date(event.datetime_start[0])
                         const dayMonthDate = date.toLocaleDateString(undefined, {
