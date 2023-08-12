@@ -1,5 +1,3 @@
-"use client";
-
 import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png";
 import PrimaryButton from "../PrimaryButton";
 import DropdownNavbarMenu from "../DropdownNavbarMenu";
@@ -11,9 +9,8 @@ import DropdownItemsWithIcon from "../AccountDropdown";
 
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
-    const username = useSelector((state) => state.users.username);
+    const fullname = useSelector((state) => state.users.fullname)
     const dispatch = useDispatch();
-
 
     return (
         <>
@@ -21,30 +18,22 @@ export default function Navbar() {
                 <nav>
                     <div className="navbar-container navbar-bg bg-white shadow-lg">
                         <div className="navbar-wrapper mycontainer flex justify-between items-center h-[82px] w-full">
-                            <div className="navbar-left">
+                            <div className="navbar-left flex gap-8 items-center">
                                 <div className="navbar-logo">
                                     <Link to={"/"}>
-                                        <img
-                                            src={FestiventLogoBlack}
-                                            alt=""
-                                            srcset=""
-                                            className="md:max-w-[150px] md:min-w-[150px] w-[30px]"
-                                        />
+                                        <img src={FestiventLogoBlack} alt="" srcset="" className="md:max-w-[150px] md:min-w-[150px] w-[30px]" />
                                     </Link>
                                 </div>
-                            </div>
-
-                            <div className="navbar-middle">
                                 <ul className="navbar-menus flex gap-10">
                                     <li className="menu-item">
                                         <Link to={"/events"}>
-                                            <span className="font-semibold">Explore</span>
+                                            <span className="font-bold">Explore</span>
                                         </Link>
                                     </li>
-                                    <li className="menu-item">
-                                        <DropdownNavbarMenu menuTitle="Categories" />
-                                    </li>
                                 </ul>
+                            </div>
+
+                            <div className="navbar-middle">
                             </div>
 
                             <div className="navbar-right">
@@ -52,42 +41,22 @@ export default function Navbar() {
                                     <div className="action-create-event">
                                         {email ? (
                                             <Link to={"/create"}>
-                                                <PrimaryButton
-                                                    buttonText="Create an Event"
-                                                    bgColor="white"
-                                                    textColor="black"
-                                                />
+                                                <PrimaryButton buttonText="Create an Event" bgColor="bg-gradient-animation-1" textColor="white" customStyle={"hover:scale-[1.02] active:scale-[.95]"} />
                                             </Link>
                                         ) : (
                                             <>
-                                                <Link
-                                                    onClick={() =>
-                                                        alert(
-                                                            "Please login first"
-                                                        )
-                                                    }
-                                                    to={"/login"}
-                                                >
-                                                    <PrimaryButton
-                                                        buttonText="Create an Event"
-                                                        bgColor="white"
-                                                        textColor="black"
-                                                    />
+                                                <Link onClick={() => alert("Please login first")} to={"/login"}>
+                                                    <PrimaryButton buttonText="Create an Event" bgColor="bg-gradient-animation-1" textColor="white" customStyle={"hover:scale-[1.02] active:scale-[.95]"} />
                                                 </Link>
                                             </>
                                         )}
                                     </div>
-                                    {email ? (
-                                        //! TAILWIND
+                                    {email && fullname ? (
                                         <DropdownItemsWithIcon handleFunctionLogout={() => dispatch(onLogout())} />
                                     ) : (
                                         <div className="action-login">
                                             <Link to={"/login"}>
-                                                <PrimaryButton
-                                                    buttonText="Log in"
-                                                    bgColor="black"
-                                                    textColor="white"
-                                                />
+                                                <PrimaryButton buttonText="Log in" bgColor="black" textColor="white" />
                                             </Link>
                                         </div>
                                     )}
@@ -95,8 +64,8 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                </nav >
-            </section >
+                </nav>
+            </section>
         </>
     );
 }

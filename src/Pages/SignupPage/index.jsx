@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import { setEmail } from "../../Redux/Features/Users";
+import { setEmail, setFullname } from "../../Redux/Features/Users";
 
 export default function SignupPage() {
     const email = useSelector((state) => state.users.email);
@@ -40,35 +40,33 @@ export default function SignupPage() {
                 `http://localhost:5000/users?email=${email}`
             );
             if (res.data.length) {
-                return toast.error("Email sudah terdaftar");
+                return toast.error("Email already registered!");
             }
             if (password.length < 6) {
-                return toast.error("Password minimum 6 karakter");
+                return toast.error("Password minimum of 6 characters!");
             }
             await postData();
             toast.success("Successfully created!");
+
             const resp = await axios.get(
                 `http://localhost:5000/users?email=${email}`
             );
-            console.log("🚀 ~ file: index.jsx:58 ~ onSignUp ~ resp:", resp);
 
             localStorage.setItem("idLogin", resp.data[0].id);
+
             setTimeout(() => {
                 dispatch(setEmail(resp.data[0].email));
-                // navigate("/");
+                dispatch(setFullname(resp.data[0].fullname))
             }, 1000);
         } catch (err) {
             console.log(err);
         }
     };
 
-    useEffect(() => {
-        console.log(email);
-    }, [email]);
-
     if (email) {
         return navigate("/");
     }
+
     return (
         <>
             <Toaster />

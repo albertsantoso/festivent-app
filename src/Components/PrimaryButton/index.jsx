@@ -13,7 +13,7 @@ export default function PrimaryButton({
             <div className="PrimaryButton">
                 <button
                     onClick={handleFunction}
-                    className={`rounded-lg px-[12px] py-[8px] w-${width} duration-150 ${bgColor} text-${textColor} ${customStyle}`}
+                    className={`rounded-lg px-[12px] h-[44px] w-${width} duration-150 ${bgColor} text-${textColor} ${customStyle} active:bg-neutral-100`}
                 >
                     {buttonText}
                 </button>
