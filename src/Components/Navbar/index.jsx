@@ -1,6 +1,5 @@
 import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png";
 import PrimaryButton from "../PrimaryButton";
-import DropdownNavbarMenu from "../DropdownNavbarMenu";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,7 +16,7 @@ export default function Navbar() {
             <section className="Navbar fixed w-full z-50">
                 <nav>
                     <div className="navbar-container navbar-bg bg-white shadow-lg">
-                        <div className="navbar-wrapper mycontainer flex justify-between items-center h-[82px] w-full">
+                        <div className="navbar-wrapper mycontainer container flex justify-between items-center h-[82px] w-full">
                             <div className="navbar-left flex gap-8 items-center">
                                 <div className="navbar-logo">
                                     <Link to={"/"}>
@@ -27,7 +26,7 @@ export default function Navbar() {
                                 <ul className="navbar-menus flex gap-10">
                                     <li className="menu-item">
                                         <Link to={"/events"}>
-                                            <span className="font-bold">Explore</span>
+                                            <span className="font-bold">Explore events</span>
                                         </Link>
                                     </li>
                                 </ul>

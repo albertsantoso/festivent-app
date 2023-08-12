@@ -24,9 +24,9 @@ export default function LoginPage() {
         <>
             <Toaster />
             <div className="LoginPage w-full h-[100vh]">
-                <div className="login-page-container flex">
-                    <div className="login-section w-[50%] h-[100vh]">
-                        <div className="login-section-container px-72 py-44 h-full ">
+                <div className="login-page-container grid md:grid-cols-2 grid-cols-1">
+                    <div className="login-section h-[100vh] px-8 flex items-center">
+                        <div className="login-section-container min-w-[320px] max-w-[360px] m-auto">
                             <div className="login-section-heading flex flex-col items-start mb-12">
                                 <div className="login-heading-logo mb-10">
                                     <Link to={"/"}>
@@ -53,7 +53,7 @@ export default function LoginPage() {
                                                 id="email"
                                                 placeholder="Email address"
                                                 ref={inputEmail}
-                                                className="w-full py-3 px-4 rounded-lg font-semibold outline-none"
+                                                className="border-2 w-full py-3 px-4 rounded-lg font-semibold outline-none"
                                             />
                                         </div>
                                         <div className="form-group">
@@ -63,7 +63,7 @@ export default function LoginPage() {
                                                 id="password"
                                                 placeholder="Password"
                                                 ref={inputPassword}
-                                                className="w-full py-3 px-4 rounded-lg font-semibold outline-none "
+                                                className="border-2 w-full py-3 px-4 rounded-lg font-semibold outline-none "
                                             />
                                         </div>
                                         <div className="form-group mt-2">
@@ -118,7 +118,7 @@ export default function LoginPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="section-image w-[50%]">
+                    <div className="section-image md:block hidden">
                         <img
                             src={ConcertImage}
                             alt=""

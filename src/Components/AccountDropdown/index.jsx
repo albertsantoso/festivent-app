@@ -14,12 +14,12 @@ export default function DropdownItemsWithIcon({ handleFunctionLogout }) {
                     (
                         <>
                             <Flowbite>
-                                <Dropdown label={email} arrowIcon={false} color={"dark"} className='max-w-[200px] p-2 shadow-xl border-2 rounded-lg border-neutral-200' placement='bottom-end' trigger='hover'>
+                                <Dropdown label={email} arrowIcon={false} color={"dark"} className='min-w-[200px] p-2 shadow-xl border-2 rounded-lg border-neutral-200' placement='bottom-end' trigger='hover'>
                                     <Dropdown.Header>
                                         <span className="block text-lg font-bold">
                                             {fullname}
                                         </span>
-                                        <span className="block text-lg font-medium">
+                                        <span className="block text-l font-medium">
                                             {email}
                                         </span>
                                     </Dropdown.Header>
