@@ -22,8 +22,8 @@ export default function DropdownNavbarMenu(props) {
     return (
         <>
             <div className="DropdownNavbarMenu">
-                <div className="dropdown-toggle flex items-center gap-2">
-                    <span className="font-semibold">{props.menuTitle}</span>
+                <div className="dropdown-toggle flex items-center gap-2 cursor-pointer">
+                    <span className="font-semibold ">{props.menuTitle}</span>
                     <PiCaretDownBold />
                     <div className="menu-dropdown">
                         <ul className="bg-white grid grid-cols-2 p-2 gap-x-1 rounded-lg">

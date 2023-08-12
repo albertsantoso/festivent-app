@@ -11,6 +11,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { checkLogin } from "./Redux/Features/Users";
 import AllEventsPageFiltering from "./Pages/AllEventsPageFiltering";
+import UserDashboard from "./Pages/UserDashboard";
 
 function App() {
     const { pathname } = useLocation();
@@ -20,10 +21,6 @@ function App() {
     useEffect(() => {
         dispatch(checkLogin());
     }, []);
-
-    // useEffect(() => {
-    //     dispatch(checkLogin());
-    // }, [email]);
 
     return (
         <>
@@ -39,6 +36,7 @@ function App() {
                         path="/events"
                         element={<AllEventsPageFiltering />}
                     />
+                    <Route path="/dashboard" element={<UserDashboard />} />
                 </Routes>
                 <Footer />
             </div>

@@ -96,6 +96,7 @@ export default function EventDetailPage() {
             });
         }
     };
+
     useEffect(() => {
         getDataLoggedInUser();
         fetchData();
@@ -142,6 +143,7 @@ export default function EventDetailPage() {
         alert("Please login first");
         navigate("/login");
     };
+
     const handleClick1 = () => setOpenModal("default1");
     const handleClick2 = () => setOpenModal("default2");
     const handleClick3 = async () => {
@@ -152,9 +154,6 @@ export default function EventDetailPage() {
             price: finalPrice,
         };
         await axios.post("http://localhost:5000/tickets", ticket);
-        await axios.patch(`http://localhost:5000/events/${id}`, {
-            count: Number(event.count) + 1,
-        });
     };
 
     const onPlaceOrder = async () => {
@@ -403,6 +402,9 @@ export default function EventDetailPage() {
                                                                 <PrimaryButton
                                                                     handleFunction={
                                                                         null
+                                                                    }
+                                                                    customStyle={
+                                                                        "cursor-not-allowed"
                                                                     }
                                                                     textColor={
                                                                         "white"
