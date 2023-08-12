@@ -665,25 +665,25 @@
       "id": 8
     }
   ],
-  "city": [
+  "event_cities": [
     {
-      "city": "Jakarta Pusat",
+      "name": "Jakarta Pusat",
       "id": 1
     },
     {
-      "city": "Jakarta Barat",
+      "name": "Jakarta Barat",
       "id": 2
     },
     {
-      "city": "Jakarta Utara",
+      "name": "Jakarta Utara",
       "id": 3
     },
     {
-      "city": "Jakarta Selatan",
+      "name": "Jakarta Selatan",
       "id": 4
     },
     {
-      "city": "Jakarta Timur",
+      "name": "Jakarta Timur",
       "id": 5
     }
   ]
