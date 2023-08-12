@@ -4,6 +4,7 @@ import { toast } from "react-hot-toast";
 const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = {
+    username: "",
     email: "",
 };
 
@@ -14,6 +15,10 @@ export const userSlice = createSlice({
         setEmail: (initialState, action) => {
             // console.log(action);
             initialState.email = action.payload;
+        },
+        setUsername: (initialState, action) => {
+            // console.log(action);
+            initialState.username = action.payload;
         },
     },
 });
@@ -33,6 +38,7 @@ export const onLogin = (email, password) => async (dispatch) => {
     localStorage.setItem("idLogin", res.data[0].id);
     setTimeout(() => {
         dispatch(setEmail(res.data[0].email));
+        dispatch(setUsername(res.data[0].fullname));
         // navigate("/");
     }, 1000);
 };
@@ -42,6 +48,7 @@ export const checkLogin = () => async (dispatch) => {
         const id = localStorage.getItem("idLogin");
         const res = await axios.get(`http://localhost:5000/users/${id}`);
         dispatch(setEmail(res.data.email));
+        dispatch(setUsername(res.data.fullname));
     } catch (error) {
         console.log(error);
     }
@@ -52,10 +59,11 @@ export const onLogout = () => async (dispatch) => {
         localStorage.removeItem("idLogin");
         const res = "";
         dispatch(setEmail(res));
+        dispatch(setUsername(res));
     } catch (error) {
         console.log(error);
     }
 };
 
-export const { setEmail } = userSlice.actions;
+export const { setEmail, setUsername } = userSlice.actions;
 export default userSlice.reducer;

@@ -22,7 +22,7 @@ function App() {
     }, []);
 
     // useEffect(() => {
-    //     dispatch(checkLogin);
+    //     dispatch(checkLogin());
     // }, [email]);
 
     return (
