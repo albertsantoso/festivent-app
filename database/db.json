@@ -11,7 +11,7 @@
       "fullname": "christopher",
       "email": "purwadhikatestmail@gmail.com",
       "password": "654321",
-      "ref_points": 0,
+      "ref_points": 5000,
       "id": 2
     },
     {
@@ -39,14 +39,14 @@
       "fullname": "Rafael",
       "email": "rafael@gmail.com",
       "password": "abc1234",
-      "ref_points": 0,
+      "ref_points": 5000,
       "id": 6
     },
     {
       "fullname": "Rafael",
       "email": "rafael2@gmail.com",
       "password": "abc1234",
-      "ref_points": 0,
+      "ref_points": 65000,
       "id": 7
     },
     {
@@ -168,7 +168,7 @@
         "18:00"
       ],
       "discount": 15,
-      "count": 2,
+      "count": 3,
       "max": 10,
       "userId": 1,
       "id": 5
@@ -214,7 +214,7 @@
         "18:00"
       ],
       "discount": 20,
-      "count": 2,
+      "count": 11,
       "max": 10,
       "userId": 3,
       "id": 7
@@ -306,7 +306,7 @@
         "19:00"
       ],
       "discount": 15,
-      "count": 3,
+      "count": 5,
       "max": 10,
       "userId": 5,
       "id": 11
@@ -521,28 +521,114 @@
   ],
   "tickets": [
     {
-      "eventID": 16,
-      "userID": 3,
+      "eventId": 16,
+      "userId": 3,
       "price": 50000,
       "id": 1
     },
     {
-      "eventID": 11,
-      "userID": 2,
+      "eventId": 11,
+      "userId": 2,
       "price": 100000,
       "id": 2
     },
     {
-      "eventID": 12,
-      "userID": 2,
+      "eventId": 12,
+      "userId": 2,
       "price": 0,
       "id": 3
     },
     {
-      "eventID": 7,
-      "userID": 1,
+      "eventId": 7,
+      "userId": 1,
       "price": 50000,
       "id": 4
+    },
+    {
+      "eventId": "1",
+      "userId": "3",
+      "price": 0,
+      "id": 5
+    },
+    {
+      "eventId": "1",
+      "userId": "6",
+      "price": 0,
+      "id": 6
+    },
+    {
+      "eventId": "5",
+      "userId": "6",
+      "price": 0,
+      "id": 7
+    },
+    {
+      "eventId": "7",
+      "userId": "6",
+      "price": 0,
+      "id": 8
+    },
+    {
+      "eventId": "6",
+      "userId": "6",
+      "price": 0,
+      "id": 9
+    },
+    {
+      "eventId": "8",
+      "userId": "6",
+      "price": 0,
+      "id": 10
+    },
+    {
+      "eventId": "11",
+      "userId": "6",
+      "price": 0,
+      "id": 11
+    },
+    {
+      "eventId": "11",
+      "userId": "7",
+      "price": 0,
+      "id": 12
+    }
+  ],
+  "ref_code": [
+    {
+      "eventId": 6,
+      "userId": 1,
+      "code": 123456,
+      "id": 1
+    },
+    {
+      "eventId": 5,
+      "userId": 7,
+      "code": 123456,
+      "id": 2
+    },
+    {
+      "eventId": "5",
+      "userId": "6",
+      "code": 791383,
+      "id": 3
+    },
+    {
+      "eventId": "7",
+      "userId": "6",
+      "code": 771075,
+      "id": 4
+    },
+    {
+      "eventId": "11",
+      "userId": "6",
+      "code": 666629,
+      "id": 5
+    },
+    {
+      "eventId": "11",
+      "userId": "7",
+      "code": 144954,
+      "id": 6
     }
   ],
   "event_categories": [
