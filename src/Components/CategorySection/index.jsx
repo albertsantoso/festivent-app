@@ -24,11 +24,11 @@ export default function CategorySection() {
     }, []);
 
     const navigate = useNavigate();
-    const onClickCategories = () => {};
+    const onClickCategories = () => { };
 
     return (
         <>
-            <section className="mycontainer">
+            <section className="md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
                 <SectionHeading sectionTitle="Trending Categories" />
 
                 <div className="tile-group grid grid-cols-2 md:grid-cols-4 gap-[12px] ">

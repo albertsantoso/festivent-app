@@ -24,17 +24,21 @@ export const userSlice = createSlice({
 });
 
 export const onLogin = (email, password) => async (dispatch) => {
-    const res = await axios.get(`http://localhost:5000/users?email=${email}`);
 
+    const res = await axios.get(`http://localhost:5000/users?email=${email}`);
     console.log("🚀 ~ file: index.js:28 ~ onLogin ~ res:", res)
-    if (res.data.length === 0) {
-        return toast.error("Email tidak terdaftar");
+    if (email !== "" && password !== "") {
+        if (res.data.length === 0) {
+            return toast.error("Email not registered!");
+        }
+        const data = res.data;
+        if (res.data.length && password !== data[0].password) {
+            return toast.error("Wrong password!");
+        }
+    } else {
+        return toast.error("Provide something!")
     }
-    const data = res.data;
-    if (res.data.length && password !== data[0].password) {
-        return toast.error("Password salah");
-    }
-    toast.success("Login successful");
+    toast.success("Login successful!");
 
     localStorage.setItem("idLogin", res.data[0].id);
     setTimeout(() => {

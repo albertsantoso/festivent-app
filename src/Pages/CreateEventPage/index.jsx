@@ -110,20 +110,20 @@ export default function CreateEvent() {
         <>
             <Toaster />
             <div className="CreateEvent">
-                <section className="create-event py-[140px]">
-                    <div className="create-event-container mycontainer">
+                <section className="create-event py-[84px]">
+                    <div className="create-event-container md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
                         <div className="create-event-wrapper">
                             <section className="basic-info-container">
                                 <div className="basic-info-wrapper flex flex-col items-start">
                                     <div className="basic-info-heading mb-4">
-                                        <div className="section-title basic-info-title text-left w-[700px]">
-                                            <h1 className="text-4xl font-bold ff-space-g">Basic Info</h1>
-                                            <p className="text-base font-medium text-neutral-700">
+                                        <div className="section-title basic-info-title text-left md:w-[700px]">
+                                            <h1 className="text-3xl md:text-4xl font-bold ff-space-g">Basic Info</h1>
+                                            <p className="text-sm md:text-base font-medium text-neutral-700">
                                                 Name your event and tell event-goers why they should come. Add details that highlight what makes it unique.
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="form-basic-info w-[720px]">
+                                    <div className="form-basic-info w-full md:w-[720px]">
                                         <div className="form-group flex flex-col items-start w-full mb-4">
                                             <label htmlFor="event_title" className="font-semibold mb-2">
                                                 Event title <sup className="font-bold text-red-500">*</sup>{" "}
@@ -134,7 +134,7 @@ export default function CreateEvent() {
                                                 id="event_title"
                                                 ref={inputTitle}
                                                 placeholder="Be clear and descriptive."
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -148,7 +148,7 @@ export default function CreateEvent() {
                                                 id="event_image"
                                                 ref={inputImage}
                                                 placeholder="Please put in your image url."
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -161,7 +161,7 @@ export default function CreateEvent() {
                                                 id="event_summary"
                                                 ref={inputSummary}
                                                 placeholder="Please give a brief summary for your event"
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -174,7 +174,7 @@ export default function CreateEvent() {
                                                 id="event_description"
                                                 ref={inputDescription}
                                                 placeholder="Describe your event"
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -187,7 +187,7 @@ export default function CreateEvent() {
                                                 id="event_price"
                                                 ref={inputPrice}
                                                 placeholder="Put 0 if your event is free"
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -209,7 +209,7 @@ export default function CreateEvent() {
                                                 placeholder="%"
                                                 min={0}
                                                 max={90}
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
@@ -223,14 +223,14 @@ export default function CreateEvent() {
                                                 ref={inputMaxUse}
                                                 placeholder="uses"
                                                 min={0}
-                                                className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg placeholder:font-medium"
                                             />
                                         </div>
                                         <div className="form-group flex flex-col items-start w-full mb-4">
                                             <label className="font-semibold mb-2">
                                                 Category <sup className="font-bold text-red-500">*</sup>{" "}
                                             </label>
-                                            <select name="category" id="category" className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg" ref={inputCategory}>
+                                            <select name="category" id="category" className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg" ref={inputCategory}>
                                                 <option value="" disabled selected>
                                                     Select Category
                                                 </option>
@@ -252,24 +252,24 @@ export default function CreateEvent() {
                             <section className="location-container">
                                 <div className="location-wrapper flex flex-col items-start">
                                     <div className="location-heading mb-4">
-                                        <div className="section-title location-title text-left w-[700px]">
-                                            <h1 className="text-4xl font-bold ff-space-g">Location</h1>
-                                            <p className="text-base font-medium text-neutral-700">Help people in the area discover your event and let attendees know where to show up.</p>
+                                        <div className="section-title location-title text-left md:w-[700px]">
+                                            <h1 className="text-3xl md:text-4xl font-bold ff-space-g">Location</h1>
+                                            <p className="text-sm md:text-base md:font-medium text-neutral-700">Help people in the area discover your event and let attendees know where to show up.</p>
                                         </div>
                                     </div>
-                                    <div className="form-location w-[720px]">
+                                    <div className="form-location w-full md:w-[720px]">
                                         <div className="form-group flex flex-col items-start w-full mb-4 relative">
                                             <label htmlFor="search_location" className="font-semibold mb-2">
                                                 Venue location <sup className="font-bold text-red-500">*</sup>{" "}
                                             </label>
                                             <div className="input-group-search relative flex items-center w-full">
-                                                <FaSearch className="search-icon absolute left-6" size={20} fill="black" />
+                                                <FaSearch className="search-icon absolute left-4 md:left-6" size={20} fill="black" />
                                                 <input
                                                     type="search"
                                                     name="search_location"
                                                     id="search_location"
                                                     ref={inputLocation}
-                                                    className="border-neutral-300 py-4 pr-4 pl-14 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                    className="border-neutral-300 py-2 md:py-4 pr-4 pl-12 md:pl-14 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
                                                 />
                                             </div>
                                         </div>
@@ -278,7 +278,7 @@ export default function CreateEvent() {
                                             <label className="font-semibold mb-2">
                                                 City <sup className="font-bold text-red-500">*</sup>{" "}
                                             </label>
-                                            <select name="city" id="city" className="border-neutral-300 py-4 px-4 w-full border-2 font-bold text-lg rounded-lg" ref={inputCity}>
+                                            <select name="city" id="city" className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-base md:text-lg rounded-lg" ref={inputCity}>
                                                 <option value="" disabled selected>
                                                     Select City
                                                 </option>
@@ -305,12 +305,12 @@ export default function CreateEvent() {
                             <section className="date-time-container mb-12">
                                 <div className="date-time-wrapper flex flex-col items-start">
                                     <div className="date-time-heading mb-4">
-                                        <div className="section-title date-time-title text-left w-[700px]">
-                                            <h1 className="text-4xl font-bold ff-space-g">Date and time</h1>
+                                        <div className="section-title date-time-title text-left md:w-[700px]">
+                                            <h1 className="text-3xl md:text-4xl font-bold ff-space-g">Date and time</h1>
                                             <p className="text-base font-medium text-neutral-700">Tell event-goers when your event starts and ends so they can make plans to attend.</p>
                                         </div>
                                     </div>
-                                    <div className="form-date-time w-[720px]">
+                                    <div className="form-date-time w-full md:w-[720px]">
                                         <div className="form-group flex flex-col gap-6 items-start w-full mb-4 relative">
                                             <div className="event-starts-date-time grid grid-cols-2 gap-2 w-full">
                                                 <div className="event-starts flex flex-col items-start">
@@ -323,7 +323,7 @@ export default function CreateEvent() {
                                                             name="event_starts"
                                                             id="event_starts"
                                                             ref={inputDateStart}
-                                                            className="border-neutral-300 py-4 pr-4 pl-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                            className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-sm md:text-lg rounded-lg placeholder"
                                                         />
                                                     </div>
                                                 </div>
@@ -338,7 +338,7 @@ export default function CreateEvent() {
                                                             id="start_time"
                                                             ref={inputTimeStart}
                                                             defaultValue={"07:00"}
-                                                            className="border-neutral-300 py-4 pr-4 pl-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                            className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-sm md:text-lg rounded-lg placeholder:font-medium"
                                                         />
                                                     </div>
                                                 </div>
@@ -354,7 +354,7 @@ export default function CreateEvent() {
                                                             name="event_ends"
                                                             id="event_ends"
                                                             ref={inputDateEnd}
-                                                            className="border-neutral-300 py-4 pr-4 pl-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                            className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-sm md:text-lg rounded-lg placeholder:font-medium"
                                                         />
                                                     </div>
                                                 </div>
@@ -369,7 +369,7 @@ export default function CreateEvent() {
                                                             id="end_time"
                                                             ref={inputTimeEnd}
                                                             defaultValue={"07:00"}
-                                                            className="border-neutral-300 py-4 pr-4 pl-4 w-full border-2 font-bold text-lg rounded-lg placeholder:font-medium"
+                                                            className="border-neutral-300 p-2 md:p-4 w-full border-2 font-bold text-sm md:text-lg rounded-lg placeholder:font-medium"
                                                         />
                                                     </div>
                                                 </div>
@@ -380,7 +380,7 @@ export default function CreateEvent() {
                             </section>
 
                             <section className="action-button">
-                                <div className="action-button-wrapper w-[720px]">
+                                <div className="action-button-wrapper w-full md:w-[720px]">
                                     <button onClick={onCreate} className={"bg-gradient-animation-1 hover:scale-[1.02] active:scale-[.99] w-full h-[60px] text-white font-bold rounded-lg duration-150"}>Create event!</button>
                                 </div>
                             </section>

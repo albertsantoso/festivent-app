@@ -5,7 +5,11 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        "center": "0 0 8px rgba(0, 0, 0, 0.25)"
+      }
+    }
   },
   plugins: [
     require('flowbite/plugin')

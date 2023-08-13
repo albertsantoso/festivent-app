@@ -1,6 +1,6 @@
 import "./EventCard.css";
 
-export default function EventCard({ image, title, dateTime, venue, price, maker }) {
+export default function EventCard({ image, title, dateTime, venue, price, refCode }) {
     return (
         <>
             <div className="EventCard">
@@ -13,16 +13,23 @@ export default function EventCard({ image, title, dateTime, venue, price, maker 
                             <div className="event-meta-container text-left flex flex-col ">
                                 <div className="event-heading">
                                     <h2 className="event-title text-lg font-bold line-clamp-2">{title}</h2>
-                                    <span className="event-time text-sm font-medium text-red-500">{dateTime}</span>
+                                    <span className="event-time text-sm font-semibold text-red-600">{dateTime}</span>
                                     <div className="event-location text-sm font-medium text-gray-600 mb-4 line-clamp-2">{venue}</div>
                                 </div>
                                 <div className="event-content">
                                     <div className="event-price text-sm font-bold">
                                         {price}
                                     </div>
-                                    <div className="event-maker text-sm font-bold">
-                                        {maker}
-                                    </div>
+                                    {
+                                        refCode ?
+                                            (
+                                                <div className="event-maker text-sm font-semibold">
+                                                    Your referral code: <strong>{refCode}</strong>
+                                                </div>
+                                            )
+                                            :
+                                            null
+                                    }
                                 </div>
                             </div>
                         </div>

@@ -36,17 +36,22 @@ export default function SignupPage() {
         try {
             const email = inputEmail.current.value;
             const password = inputPassword.current.value;
+            const fullname = inputFullname.current.value;
             const res = await axios.get(
                 `http://localhost:5000/users?email=${email}`
             );
-            if (res.data.length) {
-                return toast.error("Email already registered!");
-            }
-            if (password.length < 6) {
-                return toast.error("Password minimum of 6 characters!");
+            if (fullname !== "") {
+                if (res.data.length) {
+                    return toast.error("Email already registered!");
+                }
+                if (password.length < 6) {
+                    return toast.error("Password minimum of 6 characters!");
+                }
+            } else {
+                return toast.error("Please fill in your fullname!");
             }
             await postData();
-            toast.success("Successfully created!");
+            toast.success("Successfully registered!");
 
             const resp = await axios.get(
                 `http://localhost:5000/users?email=${email}`
@@ -71,9 +76,9 @@ export default function SignupPage() {
         <>
             <Toaster />
             <div className="SignupPage w-full h-[100vh]">
-                <div className="signup-page-container flex">
-                    <div className="signup-section w-[50%] h-[100vh]">
-                        <div className="signup-section-container px-72 py-44 h-full ">
+                <div className="signup-page-container grid md:grid-cols-2 grid-cols-1">
+                    <div className="signup-section h-[100vh] px-8 flex items-center">
+                        <div className="signup-section-container min-w-[320px] max-w-[360px] m-auto">
                             <div className="signup-section-heading flex flex-col items-start mb-12">
                                 <div className="signup-heading-logo mb-10">
                                     <Link to={"/"}>
@@ -126,7 +131,7 @@ export default function SignupPage() {
                                         <div className="form-group mt-2">
                                             <button
                                                 type="submit"
-                                                className={`rounded-lg py-3 px-4 w-full`}
+                                                className={`rounded-lg py-3 px-4 w-full hover:scale-105 active:scale-100`}
                                                 onClick={() => {
                                                     onSignUp();
                                                 }}
@@ -151,7 +156,7 @@ export default function SignupPage() {
                             </div>
                         </div>
                     </div>
-                    <div className="section-image w-[50%]">
+                    <div className="section-image md:block hidden">
                         <img
                             src={ConcertImage}
                             alt=""
