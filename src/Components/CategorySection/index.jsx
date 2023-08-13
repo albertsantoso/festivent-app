@@ -23,9 +23,6 @@ export default function CategorySection() {
         getEvents();
     }, []);
 
-    const navigate = useNavigate();
-    const onClickCategories = () => { };
-
     return (
         <>
             <section className="md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">

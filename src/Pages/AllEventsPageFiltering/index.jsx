@@ -164,7 +164,7 @@ export default function AllEventsPageFiltering() {
         <>
             <div className="EventsFilteringPage">
                 <div className="filtering-page-container py-[84px] md:py-[140px] ">
-                    <div className="filtering-page-wrapper md:py-[140px] md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
+                    <div className="filtering-page-wrapper md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
                         <div className="section-header mb-4 md:mb-8">
                             <h1 className="font-bold ff-space-g text-4xl md:text-6xl text-left">Explore events</h1>
                         </div>

@@ -26,7 +26,7 @@ export default function LoginPage() {
             <div className="LoginPage w-full h-[100vh]">
                 <div className="login-page-container grid md:grid-cols-2 grid-cols-1">
                     <div className="login-section h-[100vh] px-8 flex items-center">
-                        <div className="login-section-container min-w-[320px] max-w-[360px] m-auto">
+                        <div className="login-section-container w-[360px] m-auto">
                             <div className="login-section-heading flex flex-col items-start mb-12">
                                 <div className="login-heading-logo mb-10">
                                     <Link to={"/"}>

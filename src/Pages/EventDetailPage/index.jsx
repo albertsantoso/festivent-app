@@ -280,7 +280,7 @@ export default function EventDetailPage() {
                                                                                         :
                                                                                         (
                                                                                             <>
-                                                                                                {dateStart} · {event.datetime_start[1]} - {dateEnd} · {event.datetime_end[1]}
+                                                                                                {dateStart} · {event.datetime_start[1]} <br /> - {dateEnd} · {event.datetime_end[1]}
                                                                                             </>
                                                                                         )
                                                                                 }
