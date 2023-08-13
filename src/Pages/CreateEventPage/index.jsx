@@ -110,9 +110,12 @@ export default function CreateEvent() {
         <>
             <Toaster />
             <div className="CreateEvent">
-                <section className="create-event py-[84px]">
+                <section className="create-event py-[80px] md:py-[140px]">
                     <div className="create-event-container md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
-                        <div className="create-event-wrapper">
+                        <div className="create-event-wrapper text-left">
+                            <section className="create-event-title mb-4 md:mb-12">
+                                <h1 className="text-5xl md:text-6xl font-bold ff-space-g">Create your own event!</h1>
+                            </section>
                             <section className="basic-info-container">
                                 <div className="basic-info-wrapper flex flex-col items-start">
                                     <div className="basic-info-heading mb-4">
