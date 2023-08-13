@@ -82,7 +82,7 @@ export default function LoginPage() {
                                                 }
                                             >
                                                 <span className="font-bold text-lg text-white [text-shadow:_0_0_4px_rgb(0_0_0_/_70%)]">
-                                                    Log ins
+                                                    Log in
                                                 </span>
                                             </button>
                                         </div>
