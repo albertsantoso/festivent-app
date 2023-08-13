@@ -163,18 +163,18 @@ export default function AllEventsPageFiltering() {
     return (
         <>
             <div className="EventsFilteringPage">
-                <div className="filtering-page-container py-[140px] ">
-                    <div className="filtering-page-wrapper mycontainer">
-                        <div className="section-header mb-8">
-                            <h1 className="font-bold ff-space-g text-6xl text-left">Explore events</h1>
+                <div className="filtering-page-container py-[84px] md:py-[140px] ">
+                    <div className="filtering-page-wrapper md:py-[140px] md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
+                        <div className="section-header mb-4 md:mb-8">
+                            <h1 className="font-bold ff-space-g text-4xl md:text-6xl text-left">Explore events</h1>
                         </div>
-                        <section className="section-filters-container flex gap-2 mb-8">
-                            <div className="filter-group category-filter">
+                        <section className="section-filters-container grid grid-rows-2 grid-cols-6 md:flex gap-2 mb-8">
+                            <div className="filter-group category-filter col-span-3">
                                 <select
                                     onChange={() => onFilterCategories(inputFilter1.current.value)}
                                     name="city"
                                     id="city"
-                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
+                                    className="rounded-lg w-full text-sm truncate md:text-base md:w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
                                     ref={inputFilter1}
                                 >
                                     <option value="" disabled selected>
@@ -191,12 +191,12 @@ export default function AllEventsPageFiltering() {
                                     })}
                                 </select>
                             </div>
-                            <div className="filter-group city-filter">
+                            <div className="filter-group city-filter col-span-3">
                                 <select
                                     onChange={() => onFilterCities(inputFilter2.current.value)}
                                     name="city"
                                     id="city"
-                                    className="rounded-lg w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
+                                    className="rounded-lg w-full text-sm truncate md:text-base md:w-[220px] font-semibold border-2 border-neutral-300 py-4 cursor-pointer hover:bg-neutral-50"
                                     ref={inputFilter2}
                                 >
                                     <option value="" disabled selected>
@@ -213,7 +213,7 @@ export default function AllEventsPageFiltering() {
                                     })}
                                 </select>
                             </div>
-                            <div className="filter-group search-filter w-full relative flex items-center">
+                            <div className="filter-group search-filter w-full relative flex items-center col-span-5">
                                 <FaSearch className="absolute left-[18px]" size={20} />
                                 <input
                                     onChange={() => onSearch(inputFilter3.current.value)}
@@ -223,8 +223,11 @@ export default function AllEventsPageFiltering() {
                                 />
                             </div>
                             <div className="">
-                                <button onClick={() => onClear()} className="rounded-lg font-medium border-2 border-neutral-300 h-full w-[120px] hover:bg-neutral-50 active:bg-neutral-100">
+                                <button onClick={() => onClear()} className="rounded-lg font-medium border-2 md:block hidden border-neutral-300 h-full w-[120px] hover:bg-neutral-50 active:bg-neutral-100">
                                     Clear Filter
+                                </button>
+                                <button onClick={() => onClear()} className="rounded-lg text-[40px] flex items-center justify-center font-medium md:hidden border-neutral-300 h-full w-full hover:text-[44px] active:text-[38px] duration-150">
+                                    <ion-icon name="refresh-circle"></ion-icon>
                                 </button>
                             </div>
                         </section>

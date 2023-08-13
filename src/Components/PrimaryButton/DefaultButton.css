@@ -3,10 +3,6 @@
     color: white;
 }
 
-.black:hover {
-    background-color: #404040;
-}
-
 .white {
     background-color: rgb(255, 255, 255);
     color: #000;

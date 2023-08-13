@@ -4,7 +4,7 @@
       "fullname": "aryo",
       "email": "aryosetyotama@gmail.com",
       "password": "123456",
-      "ref_points": 0,
+      "ref_points": 5000,
       "id": 1
     },
     {
@@ -55,13 +55,6 @@
       "password": "123456",
       "ref_points": 0,
       "id": 8
-    },
-    {
-      "fullname": "ASU",
-      "email": "jdafdjafkldjalkdjalkldfjakldfjadskl@gmail.com",
-      "password": "123456",
-      "ref_points": 0,
-      "id": 9
     }
   ],
   "events": [
@@ -175,7 +168,7 @@
         "18:00"
       ],
       "discount": 15,
-      "count": 2,
+      "count": 3,
       "max": 10,
       "userId": 1,
       "id": 5
@@ -571,39 +564,15 @@
     },
     {
       "eventId": 5,
-      "userId": 8,
-      "price": 70000,
-      "id": 8
-    },
-    {
-      "eventId": 5,
       "userId": 9,
       "price": 59500,
       "id": 9
-    },
-    {
-      "eventId": 3,
-      "userId": 8,
-      "price": 0,
-      "id": 10
     },
     {
       "eventId": 19,
       "userId": 10,
       "price": 50000,
       "id": 11
-    },
-    {
-      "eventId": 11,
-      "userId": 8,
-      "price": -100000,
-      "id": 12
-    },
-    {
-      "eventId": 16,
-      "userId": 8,
-      "price": 50000,
-      "id": 13
     },
     {
       "eventId": 2,
@@ -616,6 +585,30 @@
       "userId": 1,
       "price": 70000,
       "id": 15
+    },
+    {
+      "eventId": 11,
+      "userId": 8,
+      "price": 100000,
+      "id": 16
+    },
+    {
+      "eventId": 5,
+      "userId": 8,
+      "price": 59500,
+      "id": 17
+    },
+    {
+      "eventId": 15,
+      "userId": 8,
+      "price": 50000,
+      "id": 18
+    },
+    {
+      "eventId": 6,
+      "userId": 8,
+      "price": 0,
+      "id": 19
     }
   ],
   "ref_code": [
@@ -639,12 +632,6 @@
     },
     {
       "eventId": 5,
-      "userId": 8,
-      "code": 227066,
-      "id": 4
-    },
-    {
-      "eventId": 5,
       "userId": 9,
       "code": 213199,
       "id": 5
@@ -656,22 +643,28 @@
       "id": 6
     },
     {
-      "eventId": 11,
-      "userId": 8,
-      "code": 721633,
-      "id": 7
-    },
-    {
-      "eventId": 16,
-      "userId": 8,
-      "code": 243808,
-      "id": 8
-    },
-    {
       "eventId": 5,
       "userId": 1,
       "code": 950502,
       "id": 9
+    },
+    {
+      "eventId": 11,
+      "userId": 8,
+      "code": 185430,
+      "id": 10
+    },
+    {
+      "eventId": 5,
+      "userId": 8,
+      "code": 743701,
+      "id": 11
+    },
+    {
+      "eventId": 15,
+      "userId": 8,
+      "code": 826190,
+      "id": 12
     }
   ],
   "event_categories": [

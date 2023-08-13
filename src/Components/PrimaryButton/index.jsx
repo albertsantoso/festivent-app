@@ -4,19 +4,17 @@ export default function PrimaryButton({
     buttonText,
     bgColor,
     textColor,
-    width,
     handleFunction,
-    customStyle
+    customStyle,
+    textSize = "sm"
 }) {
     return (
         <>
-            <div className="PrimaryButton">
+            <div className="PrimaryButton w-full">
                 <button
                     onClick={handleFunction}
-                    className={`rounded-lg px-[12px] h-[44px] w-${width} duration-150 ${bgColor} text-${textColor} ${customStyle} active:bg-neutral-100`}
-                >
-                    {buttonText}
-                </button>
+                    className={`rounded-lg md:px-[12px] h-[42px] w-full text-sm md:text-${textSize} duration-150 ${bgColor} text-${textColor} ${customStyle}`}
+                >{buttonText}</button>
             </div>
         </>
     );

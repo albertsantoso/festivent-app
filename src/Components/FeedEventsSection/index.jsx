@@ -23,7 +23,7 @@ export default function FeedEventsSection() {
 
     return (
         <>
-            <section className="mycontainer">
+            <section className="md:px-[30px] md:mx-auto md:max-w-[1300px] px-6">
                 <SectionHeading sectionTitle="Upcoming Events" />
 
                 <div className="feed-events-container grid gap-6 md:grid-cols-4">
