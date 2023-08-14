@@ -6,7 +6,8 @@ const { createSlice } = require("@reduxjs/toolkit");
 const initialState = {
     username: "",
     email: "",
-    fullname: ""
+    fullname: "",
+    points: 0
 };
 
 export const userSlice = createSlice({
@@ -19,6 +20,9 @@ export const userSlice = createSlice({
         },
         setFullname: (initialState, action) => {
             initialState.fullname = action.payload;
+        },
+        setPoints: (initialState, action) => {
+            initialState.points = action.payload
         }
     },
 });
@@ -44,6 +48,7 @@ export const onLogin = (email, password) => async (dispatch) => {
     setTimeout(() => {
         dispatch(setEmail(res.data[0].email));
         dispatch(setFullname(res.data[0].fullname));
+        dispatch(setPoints(res.data[0].ref_points))
         // navigate("/");
     }, 1000);
 };
@@ -70,5 +75,7 @@ export const onLogout = () => async (dispatch) => {
     }
 };
 
-export const { setEmail, setFullname } = userSlice.actions;
+
+
+export const { setEmail, setFullname, setPoints } = userSlice.actions;
 export default userSlice.reducer;

@@ -91,13 +91,12 @@ export default function UserDashboard() {
                                     })
                                     return (
                                         <>
-                                            <Link to={`/event/${v.id}`}>
-                                                <EventCard key={v.id}
-                                                    image={v.image}
-                                                    title={`${v.title}`}
-                                                    dateTime={dayMonthDate}
-                                                    venue={`${v.location}`} />
-                                            </Link>
+                                            <EventCard key={v.id}
+                                                image={v.image}
+                                                title={`${v.title}`}
+                                                dateTime={dayMonthDate}
+                                                venue={`${v.location}`}
+                                                goTo={`/event/${v.id}`} />
                                         </>
                                     );
                                 })
@@ -141,15 +140,16 @@ export default function UserDashboard() {
                                     })
                                     return (
                                         <>
-                                            <Link to={`/event/${v.event.id}`}>
-                                                <EventCard key={v.id}
-                                                    image={v.event.image}
-                                                    title={`${v.event.title}`}
-                                                    dateTime={dayMonthDate}
-                                                    venue={`${v.event.location}`}
-                                                    refCode={v.ref_code ? v.ref_code : null}
-                                                />
-                                            </Link>
+                                            {/* <Link to={`/event/${v.event.id}`}> */}
+                                            <EventCard key={v.id}
+                                                image={v.event.image}
+                                                title={`${v.event.title}`}
+                                                dateTime={dayMonthDate}
+                                                venue={`${v.event.location}`}
+                                                refCode={v.ref_code ? v.ref_code : null}
+                                                goTo={`/event/${v.event.id}`}
+                                            />
+                                            {/* </Link> */}
                                         </>
                                     );
                                 })
