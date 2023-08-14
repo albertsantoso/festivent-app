@@ -1,606 +1,950 @@
 {
-    "users": [
-        {
-            "fullname": "aryo",
-            "email": "aryosetyotama@gmail.com",
-            "password": "123456",
-            "ref_points": 5000,
-            "id": 1
-        },
-        {
-            "fullname": "christopher",
-            "email": "purwadhikatestmail@gmail.com",
-            "password": "654321",
-            "ref_points": 5000,
-            "id": 2
-        },
-        {
-            "fullname": "Ikrar",
-            "email": "ikrar27@yahoomail.com",
-            "password": "123456",
-            "ref_points": 0,
-            "id": 3
-        },
-        {
-            "fullname": "Fadhel",
-            "email": "fadhel28@gmail.com",
-            "password": "654321",
-            "ref_points": 0,
-            "id": 4
-        },
-        {
-            "fullname": "iksan",
-            "email": "iksan@googlemail.com",
-            "password": "123456",
-            "ref_points": 0,
-            "id": 5
-        },
-        {
-            "fullname": "Rafael",
-            "email": "rafael@gmail.com",
-            "password": "abc1234",
-            "ref_points": 5000,
-            "id": 6
-        },
-        {
-            "fullname": "Rafael",
-            "email": "rafael2@gmail.com",
-            "password": "abc1234",
-            "ref_points": 75000,
-            "id": 7
-        },
-        {
-            "fullname": "Albert Santoso",
-            "email": "albert@gmail.com",
-            "password": "123456",
-            "ref_points": 0,
-            "id": 8
-        }
-    ],
-    "events": [
-        {
-            "title": "Mekari Week: Exploring the Role of AI in the Workforce Productivity",
-            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F565108719%2F998707907843%2F1%2Foriginal.20230731-063751?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4500%2C2250&s=1093f8d3ee5a05ee7f1b206f87ebfc0f",
-            "summary": "Akhir-akhir Ini Ngerasa Kinerja Tim Lagi Gak Produktif? Penasaran Gimana Cara AI Membantu Masalah Anda? Temukan Jawabannya di Acara Ini!",
-            "description": "AI adalah sebuah topik yang semakin populer untuk dibahas di kalangan masyarakat. Walaupun AI membawa banyak dampak positif, namun tidak sedikit juga efek negatif yang dibawakan oleh kehadiran AI ini, apalagi setelah dilihat pengaplikasian AI ternyata sangatlah banyak dan beragam di berbagai industry. Pada acara ini kami akan membahas peran dan dampak AI pada industry tenaga kerja, hadirilah acara kami dan perkaya diri anda dengan informasi hingga siap menghadapi kehadiran AI ini.",
-            "price": 0,
-            "event_category": 8,
-            "location": "Microsoft Indonesia, No.Kav 52-53 Jalan Jendral Sudirman, Kec kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
-            "city": 1,
-            "datetime_start": ["2023-08-02", "16:30"],
-            "datetime_end": ["2023-08-02", "19:30"],
-            "discount": 0,
-            "count": 0,
-            "max": 10,
-            "userId": 3,
-            "id": 1
-        },
-        {
-            "title": "Indonesian 4.0 Conference & Expo 2023",
-            "image": "https://cdn-az.allevents.in/events5/banners/f368361f3b5f52c528df9c6026c0328dfe9e1ea1ae9a977f93a6bd31afc58684-rimg-w1200-h675-gmir.jpg",
-            "summary": "Get ready to witness the future of Indonesia's industrial revolution at the Indonesia 4.0 Conference & Expo 2023, happening on August 23-24",
-            "description": "Industrial revolution ialah salah satu perubahan terbesar dalam sejarah manusia, melalui revolusi tersebut tingkat teknologi manusia berkembang dengan pesat dan membawa dampak perubahan yang besar. Sekarang kita berada diambang perubahan revolusi digital 4.0 yang juga mempunyai potensi untuk membawa dampak dramatis pada lingkungan bisnis Indonesia, hadirilah acara kami dan bekali diri sendiri dengan ilmu-ilmu relevan untuk memanfaatkan industry 4.0 yang akan datang ini.",
-            "price": 0,
-            "event_category": 3,
-            "location": "JIEXPO Kemayoran Jl. H. Benyamin Suaeb, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-08-23", "09:00"],
-            "datetime_end": ["2023-08-24", "17:00"],
-            "discount": 0,
-            "count": 2,
-            "max": 10,
-            "userId": 2,
-            "id": 2
-        },
-        {
-            "title": "Congress of Indonesian Diaspora 7 (CID-7)",
-            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F549138649%2F1639231545823%2F1%2Foriginal.20230705-203239?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=19%2C0%2C1322%2C661&s=151659bfd39e6689ca0014831bba9fb3",
-            "summary": "Congress of Indonesian Diaspora 7: Empowering Indonesian Diaspora in the Strategy for Nation Branding Towards Indonesia 2045",
-            "description": "Congress of Indonesian Diaspora kembali diadakan pada tanggal 12 Agustus 2023, dengan mengangkat tema identitas yakni National Branding, dengan melihat tingkat kompetetifnya Indonesia dan juga berupaya meningkatkan imagenya pada level internasional untuk mencapai visi Indonesia 2045. Pada acara ini kami akan memperlihatkan berbagai upaya upaya dari kalangan diaspora Indonesia di berbagai belahan dunia dan kegiatan mereka dalam upaya mendorong pembangunan brand nasional Indonesia dari berbagai segi, selain itu juga ada banyak pembicara pembicara yang merupakan leading figures dalam bidangnya dari berbagai sumber di Indonesia yang akan hadir dan membawakan acara ini.",
-            "price": 0,
-            "event_category": 3,
-            "location": "THE HALL BALLROOM - SENAYAN CITY Lot 19 No Kecamatan Tanah Abang, Daerah Khusus Ibukota Jakarta 10270",
-            "city": 1,
-            "datetime_start": ["2023-08-12", "09:00"],
-            "datetime_end": ["2023-08-12", "17:00"],
-            "discount": 0,
-            "count": 3,
-            "max": 10,
-            "userId": 1,
-            "id": 3
-        },
-        {
-            "title": "IndoSec 2023",
-            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F545248399%2F1367565260943%2F1%2Foriginal.20230629-062206?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C50%2C1600%2C800&s=f32878bcd2c82791617d3c428e966e11",
-            "summary": "Tradepass is hosting the 6th edition IndoSec on 29-30 August 2023 at The Ritz-Carlton Jakarta, Pacific Place.",
-            "description": "To promote collaboration between the public and private sectors and curb the efforts of malicious sectors Tradepass is hosting the 6th edition Indosec on August of 2023. The event will host up to 700+ cybersecurity experts including heads of information security, risks, compliance, forensics, and cyber laws from leading figures in both the prive and public sectors.",
-            "price": 0,
-            "event_category": 8,
-            "location": "The Ritz-Carlton Jakarta, Pacific Place Jalan Jendral sudirman kav 52-53 Kec. Kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
-            "city": 5,
-            "datetime_start": ["2023-08-29", "08:00"],
-            "datetime_end": ["2023-08-31", "21:00"],
-            "discount": 0,
-            "count": 3,
-            "max": 10,
-            "userId": 1,
-            "id": 4
-        },
-        {
-            "title": "FIL Jakarta: Tech Fantasy 2023",
-            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F561593229%2F1498146012223%2F1%2Foriginal.20230725-114809?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C8334%2C4167&s=26cd89c2644014a1b22df007919a4d86",
-            "summary": "FILJakarta is an free event for all to learn and explore the uses of blockchain technology, hosted by Filecoin and organized by Metapals!",
-            "description": "Step into an extraordinary tech event in which Web3, gaming, and tech communities converges to empower developers. Get ready to immerse yourself in cutting-edge innovations, insightful discussions as well as hands-on workshops by leading industry experts. This is a celebration of creativity and knowledge exchange that will ignite your passion for pushing the boundaries of technology.",
-            "price": 70000,
-            "event_category": 8,
-            "location": "Soehanna Hall 11A, Jalan Jendral sudirman kav 52-53 #Lt.2 Kec. Kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
-            "city": 5,
-            "datetime_start": ["2023-09-02", "09:00"],
-            "datetime_end": ["2023-09-02", "18:00"],
-            "discount": 15,
-            "count": 3,
-            "max": 10,
-            "userId": 1,
-            "id": 5
-        },
-        {
-            "title": "International Education Expo",
-            "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F555615029%2F474262468963%2F1%2Foriginal.20230715-070516?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=975261b91ff300e57dfd90351b0fd092",
-            "summary": "Ingin kuliah di luar negeri? Butuh LoA untuk pendaftaran beasiswa? Yuk ikuti expo ini!",
-            "description": "Edukasi ialah sebuah proses penting yang kelak akan menentukan hidup seseorang di masa yang akan datang, dengan adanya edukasi tinggi dan berkualitas seorang pasti akan dapat menjamin sebuah kehidupan yang baik bagi dirinya dan keluarga, oleh karena itu pertimbangkan dengan baiklah pilihan pilihan karir dan edukasi anda! Pada International Educations Expo ini kami akan membawakan perkembangan-perkembangan terbaru, pilihan-pilihan karir terbaik dan juga kesempatan bagi anda untuk meraih edukasi yang benar untuk anda bersama partner-parner expo kami.",
-            "price": 0,
-            "event_category": 4,
-            "location": "Hotel Trivago, Jalan Jendral Sudirman, Daerah Khusus Ibukota Jakarta",
-            "city": 5,
-            "datetime_start": ["2023-08-18", "18:00"],
-            "datetime_end": ["2023-08-18", "21:00"],
-            "discount": 0,
-            "count": 1,
-            "max": 10,
-            "userId": 2,
-            "id": 6
-        },
-        {
-            "title": "INDONESIA DIGITAL TECHNOLOGY EXPO 2023",
-            "image": "https://www.gotekno.id/wp-content/uploads/2023/06/https___cdn.evbuc_.com_images_465436789_677573321953_1_original.jpeg",
-            "summary": "An event that brought together business, Digital Lifestyle technology and innovation Collide in INDITEX 2023",
-            "description": "Indonesia Digital Technology Expo adalah sebuah ajang event yang akan mempertemukan bisnis, digital lifestyle dan inovasi, dengan adanya acara ini banyak kesempatan-kesempatan emas yang akan terbuka bagi para peserta yang hadir dan juga partner-partner kami agar sama-sama dapat memajukan diri dan bangsa.",
-            "price": 50000,
-            "event_category": 8,
-            "location": "President University Convention Center, Jalan Haji Usmar Ismail Blok D No. 7, Mekarmukti, Kec. Cikarang Utara Kabupaten Bekasi, Jawa Barat 17530",
-            "city": 1,
-            "datetime_start": ["2023-08-23", "10:00"],
-            "datetime_end": ["2023-08-24", "18:00"],
-            "discount": 20,
-            "count": 2,
-            "max": 10,
-            "userId": 3,
-            "id": 7
-        },
-        {
-            "title": "Mindful Meditation",
-            "image": "https://cdn-az.allevents.in/events5/banners/19a33734b3d14fc3f4079ef7e0f71ac808a5eea3e2569acdcf21dfb141f787f1-rimg-w960-h720-gmir.jpg?v=1690999459",
-            "summary": "Meditasi memberikan kesempatan bagi para praktisi untuk menenangkan diri dan mengontrol stress, datanglah dan pelajari cara-cara meditasi terbaik kami!",
-            "description": "Menjaga kesehatan fisik sering kali menjadi satu-satunya hal yang dipikiran masyarakat saat membicarakan perihal kesehatan, namun ternyata menjaga kesehatan psikis juga merupakan suatu hal penting yang turut perlu diperhatikan. Meditasi merupakan salah satu cara termudah untuk menjaga kesehatan mental, hanya memerlukan konsentrasi dan waktu sebentar, yuk registrasi ke event kami agar anda dapat belajar cara melakukan meditasi dan segera rasakan keuntungannya.",
-            "price": 0,
-            "event_category": 7,
-            "location": "Verizon Event Space, RW.5, North Cipete, Kebayoran Baru, South Jakarta City, Jakarta 12150",
-            "city": 1,
-            "datetime_start": ["2023-08-09", "17:30"],
-            "datetime_end": ["2023-08-09", "20:00"],
-            "discount": 0,
-            "count": 3,
-            "max": 10,
-            "userId": 1,
-            "id": 8
-        },
-        {
-            "title": "Garuda Indonesia: TravelFair - The Biggest Travel Deals",
-            "image": "https://i0.wp.com/pointsgeek.id/wp-content/uploads/2022/10/Screen-Shot-2022-10-16-at-08.07.29.png?fit=667%2C385&ssl=1",
-            "summary": "Jika anda sedang memimpikan wisata berikut anda, datanglah ke event kami agar segera terwujud",
-            "description": "Garuda Indonesia kembali mengadakan travel fair yang dijamin meriah dan menarik! Travel fair kali ini juga tidak lupa menghadirkan travel deals terbesar yang pernah anda lihat, jadi tunggu apalagi ayo daftar dan hadiri event kami.",
-            "price": 50000,
-            "event_category": 7,
-            "location": "Balai Kartini, Jl. Gatot Subroto No.6, RT.6/RW.3, Kuningan, East Kuningan, Setiabudi, South Jakarta City, Jakarta 12950",
-            "city": 1,
-            "datetime_start": ["2023-10-28", "08:30"],
-            "datetime_end": ["2023-10-30", "17:00"],
-            "discount": 5,
-            "count": 3,
-            "max": 10,
-            "userId": 2,
-            "id": 9
-        },
-        {
-            "title": "Permata Bank: Travel Fair 2023",
-            "image": "https://inspirasi.dwidayatour.co.id/wp-content/uploads/2022/04/Blog-Banner-1920x1080-PermataBank-TF-01-1.jpg",
-            "summary": "Permata Bank mempersembahkan Travel Fair 2023!!",
-            "description": "Permata Bank selaku salah satu institusi bank terbesar di Indonesia kali ini kembali mengadakan travel fair 2023 yang tentunya lengkap dengan penawaran penawaran traveling yang menarik dan juga hot deals dan promo yang pastinya akan cocok bagi semua hadirin sekalian! Tunggu apalagi ayo daftar dan hadiri acaranya sekarang juga!",
-            "price": 0,
-            "event_category": 7,
-            "location": "Dwidaya Tour Office, Pagedangan, Tangerang Regency, Banten 15339",
-            "city": 1,
-            "datetime_start": ["2023-08-04", "08:00"],
-            "datetime_end": ["2023-08-07", "19:00"],
-            "discount": 0,
-            "count": 2,
-            "max": 10,
-            "userId": 2,
-            "id": 10
-        },
-        {
-            "title": "The Gaikindo International Auto Show",
-            "image": "https://indonesiaautoshow.com/wp-content/uploads/2023/05/Web-Home-Banner-01.jpg",
-            "summary": "The annual world-class auto show is back and its better than ever!",
-            "description": "Gaikindo Auto Show is one of the premier leading auto shows in Indonesia, with events being held yearly each better and more festive than the last! Join us now to witness the showcase and displays of the most modern cars with elegandt designs, futuristic features that is sure to be eye-catching and breathtaking!",
-            "price": 100000,
-            "event_category": 8,
-            "location": "Indonesia Convention Center, Kab. Tangerang",
-            "city": 1,
-            "datetime_start": ["2023-08-10", "08:00"],
-            "datetime_end": ["2023-08-20", "19:00"],
-            "discount": 15,
-            "count": 4,
-            "max": 10,
-            "userId": 5,
-            "id": 11
-        },
-        {
-            "title": "China Trade Expo 2023",
-            "image": "https://jadwalevent.web.id/wp-content/uploads/2023/07/China-Trade-Expo.jpg",
-            "summary": "China Trade Expo 2023 akan memamerkan ratusan produk Elektronik menarik dan inovasi Elektronik terbaru dari 250+ Exhibitor dari China, Malaysia, dan Indonesia.",
-            "description": "China adalah sebuah negara yang telah mengalami perkembangan penduduk dan ekonomi yang pesat dalam beberapa tahun silam, pertumbuhan luar biasa inilah yang membuat China banyak dijadikan partner bisnis dan investasi di berbagai negara. Indonesia pun tidak melewatkan kesempatan untuk bekerja sama dan menjalin hubungan bisnis yang baik dengan China, dan dengan adanya China Trade Expo 2023 ini kami menyiapkan kesempatan unik bagi anda para pelaku bisnis di Indonesia untuk memulai menjalin koneksi bisnis dan juga supplychain kepada negara tirai bambu.",
-            "price": 0,
-            "event_category": 3,
-            "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-08-24", "08:00"],
-            "datetime_end": ["2023-08-26", "19:00"],
-            "discount": 0,
-            "count": 2,
-            "max": 10,
-            "userId": 1,
-            "id": 12
-        },
-        {
-            "title": "Food Beverage Indonesia",
-            "image": "https://jadwalevent.web.id/wp-content/uploads/2023/06/WEB-BANNER-FBI-1498-X-587-230518.jpg",
-            "summary": "Food + Beverage Indonesia berfokus pada bahan-bahan makanan, peralatan, teknologi, dan sistem produksi untuk pemrosesan, serta bahan pengemasan.",
-            "description": "Food+Beverage Indonesia menjadi tempat untuk memperkenalkan produk terbaru, mesin dan solusi terbaru yang dibutuhkan untuk menghasilkan makanan berkualitas lebih baik di Indonesia. Pameran ini juga akan menghadirkan side-event seperti Coffee & Tea Expo, Sweets & Snacks Expo, dan Organic Food Expo. Jangan lupa untuk mengunjungi Instagram kami @foodbeverageexpo.id untuk mendapatkan berita-berita expo menarik dari kami!!",
-            "price": 0,
-            "event_category": 2,
-            "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-05-08", "09:30"],
-            "datetime_end": ["2023-05-11", "19:00"],
-            "discount": 0,
-            "count": 2,
-            "max": 10,
-            "userId": 2,
-            "id": 13
-        },
-        {
-            "title": "IDMA Indonesia 2023",
-            "image": "https://jadwalevent.web.id/wp-content/uploads/2023/05/IDMA-Indonesia.png",
-            "summary": "International Flour, Feed, Corn, Semolina, Rice, Bulghur Milling Machinery & Pulses, Pasta, Biscuit Technologies Exhibition",
-            "description": "Informasi lebih lanjut dapat ditemukan pada website kami yaitu: https://www.idmaindonesia.com/iletisim/",
-            "price": 0,
-            "event_category": 3,
-            "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-10-04", "08:00"],
-            "datetime_end": ["2023-10-06", "19:00"],
-            "discount": 0,
-            "count": 3,
-            "max": 10,
-            "userId": 4,
-            "id": 14
-        },
-        {
-            "title": "Seminar Ketahanan Endpoint Prodata Manage Engine",
-            "image": "https://jadwalevent.web.id/wp-content/uploads/2023/05/Seminar-Prodata.jpg",
-            "summary": "Ikuti dan Pelajari bagaimana solusi ManageEngine Endpoint Central dengan fitur Endpoint Security, akan membantu Bapak/Ibu dalam menghadapi cyber attack.",
-            "description": "Industri IT di Indonesia tentunya sudah berkembang dengan pesat, dan ditengah kesibukan kegiatan bisnis dan pertumbuhan lingkunan bisnis Indonesia tentunya perihal keamanan server dan endpoint telah menjadi sebuah topik relevan yang aman penting dan diangkat-angkat oleh para expert TI, dengan maraknya serangan cyber secara global pada tahun tahun silam, sudah saatnya industri TI Indonesia bergerak untuk meningkatkan keamanan operasi mereka yang dimulai dengan menjaga akses endpoint.",
-            "price": 50000,
-            "event_category": 8,
-            "location": "J.W. Marriot, Kuningan, Jakarta Selatan 12950",
-            "city": 5,
-            "datetime_start": ["2024-05-23", "08:00"],
-            "datetime_end": ["2024-05-23", "19:00"],
-            "discount": 10,
-            "count": 1,
-            "max": 10,
-            "userId": 4,
-            "id": 15
-        },
-        {
-            "title": "Global Sources Electronic Indonesia 2023",
-            "image": "https://www.jcc.co.id/userfiles/post/648c1094e2d25.jpg",
-            "summary": "Experience world-class sourcing for consumer electronics, mobile electronics, and electronic components right on your doorstep in Jakarta!",
-            "description": "Temukan informasi lebih lanjut melalui website kami yaitu www.globalsources.com/trade-fair/indonesia-show/",
-            "price": 50000,
-            "event_category": 8,
-            "location": "Balai Sidang Jakarta Convention Centre, Exhibition Hall A+B, Jakarta Pusat 10270",
-            "city": 1,
-            "datetime_start": ["2023-12-06", "10:00"],
-            "datetime_end": ["2023-12-08", "21:00"],
-            "discount": 20,
-            "count": 3,
-            "max": 10,
-            "userId": 5,
-            "id": 16
-        },
-        {
-            "title": "Jakarta Auto Week 2024",
-            "image": "https://www.jcc.co.id/userfiles/post/63bbe33973a55.jpg",
-            "summary": "AUTOMOTIVE X LIVESTYLE!",
-            "description": "Jakarta Auto Week will act as a comprehensive and compact automotive exhibition, that showcase a wide range of automotive products. Held in Jakarta, Jakarta Auto Week will serve as strategic platform to encourage car sales, as well to intoduce the latest automotive products to potential audience. The extensive auto show, will feature variety of lifestyle sectors and highligjht characteristics of the Indonesian urban society. The 9-days events provide a platform for automotive industry to collaborate with lifestyle industry, as well to provide an inspiring atmosphere and exciting entertainments.",
-            "price": 50000,
-            "event_category": 8,
-            "location": "Jakarta International Expo Hall A1, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-03-11", "10:00"],
-            "datetime_end": ["2023-03-19", "22:00"],
-            "discount": 20,
-            "count": 3,
-            "max": 10,
-            "userId": 5,
-            "id": 17
-        },
-        {
-            "title": "The 21 Indonesia Agro Food Expo 2023",
-            "image": "https://exhibition.jiexpo.com/wp-content/uploads/sites/5/2023/07/UNTUK-WEBSITE.jpg",
-            "summary": "Indonesia International Agriculture Food & Beverage Industry Exhibition",
-            "description": "Indonesia tentunya sudah dikenal sebagai negara kesatuan yang beragam akan budaya dan kultur, tentunya juga terkenal di bagian kuliner. Pada kesempatan ini The 21st Indonesia Agro-Food Expo memberi kesempatan unik kepada para pengunjung untuk mengenal lebih baik dan juga merasakan sendiri beragam-ragam makanan kuliner dan minuman khas Indonesia, baik yang sudah sangat populer digemari di Indonesia dan secara Internasional hingga juga kuliner lain yang mungkin masih belum mendapatkan perhatian yang sepantasnya, semua ini ada dalam acara kami! Ayo segera daftarkan diri anda dan ajaklah teman, dan keluarga untuk mengunjungi Agro Food Expo.",
-            "price": 0,
-            "event_category": 3,
-            "location": "Jakarta International Expo Hall A1, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-08-13", "10:00"],
-            "datetime_end": ["2023-08-13", "17:00"],
-            "discount": 0,
-            "count": 1,
-            "max": 10,
-            "userId": 2,
-            "id": 18
-        },
-        {
-            "title": "Industrial Transformation Indonesia & Indonesia's Comprehensive Trade Event For Industry",
-            "image": "https://exhibition.jiexpo.com/wp-content/uploads/sites/5/2023/07/cover_jiexpo_1.png",
-            "summary": "Indonesia's Largest B2B Collaboration for Digital Transformation and Technology!",
-            "description": "Perkembangan tekonologi semakin cepat, setiap tahun ada saja teknologi, penemuan, ataupun sistem informasi baru yang dapat mempengaruhi lingkungan bisnis dalam cara yang banyak, oleh karena itu penting lah bagi para pelaku bisnis di berbagai belahan dunia untuk terus memantau dan mengikuti perkembangan teknologi baru. Acara kami menampilkan berbagai perkembangan perkembangan terbaru yang tentunya relevan pada sektor-sektor bisnis terbesar di Indonesia, selain itu juga acara kami menyiapkan sebuah kesempatan bagi para hadirin untuk melakukan networking, saling bertemu dan menjalin hubungan kerjasama dengan berbagai pihak dari segala penjuru industri Indonesia. Ayo segera daftarkan diri anda dan ikuti acara kami.",
-            "price": 50000,
-            "event_category": 8,
-            "location": "Jakarta International Expo Hall D1, Kemayoran, Jakarta Pusat 14410",
-            "city": 1,
-            "datetime_start": ["2023-10-10", "10:00"],
-            "datetime_end": ["2023-10-11", "17:00"],
-            "discount": 10,
-            "count": 11,
-            "max": 10,
-            "userId": 1,
-            "id": 19
-        },
-        {
-            "title": "Van Gogh Alive Indonesia",
-            "image": "https://jakarta-tourism.sgp1.cdn.digitaloceanspaces.com/events/2qYpSFUAbH1EZP1eJ4ZWP7lsqReraP-metaVmFuIEdvZ2guanBn-.jpg",
-            "summary": "Masuki dunia di mana karya Van Gogh menjadi hidup dan interaktif!!",
-            "description": "Tentunya semua orang pasti pernah mendengar nama Van Gogh, seorang seniman yang namanya sudah tenar se-dunia, pada kesempatan kali Van Gogh Alive Indonesia memberi kesempatan para hadirin untuk memasuki dan mengenal lebih baik dunia karya-karya masterpiece Van Gogh! Tunggu apalagi? Ayo segera registrasi pada event kami dan juga ajak teman-teman mu.",
-            "price": 50000,
-            "event_category": 2,
-            "location": "Mall Taman Anggrek, Letjen S. Parman St No.Kav 21, Jakarta Barat 11470",
-            "city": 2,
-            "datetime_start": ["2023-09-07", "09:00"],
-            "datetime_end": ["2023-09-10", "19:00"],
-            "discount": 10,
-            "count": 1,
-            "max": 10,
-            "userId": 2,
-            "id": 20
-        }
-    ],
-    "tickets": [
-        {
-            "eventId": 16,
-            "userId": 3,
-            "price": 50000,
-            "id": 1
-        },
-        {
-            "eventId": 11,
-            "userId": 2,
-            "price": 100000,
-            "id": 2
-        },
-        {
-            "eventId": 12,
-            "userId": 2,
-            "price": 0,
-            "id": 3
-        },
-        {
-            "eventId": 7,
-            "userId": 1,
-            "price": 50000,
-            "id": 4
-        },
-        {
-            "eventId": 1,
-            "userId": 6,
-            "price": 0,
-            "id": 5
-        },
-        {
-            "eventId": 2,
-            "userId": 6,
-            "price": 0,
-            "id": 6
-        },
-        {
-            "eventId": 5,
-            "userId": 6,
-            "price": 59500,
-            "id": 7
-        },
-        {
-            "eventId": 5,
-            "userId": 9,
-            "price": 59500,
-            "id": 9
-        },
-        {
-            "eventId": 19,
-            "userId": 10,
-            "price": 50000,
-            "id": 11
-        },
-        {
-            "eventId": 2,
-            "userId": 1,
-            "price": 0,
-            "id": 14
-        },
-        {
-            "eventId": 5,
-            "userId": 1,
-            "price": 70000,
-            "id": 15
-        },
-        {
-            "eventId": 11,
-            "userId": 8,
-            "price": 100000,
-            "id": 16
-        },
-        {
-            "eventId": 5,
-            "userId": 8,
-            "price": 59500,
-            "id": 17
-        },
-        {
-            "eventId": 15,
-            "userId": 8,
-            "price": 50000,
-            "id": 18
-        },
-        {
-            "eventId": 6,
-            "userId": 8,
-            "price": 0,
-            "id": 19
-        }
-    ],
-    "ref_code": [
-        {
-            "eventId": 6,
-            "userId": 1,
-            "code": 123456,
-            "id": 1
-        },
-        {
-            "eventId": 5,
-            "userId": 7,
-            "code": 123456,
-            "id": 2
-        },
-        {
-            "eventId": 5,
-            "userId": 6,
-            "code": 578219,
-            "id": 3
-        },
-        {
-            "eventId": 5,
-            "userId": 9,
-            "code": 213199,
-            "id": 5
-        },
-        {
-            "eventId": 19,
-            "userId": 10,
-            "code": 305672,
-            "id": 6
-        },
-        {
-            "eventId": 5,
-            "userId": 1,
-            "code": 950502,
-            "id": 9
-        },
-        {
-            "eventId": 11,
-            "userId": 8,
-            "code": 185430,
-            "id": 10
-        },
-        {
-            "eventId": 5,
-            "userId": 8,
-            "code": 743701,
-            "id": 11
-        },
-        {
-            "eventId": 15,
-            "userId": 8,
-            "code": 826190,
-            "id": 12
-        }
-    ],
-    "event_categories": [
-        {
-            "name": "Music & Entertainment",
-            "id": 1
-        },
-        {
-            "name": "Arts and Culture",
-            "id": 2
-        },
-        {
-            "name": "Business",
-            "id": 3
-        },
-        {
-            "name": "Education",
-            "id": 4
-        },
-        {
-            "name": "Healthcare",
-            "id": 5
-        },
-        {
-            "name": "Comedy",
-            "id": 6
-        },
-        {
-            "name": "Holiday",
-            "id": 7
-        },
-        {
-            "name": "Technology",
-            "id": 8
-        }
-    ],
-    "event_cities": [
-        {
-            "name": "Jakarta Pusat",
-            "id": 1
-        },
-        {
-            "name": "Jakarta Barat",
-            "id": 2
-        },
-        {
-            "name": "Jakarta Utara",
-            "id": 3
-        },
-        {
-            "name": "Jakarta Selatan",
-            "id": 4
-        },
-        {
-            "name": "Jakarta Timur",
-            "id": 5
-        }
-    ]
+  "users": [
+    {
+      "fullname": "aryo",
+      "email": "aryosetyotama@gmail.com",
+      "password": "123456",
+      "ref_points": 5000,
+      "id": 1
+    },
+    {
+      "fullname": "christopher",
+      "email": "purwadhikatestmail@gmail.com",
+      "password": "654321",
+      "ref_points": 5000,
+      "id": 2
+    },
+    {
+      "fullname": "Ikrar",
+      "email": "ikrar27@yahoomail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 3
+    },
+    {
+      "fullname": "Fadhel",
+      "email": "fadhel28@gmail.com",
+      "password": "654321",
+      "ref_points": 0,
+      "id": 4
+    },
+    {
+      "fullname": "iksan",
+      "email": "iksan@googlemail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 5
+    },
+    {
+      "fullname": "Rafael",
+      "email": "rafael@gmail.com",
+      "password": "abc1234",
+      "ref_points": 5000,
+      "id": 6
+    },
+    {
+      "fullname": "Rafael",
+      "email": "rafael2@gmail.com",
+      "password": "abc1234",
+      "ref_points": 75000,
+      "id": 7
+    },
+    {
+      "fullname": "Albert Santoso",
+      "email": "albert@gmail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 8
+    },
+    {
+      "fullname": "Andreas",
+      "email": "andreas@gmail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 9
+    },
+    {
+      "fullname": "Aldo",
+      "email": "aldo@gmail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 10
+    },
+    {
+      "fullname": "rafael",
+      "email": "rafaeltest@gmail.com",
+      "password": "abc1234",
+      "ref_points": 5000,
+      "id": 11
+    },
+    {
+      "fullname": "rafael",
+      "email": "rafaeltest2@gmail.com",
+      "password": "abc1234",
+      "ref_points": 5000,
+      "id": 12
+    },
+    {
+      "fullname": "rafael",
+      "email": "rafaeltest3@gmail.com",
+      "password": "abc1234",
+      "ref_points": 0,
+      "id": 13
+    },
+    {
+      "fullname": "rafael",
+      "email": "rafaeltest4@gmail.com",
+      "password": "abc1234",
+      "ref_points": 0,
+      "id": 14
+    },
+    {
+      "fullname": "Lucky",
+      "email": "lucky@gmail.com",
+      "password": "123456",
+      "ref_points": 5000,
+      "id": 15
+    },
+    {
+      "fullname": "Rico",
+      "email": "rico@gmail.com",
+      "password": "123456",
+      "ref_points": 5000,
+      "id": 16
+    },
+    {
+      "fullname": "Joe",
+      "email": "joe@gmail.com",
+      "password": "123456",
+      "ref_points": 0,
+      "id": 17
+    }
+  ],
+  "events": [
+    {
+      "title": "Mekari Week: Exploring the Role of AI in the Workforce Productivity",
+      "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F565108719%2F998707907843%2F1%2Foriginal.20230731-063751?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4500%2C2250&s=1093f8d3ee5a05ee7f1b206f87ebfc0f",
+      "summary": "Akhir-akhir Ini Ngerasa Kinerja Tim Lagi Gak Produktif? Penasaran Gimana Cara AI Membantu Masalah Anda? Temukan Jawabannya di Acara Ini!",
+      "description": "AI adalah sebuah topik yang semakin populer untuk dibahas di kalangan masyarakat. Walaupun AI membawa banyak dampak positif, namun tidak sedikit juga efek negatif yang dibawakan oleh kehadiran AI ini, apalagi setelah dilihat pengaplikasian AI ternyata sangatlah banyak dan beragam di berbagai industry. Pada acara ini kami akan membahas peran dan dampak AI pada industry tenaga kerja, hadirilah acara kami dan perkaya diri anda dengan informasi hingga siap menghadapi kehadiran AI ini.",
+      "price": 0,
+      "event_category": 8,
+      "location": "Microsoft Indonesia, No.Kav 52-53 Jalan Jendral Sudirman, Kec kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-02",
+        "16:30"
+      ],
+      "datetime_end": [
+        "2023-08-02",
+        "19:30"
+      ],
+      "discount": 0,
+      "count": 0,
+      "max": 10,
+      "userId": 3,
+      "id": 1
+    },
+    {
+      "title": "Indonesian 4.0 Conference & Expo 2023",
+      "image": "https://cdn-az.allevents.in/events5/banners/f368361f3b5f52c528df9c6026c0328dfe9e1ea1ae9a977f93a6bd31afc58684-rimg-w1200-h675-gmir.jpg",
+      "summary": "Get ready to witness the future of Indonesia's industrial revolution at the Indonesia 4.0 Conference & Expo 2023, happening on August 23-24",
+      "description": "Industrial revolution ialah salah satu perubahan terbesar dalam sejarah manusia, melalui revolusi tersebut tingkat teknologi manusia berkembang dengan pesat dan membawa dampak perubahan yang besar. Sekarang kita berada diambang perubahan revolusi digital 4.0 yang juga mempunyai potensi untuk membawa dampak dramatis pada lingkungan bisnis Indonesia, hadirilah acara kami dan bekali diri sendiri dengan ilmu-ilmu relevan untuk memanfaatkan industry 4.0 yang akan datang ini.",
+      "price": 0,
+      "event_category": 3,
+      "location": "JIEXPO Kemayoran Jl. H. Benyamin Suaeb, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-23",
+        "09:00"
+      ],
+      "datetime_end": [
+        "2023-08-24",
+        "17:00"
+      ],
+      "discount": 0,
+      "count": 2,
+      "max": 10,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "title": "Congress of Indonesian Diaspora 7 (CID-7)",
+      "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F549138649%2F1639231545823%2F1%2Foriginal.20230705-203239?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=19%2C0%2C1322%2C661&s=151659bfd39e6689ca0014831bba9fb3",
+      "summary": "Congress of Indonesian Diaspora 7: Empowering Indonesian Diaspora in the Strategy for Nation Branding Towards Indonesia 2045",
+      "description": "Congress of Indonesian Diaspora kembali diadakan pada tanggal 12 Agustus 2023, dengan mengangkat tema identitas yakni National Branding, dengan melihat tingkat kompetetifnya Indonesia dan juga berupaya meningkatkan imagenya pada level internasional untuk mencapai visi Indonesia 2045. Pada acara ini kami akan memperlihatkan berbagai upaya upaya dari kalangan diaspora Indonesia di berbagai belahan dunia dan kegiatan mereka dalam upaya mendorong pembangunan brand nasional Indonesia dari berbagai segi, selain itu juga ada banyak pembicara pembicara yang merupakan leading figures dalam bidangnya dari berbagai sumber di Indonesia yang akan hadir dan membawakan acara ini.",
+      "price": 0,
+      "event_category": 3,
+      "location": "THE HALL BALLROOM - SENAYAN CITY Lot 19 No Kecamatan Tanah Abang, Daerah Khusus Ibukota Jakarta 10270",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-12",
+        "09:00"
+      ],
+      "datetime_end": [
+        "2023-08-12",
+        "17:00"
+      ],
+      "discount": 0,
+      "count": 3,
+      "max": 10,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "IndoSec 2023",
+      "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F545248399%2F1367565260943%2F1%2Foriginal.20230629-062206?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C50%2C1600%2C800&s=f32878bcd2c82791617d3c428e966e11",
+      "summary": "Tradepass is hosting the 6th edition IndoSec on 29-30 August 2023 at The Ritz-Carlton Jakarta, Pacific Place.",
+      "description": "To promote collaboration between the public and private sectors and curb the efforts of malicious sectors Tradepass is hosting the 6th edition Indosec on August of 2023. The event will host up to 700+ cybersecurity experts including heads of information security, risks, compliance, forensics, and cyber laws from leading figures in both the prive and public sectors.",
+      "price": 0,
+      "event_category": 8,
+      "location": "The Ritz-Carlton Jakarta, Pacific Place Jalan Jendral sudirman kav 52-53 Kec. Kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
+      "city": 5,
+      "datetime_start": [
+        "2023-08-29",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2023-08-31",
+        "21:00"
+      ],
+      "discount": 0,
+      "count": 3,
+      "max": 10,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "FIL Jakarta: Tech Fantasy 2023",
+      "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F561593229%2F1498146012223%2F1%2Foriginal.20230725-114809?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C8334%2C4167&s=26cd89c2644014a1b22df007919a4d86",
+      "summary": "FILJakarta is an free event for all to learn and explore the uses of blockchain technology, hosted by Filecoin and organized by Metapals!",
+      "description": "Step into an extraordinary tech event in which Web3, gaming, and tech communities converges to empower developers. Get ready to immerse yourself in cutting-edge innovations, insightful discussions as well as hands-on workshops by leading industry experts. This is a celebration of creativity and knowledge exchange that will ignite your passion for pushing the boundaries of technology.",
+      "price": 70000,
+      "event_category": 8,
+      "location": "Soehanna Hall 11A, Jalan Jendral sudirman kav 52-53 #Lt.2 Kec. Kby. Baru, Daerah Khusus Ibukota Jakarta 12190",
+      "city": 5,
+      "datetime_start": [
+        "2023-09-02",
+        "09:00"
+      ],
+      "datetime_end": [
+        "2023-09-02",
+        "18:00"
+      ],
+      "discount": 15,
+      "count": 5,
+      "max": 10,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "International Education Expo",
+      "image": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F555615029%2F474262468963%2F1%2Foriginal.20230715-070516?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=975261b91ff300e57dfd90351b0fd092",
+      "summary": "Ingin kuliah di luar negeri? Butuh LoA untuk pendaftaran beasiswa? Yuk ikuti expo ini!",
+      "description": "Edukasi ialah sebuah proses penting yang kelak akan menentukan hidup seseorang di masa yang akan datang, dengan adanya edukasi tinggi dan berkualitas seorang pasti akan dapat menjamin sebuah kehidupan yang baik bagi dirinya dan keluarga, oleh karena itu pertimbangkan dengan baiklah pilihan pilihan karir dan edukasi anda! Pada International Educations Expo ini kami akan membawakan perkembangan-perkembangan terbaru, pilihan-pilihan karir terbaik dan juga kesempatan bagi anda untuk meraih edukasi yang benar untuk anda bersama partner-parner expo kami.",
+      "price": 0,
+      "event_category": 4,
+      "location": "Hotel Trivago, Jalan Jendral Sudirman, Daerah Khusus Ibukota Jakarta",
+      "city": 5,
+      "datetime_start": [
+        "2023-08-18",
+        "18:00"
+      ],
+      "datetime_end": [
+        "2023-08-18",
+        "21:00"
+      ],
+      "discount": 0,
+      "count": 1,
+      "max": 10,
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "title": "INDONESIA DIGITAL TECHNOLOGY EXPO 2023",
+      "image": "https://www.gotekno.id/wp-content/uploads/2023/06/https___cdn.evbuc_.com_images_465436789_677573321953_1_original.jpeg",
+      "summary": "An event that brought together business, Digital Lifestyle technology and innovation Collide in INDITEX 2023",
+      "description": "Indonesia Digital Technology Expo adalah sebuah ajang event yang akan mempertemukan bisnis, digital lifestyle dan inovasi, dengan adanya acara ini banyak kesempatan-kesempatan emas yang akan terbuka bagi para peserta yang hadir dan juga partner-partner kami agar sama-sama dapat memajukan diri dan bangsa.",
+      "price": 50000,
+      "event_category": 8,
+      "location": "President University Convention Center, Jalan Haji Usmar Ismail Blok D No. 7, Mekarmukti, Kec. Cikarang Utara Kabupaten Bekasi, Jawa Barat 17530",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-23",
+        "10:00"
+      ],
+      "datetime_end": [
+        "2023-08-24",
+        "18:00"
+      ],
+      "discount": 20,
+      "count": 3,
+      "max": 10,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "title": "Mindful Meditation",
+      "image": "https://cdn-az.allevents.in/events5/banners/19a33734b3d14fc3f4079ef7e0f71ac808a5eea3e2569acdcf21dfb141f787f1-rimg-w960-h720-gmir.jpg?v=1690999459",
+      "summary": "Meditasi memberikan kesempatan bagi para praktisi untuk menenangkan diri dan mengontrol stress, datanglah dan pelajari cara-cara meditasi terbaik kami!",
+      "description": "Menjaga kesehatan fisik sering kali menjadi satu-satunya hal yang dipikiran masyarakat saat membicarakan perihal kesehatan, namun ternyata menjaga kesehatan psikis juga merupakan suatu hal penting yang turut perlu diperhatikan. Meditasi merupakan salah satu cara termudah untuk menjaga kesehatan mental, hanya memerlukan konsentrasi dan waktu sebentar, yuk registrasi ke event kami agar anda dapat belajar cara melakukan meditasi dan segera rasakan keuntungannya.",
+      "price": 0,
+      "event_category": 7,
+      "location": "Verizon Event Space, RW.5, North Cipete, Kebayoran Baru, South Jakarta City, Jakarta 12150",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-09",
+        "17:30"
+      ],
+      "datetime_end": [
+        "2023-08-09",
+        "20:00"
+      ],
+      "discount": 0,
+      "count": 3,
+      "max": 10,
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "title": "Garuda Indonesia: TravelFair - The Biggest Travel Deals",
+      "image": "https://i0.wp.com/pointsgeek.id/wp-content/uploads/2022/10/Screen-Shot-2022-10-16-at-08.07.29.png?fit=667%2C385&ssl=1",
+      "summary": "Jika anda sedang memimpikan wisata berikut anda, datanglah ke event kami agar segera terwujud",
+      "description": "Garuda Indonesia kembali mengadakan travel fair yang dijamin meriah dan menarik! Travel fair kali ini juga tidak lupa menghadirkan travel deals terbesar yang pernah anda lihat, jadi tunggu apalagi ayo daftar dan hadiri event kami.",
+      "price": 50000,
+      "event_category": 7,
+      "location": "Balai Kartini, Jl. Gatot Subroto No.6, RT.6/RW.3, Kuningan, East Kuningan, Setiabudi, South Jakarta City, Jakarta 12950",
+      "city": 1,
+      "datetime_start": [
+        "2023-10-28",
+        "08:30"
+      ],
+      "datetime_end": [
+        "2023-10-30",
+        "17:00"
+      ],
+      "discount": 5,
+      "count": 3,
+      "max": 10,
+      "userId": 2,
+      "id": 9
+    },
+    {
+      "title": "Permata Bank: Travel Fair 2023",
+      "image": "https://inspirasi.dwidayatour.co.id/wp-content/uploads/2022/04/Blog-Banner-1920x1080-PermataBank-TF-01-1.jpg",
+      "summary": "Permata Bank mempersembahkan Travel Fair 2023!!",
+      "description": "Permata Bank selaku salah satu institusi bank terbesar di Indonesia kali ini kembali mengadakan travel fair 2023 yang tentunya lengkap dengan penawaran penawaran traveling yang menarik dan juga hot deals dan promo yang pastinya akan cocok bagi semua hadirin sekalian! Tunggu apalagi ayo daftar dan hadiri acaranya sekarang juga!",
+      "price": 0,
+      "event_category": 7,
+      "location": "Dwidaya Tour Office, Pagedangan, Tangerang Regency, Banten 15339",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-04",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2023-08-07",
+        "19:00"
+      ],
+      "discount": 0,
+      "count": 2,
+      "max": 10,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "title": "The Gaikindo International Auto Show",
+      "image": "https://indonesiaautoshow.com/wp-content/uploads/2023/05/Web-Home-Banner-01.jpg",
+      "summary": "The annual world-class auto show is back and its better than ever!",
+      "description": "Gaikindo Auto Show is one of the premier leading auto shows in Indonesia, with events being held yearly each better and more festive than the last! Join us now to witness the showcase and displays of the most modern cars with elegandt designs, futuristic features that is sure to be eye-catching and breathtaking!",
+      "price": 100000,
+      "event_category": 8,
+      "location": "Indonesia Convention Center, Kab. Tangerang",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-10",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2023-08-20",
+        "19:00"
+      ],
+      "discount": 15,
+      "count": 4,
+      "max": 10,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "title": "China Trade Expo 2023",
+      "image": "https://jadwalevent.web.id/wp-content/uploads/2023/07/China-Trade-Expo.jpg",
+      "summary": "China Trade Expo 2023 akan memamerkan ratusan produk Elektronik menarik dan inovasi Elektronik terbaru dari 250+ Exhibitor dari China, Malaysia, dan Indonesia.",
+      "description": "China adalah sebuah negara yang telah mengalami perkembangan penduduk dan ekonomi yang pesat dalam beberapa tahun silam, pertumbuhan luar biasa inilah yang membuat China banyak dijadikan partner bisnis dan investasi di berbagai negara. Indonesia pun tidak melewatkan kesempatan untuk bekerja sama dan menjalin hubungan bisnis yang baik dengan China, dan dengan adanya China Trade Expo 2023 ini kami menyiapkan kesempatan unik bagi anda para pelaku bisnis di Indonesia untuk memulai menjalin koneksi bisnis dan juga supplychain kepada negara tirai bambu.",
+      "price": 0,
+      "event_category": 3,
+      "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-24",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2023-08-26",
+        "19:00"
+      ],
+      "discount": 0,
+      "count": 2,
+      "max": 10,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "title": "Food Beverage Indonesia",
+      "image": "https://jadwalevent.web.id/wp-content/uploads/2023/06/WEB-BANNER-FBI-1498-X-587-230518.jpg",
+      "summary": "Food + Beverage Indonesia berfokus pada bahan-bahan makanan, peralatan, teknologi, dan sistem produksi untuk pemrosesan, serta bahan pengemasan.",
+      "description": "Food+Beverage Indonesia menjadi tempat untuk memperkenalkan produk terbaru, mesin dan solusi terbaru yang dibutuhkan untuk menghasilkan makanan berkualitas lebih baik di Indonesia. Pameran ini juga akan menghadirkan side-event seperti Coffee & Tea Expo, Sweets & Snacks Expo, dan Organic Food Expo. Jangan lupa untuk mengunjungi Instagram kami @foodbeverageexpo.id untuk mendapatkan berita-berita expo menarik dari kami!!",
+      "price": 0,
+      "event_category": 2,
+      "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-05-08",
+        "09:30"
+      ],
+      "datetime_end": [
+        "2023-05-11",
+        "19:00"
+      ],
+      "discount": 0,
+      "count": 2,
+      "max": 10,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "title": "IDMA Indonesia 2023",
+      "image": "https://jadwalevent.web.id/wp-content/uploads/2023/05/IDMA-Indonesia.png",
+      "summary": "International Flour, Feed, Corn, Semolina, Rice, Bulghur Milling Machinery & Pulses, Pasta, Biscuit Technologies Exhibition",
+      "description": "Informasi lebih lanjut dapat ditemukan pada website kami yaitu: https://www.idmaindonesia.com/iletisim/",
+      "price": 0,
+      "event_category": 3,
+      "location": "Jakarta International Expo, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-10-04",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2023-10-06",
+        "19:00"
+      ],
+      "discount": 0,
+      "count": 3,
+      "max": 10,
+      "userId": 4,
+      "id": 14
+    },
+    {
+      "title": "Seminar Ketahanan Endpoint Prodata Manage Engine",
+      "image": "https://jadwalevent.web.id/wp-content/uploads/2023/05/Seminar-Prodata.jpg",
+      "summary": "Ikuti dan Pelajari bagaimana solusi ManageEngine Endpoint Central dengan fitur Endpoint Security, akan membantu Bapak/Ibu dalam menghadapi cyber attack.",
+      "description": "Industri IT di Indonesia tentunya sudah berkembang dengan pesat, dan ditengah kesibukan kegiatan bisnis dan pertumbuhan lingkunan bisnis Indonesia tentunya perihal keamanan server dan endpoint telah menjadi sebuah topik relevan yang aman penting dan diangkat-angkat oleh para expert TI, dengan maraknya serangan cyber secara global pada tahun tahun silam, sudah saatnya industri TI Indonesia bergerak untuk meningkatkan keamanan operasi mereka yang dimulai dengan menjaga akses endpoint.",
+      "price": 50000,
+      "event_category": 8,
+      "location": "J.W. Marriot, Kuningan, Jakarta Selatan 12950",
+      "city": 5,
+      "datetime_start": [
+        "2024-05-23",
+        "08:00"
+      ],
+      "datetime_end": [
+        "2024-05-23",
+        "19:00"
+      ],
+      "discount": 10,
+      "count": 3,
+      "max": 10,
+      "userId": 4,
+      "id": 15
+    },
+    {
+      "title": "Global Sources Electronic Indonesia 2023",
+      "image": "https://www.jcc.co.id/userfiles/post/648c1094e2d25.jpg",
+      "summary": "Experience world-class sourcing for consumer electronics, mobile electronics, and electronic components right on your doorstep in Jakarta!",
+      "description": "Temukan informasi lebih lanjut melalui website kami yaitu www.globalsources.com/trade-fair/indonesia-show/",
+      "price": 50000,
+      "event_category": 8,
+      "location": "Balai Sidang Jakarta Convention Centre, Exhibition Hall A+B, Jakarta Pusat 10270",
+      "city": 1,
+      "datetime_start": [
+        "2023-12-06",
+        "10:00"
+      ],
+      "datetime_end": [
+        "2023-12-08",
+        "21:00"
+      ],
+      "discount": 20,
+      "count": 3,
+      "max": 10,
+      "userId": 5,
+      "id": 16
+    },
+    {
+      "title": "Jakarta Auto Week 2024",
+      "image": "https://www.jcc.co.id/userfiles/post/63bbe33973a55.jpg",
+      "summary": "AUTOMOTIVE X LIVESTYLE!",
+      "description": "Jakarta Auto Week will act as a comprehensive and compact automotive exhibition, that showcase a wide range of automotive products. Held in Jakarta, Jakarta Auto Week will serve as strategic platform to encourage car sales, as well to intoduce the latest automotive products to potential audience. The extensive auto show, will feature variety of lifestyle sectors and highligjht characteristics of the Indonesian urban society. The 9-days events provide a platform for automotive industry to collaborate with lifestyle industry, as well to provide an inspiring atmosphere and exciting entertainments.",
+      "price": 50000,
+      "event_category": 8,
+      "location": "Jakarta International Expo Hall A1, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-03-11",
+        "10:00"
+      ],
+      "datetime_end": [
+        "2023-03-19",
+        "22:00"
+      ],
+      "discount": 20,
+      "count": 3,
+      "max": 10,
+      "userId": 5,
+      "id": 17
+    },
+    {
+      "title": "The 21 Indonesia Agro Food Expo 2023",
+      "image": "https://exhibition.jiexpo.com/wp-content/uploads/sites/5/2023/07/UNTUK-WEBSITE.jpg",
+      "summary": "Indonesia International Agriculture Food & Beverage Industry Exhibition",
+      "description": "Indonesia tentunya sudah dikenal sebagai negara kesatuan yang beragam akan budaya dan kultur, tentunya juga terkenal di bagian kuliner. Pada kesempatan ini The 21st Indonesia Agro-Food Expo memberi kesempatan unik kepada para pengunjung untuk mengenal lebih baik dan juga merasakan sendiri beragam-ragam makanan kuliner dan minuman khas Indonesia, baik yang sudah sangat populer digemari di Indonesia dan secara Internasional hingga juga kuliner lain yang mungkin masih belum mendapatkan perhatian yang sepantasnya, semua ini ada dalam acara kami! Ayo segera daftarkan diri anda dan ajaklah teman, dan keluarga untuk mengunjungi Agro Food Expo.",
+      "price": 0,
+      "event_category": 3,
+      "location": "Jakarta International Expo Hall A1, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-08-13",
+        "10:00"
+      ],
+      "datetime_end": [
+        "2023-08-13",
+        "17:00"
+      ],
+      "discount": 0,
+      "count": 1,
+      "max": 10,
+      "userId": 2,
+      "id": 18
+    },
+    {
+      "title": "Industrial Transformation Indonesia & Indonesia's Comprehensive Trade Event For Industry",
+      "image": "https://exhibition.jiexpo.com/wp-content/uploads/sites/5/2023/07/cover_jiexpo_1.png",
+      "summary": "Indonesia's Largest B2B Collaboration for Digital Transformation and Technology!",
+      "description": "Perkembangan tekonologi semakin cepat, setiap tahun ada saja teknologi, penemuan, ataupun sistem informasi baru yang dapat mempengaruhi lingkungan bisnis dalam cara yang banyak, oleh karena itu penting lah bagi para pelaku bisnis di berbagai belahan dunia untuk terus memantau dan mengikuti perkembangan teknologi baru. Acara kami menampilkan berbagai perkembangan perkembangan terbaru yang tentunya relevan pada sektor-sektor bisnis terbesar di Indonesia, selain itu juga acara kami menyiapkan sebuah kesempatan bagi para hadirin untuk melakukan networking, saling bertemu dan menjalin hubungan kerjasama dengan berbagai pihak dari segala penjuru industri Indonesia. Ayo segera daftarkan diri anda dan ikuti acara kami.",
+      "price": 50000,
+      "event_category": 8,
+      "location": "Jakarta International Expo Hall D1, Kemayoran, Jakarta Pusat 14410",
+      "city": 1,
+      "datetime_start": [
+        "2023-10-10",
+        "10:00"
+      ],
+      "datetime_end": [
+        "2023-10-11",
+        "17:00"
+      ],
+      "discount": 10,
+      "count": 11,
+      "max": 10,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "title": "Van Gogh Alive Indonesia",
+      "image": "https://jakarta-tourism.sgp1.cdn.digitaloceanspaces.com/events/2qYpSFUAbH1EZP1eJ4ZWP7lsqReraP-metaVmFuIEdvZ2guanBn-.jpg",
+      "summary": "Masuki dunia di mana karya Van Gogh menjadi hidup dan interaktif!!",
+      "description": "Tentunya semua orang pasti pernah mendengar nama Van Gogh, seorang seniman yang namanya sudah tenar se-dunia, pada kesempatan kali Van Gogh Alive Indonesia memberi kesempatan para hadirin untuk memasuki dan mengenal lebih baik dunia karya-karya masterpiece Van Gogh! Tunggu apalagi? Ayo segera registrasi pada event kami dan juga ajak teman-teman mu.",
+      "price": 50000,
+      "event_category": 2,
+      "location": "Mall Taman Anggrek, Letjen S. Parman St No.Kav 21, Jakarta Barat 11470",
+      "city": 2,
+      "datetime_start": [
+        "2023-09-07",
+        "09:00"
+      ],
+      "datetime_end": [
+        "2023-09-10",
+        "19:00"
+      ],
+      "discount": 10,
+      "count": 1,
+      "max": 10,
+      "userId": 2,
+      "id": 20
+    },
+    {
+      "title": "Event Test 1",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8QAAACbCAYAAACknFJIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAJgNJREFUeNrsnet1G7fWhhGt/A+/CjKpwEwFmlRguoKMKjBVgekK6FOBlAooVSCqAkoViKlASgX5hGgYMbJ4mRncXuB51pplnxyZ4mwA+4a9gR8MdGX8/IyO+G9Pz8/dO/9+iQgBAAAAAADi8wMi+I5RG+Da5+etYHfs+PdsB8y3W//7rv07AAAAAAAAEBB7pXp+6ufntP2zSuA7bYLj260gec1QAQAAAAAAwFDsbu/8+Vk9P3+LPA/Pz8Xz0yQStAMAAAAAAIAIozaYVAqC9z2rNqgnOAYAAAAAAICdgfDs+XnMJBB++0wYYgAAAAAAACgpEN48I4YaAAAAAAAANkwKCITtc8NQAwAAAAAA9OPHzN7H7pYuzMtp0SVwyxQGAAAAAAAAGwSXsCu8/YwZdgAAAAAAgLKZFhYI/90G/wAAAAAAANCTHEqmN3fzlsaS6QuQJbb1Q7n6I0Xd9Gg4gBAAQIEfEEFwxsI28un5uSs9IC41GLbQPwyQJ7bi5Yvod7dG6VcMPQAA9LQhECeeUk3Ef3Uxb04IhmW5Yv0CZMlH4e++TPA7cVc7AAA2BN6HqjThgLj0YHjdPgCAYUqJ6wS/00emFQCABFQ/hkc5afxUckA8LTwYNoYMGkCu1Ogmp6gnGAAA8G/BJ6fMF72A2DqLc+ZukrswADAc5d3MFNs4KJcGANBgbV52/CB8bKWKs4oCpYC4en4WzNt/WCICAAxTrobJIadMKQAAfFvYGVtVwt/fWSJeKSC2fcOcFPpykhoZNAAME87MYdghBgDQgP5hbGQX1sbheUoqAbHtG66Zt/9AuTRAnijrOGuU7hKUJ0lUAAANloggOPQPCwXEldG9kxOFAQDHwnVLyBMAoETWhttTYlALf3enFQUKAbE9RIssPwExAIapEMOEPAEA8G3Bu41Ujq+cHuR5IjBY9IB5GnwASIaxuGFKzZmpDNctAQCoQP9wnBhLFefnKaUeEFMqjcIAKAHlxJ81TGsMPQAADLAjEBb6h0UC4ganxv8EAAAMU4Z6if5hAAANngiIgzMSj7GcHzCcckDM7vB/WaMwALJF2TDRPwwAAH1ZIgJsZOw5k2pAbMsHK+YrCgOgANTPSUjtbANr6DmIEQBAA9oBw6NclebF50g1IP7MXEVhAGCYkmeZ4HeiXBoAADsCu1FOxHuJh1IMiO3JoDVzFYUBUAjK+u4aeQIAQE/oHw5PZbSrcL3EQykGxOwOf0+Kp7gCgBvDpHw90BJ5AgBAJjakBGrh7+4tgZJaQGz7vrh3GIUBgGEq2DANAPsBAKDDPSIIjnJbkbczS1ILiCeGw1Deg/5hgDyhfxh5AgCUyhIRBKcmHvqeHxJ70RuTR/+X3TW5bhe6/fvTjp8bm9e7wH5u//dYYJwAwA2PRjcJePb8XCb2ncaGpCoAAAEx7LKRK+Hv/4spoIW0en7+Fn9cBPSbsvGL5+eh/UwAyNMwKeu7iiEEAACQYSrsc6wYJI3nwpNc2O0AQOel9jwwfAAAAFLcCPsd81IGaUUwDAAFscAwAQAAQCCUNx6LODRzZLR3StjFBQAMEwAAAKTIRNzv8MqPCQ2SKl/N7kOz4IXKvPYbdjn0ZvtAsiVijMr2uHU9uOjt9Tx3rBn5wwNZjwCAPwApz7HtubbPN0nxCkEfcKuFQECsOkhrk94pq7GdfGvgtk/MHnlYFFZ53ZvDp3hDdyOyGbcP5vUEdF9sG6P7dj2tCxlT5XsAl6w5AOjoDxwKTvAHoA+jrbl2OtBnuWuf23Y+rTNck6oUc/2svXpEcft+Wnjw1JiX/unY/d/299ueRu6x7q4cZ+blkIXU1uDmhPVZO65VZrJXPjNhxtIBgDdBSdPa4di67aH1S/AH8p9vvs/hWLV+fg7+R2W0y6XHvgXk+n5bO0F/Lyhr8aspo8xiw7gd3zrE5BzAlXm5B9r+Sbb4v0bEOgkfjWabwtq8ZG1Tyt7atfClIJ1nTLhdmPMO+rWv7UllXp8d+Jmp0a4qOOYdQ+vCRQY6/amVaww7hz8Ql3nict+HHY9vPe3m762+D83l8/OHSaNcf2a6V9aOhOeLCSF31wHxwpR12MpXzw7EZUJBsOIu3VNrBP9XWOIipyD4mAB54+zEckpKrhTxyf91cGCVbc/lEcGidYC+iI/nDwl9l1zW7XnPwKIv1gf4bHSrdlIKaobyaHR3wD91tNlNO+9SCOiu2nW3jvgdHkx+VXPZ8TdPFuXYm3KUVUbytOW3dUFr0SrLC6PbjtDnWbTzNqST8ICu8laq1tU5VH3X5oj3m2QwpqkwzsimhQJ/IC1qcfmPOrxnqjZ2FtG3w0dI3EbVCFOrXn7HQptlHkTlHhjXRvvidZd3g08wTEX0KasHOKNC7Gsq5KAfHwPsEI3wB5JllnmysxJZp6sIO7VT/IP0bdQMYTo1djF2E0sLmHI6cGNMILzzgJWZJ6PVIF9vT12I7Tl2J3yEs+GESSbrY4o/4Ly6qBKy98q79fPM9Plj4A2sBf5B+nHXCoE6Vc4hGLXKqeQF0IgHwqMCnZchSZAaw5SdYVJOBM07vCdVT8N1ZQ4tDjce5TMrXO9MRWy+spwne5L6K4MveYhHfIS0464RwgzeU+ZiR5+F9boQFHeLp4xh1DI5ZJ+GYcrROcwt8P/bxC9NzSHY81UqjS3R8QfUqxzeo8lk/vlu0xqzPtOvupkgTKePz9Kd2nAQ0K7SWpUj6UeG8ujYgTGGKQ3DlKNzSEDsngqnbac/QHWflj8wF7e5b8mpws13+fSMtekv7jpxNEjK9yOmxtr4Oc59Ux59YziufZfDdGPSv7plk9CoGTInsrzpuSaQvz+WHX72tJD3tNwyNXpzkcm6cHXF0rY/MGZ67PQHmgS/m/L1ibdv5mCqMh6yrm6MvwqDU5Zm+nEXO45u+xx9BVHIN52S9T40jI33fs5jDRk79P52ZrqgvLs16/iu6qeLxnLka5PHzlPlSB5j/AFZf6ASl+V4K3DMuTLBR58/rakCcVeFMJNWvjNkmkVQzMFZ4RzPYxx3ZBXfMI0ycQ5LCexmkXRnDsHfFH8Af0A8Kf5YSDDsq72B1lSBZC27Vm4fV6UW9JnmYwQJhtM6WAXDlMaay8E5LCn5HCMgziEAvMEfwB/IwBdYFBQMb3S8y9LpOWvQb9zlooeY/mF33D0/T45KolaGPkcXxqdO4Ds0DEVwJnvWEH08/lh2+NmS+octa6ZH5wTCZ/F3sP7AGf5AMv5A7P5d5f7he1NWz7oNsr44/DzWr+e464RBkneS3tIYDs5yySKiAicYju9Qf0TnBTVMXYI+5XHoe0AWQfHxdDkTIFW+DhzzGn/AuU2O5Q+MxefzZ1PeAW5TR2uvMhx+5z3uOil8gebiJG0HwxeMiVNGkWQ6JRhOQlGevzMfMEyeDdORDoKyk39VYED8IeDvsoHgJIP1MORU6cb4PfG2VH8g1j3FdQayK5HPjH3SXLsKiBmkNJykTQB1gQi9YAOgeWDDN0fsUbElNJ/e+e8TROONLglB5XFYDwhs73CIj0LdFg4tlW7wB7xRRZItrTqaNA50H2Pvj6WrgJj+YQ+D0tP4E0D5V2ohnPBNBhri8sm838+PYfJHl4Rgaf3DG/5imhzEVZliTIaUShMM+2diwiflSMZqMnIwdjVi9G+L2SFOh77l0vSZhiNE6XSscix45XxP0ILOSyNIVB6HIa0xd0yVg87nlwzWQt9SaYLhvPwB7E4eDNk8tBWKFSL0wrWrgJhslVv6lEs3BMNZOVsNhi+JdbjLGa0wTEkEibXRThoNaY15YqrsRf0grSGl0gTD4f2BUJV5+AXaTAboJcbeH0uXhof7q+LdSdkgt2iPj6Bo1M4D5BvveThgtKbIyNvT5aCymfB7rhzoCuVx9h00qK+D6YBgGD2Svu7qywo5F3uP9QLZhYm7TgYaH4iTpajJBEffhXDN1FAqHXtnZlff8Ab6h/3JvkspcKn9wxBeL4dkX3XKPsb4A1nPO242yIO+dotqXH/61klAzAJ1S5dyQSt3Dl2Ky8Tx/K+Mft+bOudHBGU1YooeJI5Muf3DBNW7acR9kr6l0tZ23DD8Uak96yTsTj7zhLFP2Bb3DYjJWLjl2J6yWHfiwvd8TvSzoDuX7XPIMLHu/HBdkINw5eAz6CP+3i6q7w6f9RjXmHfiwn/xmdCmMikPqh5rlYDYH0tXATEL1B1rc/z1CjYYZmc+DRrjppd4ZDgYLSZ2V/gcw5SWYcrU9iwdfc69uFPoIxhRP2StT6Jkjj+QDLXxd+AiG1D50HW9crVtwLjrZMDih7BO0hTFmBwudnaHnD4IwzimbziHQEzOMGVqe64dyoyA+NXBnArLo2+pdGNIpKbGF0/rpUK0RQbEtKb6490E5AkLNDq3Ry6iOaJKDhcOCeXS8Tg7MrhQ71tNmWVH2zMu5F1zDYhdU2KpNP5AmvjYsMDu5MWIsU837jpJZNGXzDGlUpwgma5yG7Ie1B18Zb6Z48sUMUz+KKV/uOtJ2gTEh2nE50TfUmnOEUnXH2gcfyYls3nxgbFPgqWrgJjSQXfcmcPZ4RlBU9IMUVokl+Ipw/MOP4/OC2yYMhyHpcPPIiB+CT6UT+bvWyqNP5CvP/AeNSLNTm8x9onGXT+yQJN2ksaG63hSZ9LTsVF18K0zbnc17rcc87s3Ttqm9+Vn87ILnpLO2PQNo/MSNkwZjsO1B9kpBka1o+TA1Gi3bvUpla7wByT8gZFxcxL82FAJUCqVoTU1uC3uGhDXLFCnHOofpk8ofTZl031K39QcfLur+m3H//fWyb16x7jXbRIgph459hCtbcPEjowfugRGY3EHYen480q+ekk9MBxSKg3pUxs316vViDJL3cXYJ2qLf2SBRjeMu2gyk/eyTQCszfclf/Y9PxjdEuLTHgZQLft7uScYPoa79vm29f52vD8GDDjPewQm6Dx/lNI//J7OG8pdwXNTOTDsWyo9ydAfsHP4PkN/4KOjgJge0nIDYsben/5duvqwm+fnbx4nz80eOdtA6TGDd1y1gf2xgZ/9uZngu696OjhK71h7NhJ23B88fv/FAOcbfeXn6cJC+D19BHAzUVnMBr73RHzO9w3yHvAHZJ4HR2scG1Gu3XtETkn5ge8qJwQaxjGYZWD46oFzTS350nW3d1aII9eVug0gHh07KH134zFMaRgm5XHwdR1LicmBhwKdMfwBvYTYqND1zTM8IB4jI2+PszvrJwjT6TPOcHf40eWEE9ud62rw1Qz8TeDSllE7lx4czMm+JdkYpjQMk7pz6KM1QlUmQ/SIcmD42HMeqFeLleoPDE2CzbERxQbEU2QUPO76hy7XLnH1iDv23Uk5NZoHl9n3+c0M6zN9i+21uhJ5/64BsdoY1yZs795TO5d+aedB3ztczwf829qAL5aFjEPXk7R9yC8Hqufns/D3P+s5D1T9gfXz86sHf+BS5P2HnouB7SkX+of96aQ7Vx+WQw9L6qVTqtnglUejrSKTruVwqv34DxGNdd1RbkMD+AW6yttuWQlrxT4+bwpQtBU3Ba7FRea2L7Q/8GDyroSgPbHMs4M2IKdI7TpdTpn+o8fCVr8a4T7w7ohiNnizM+zrGhD7uecm/ZNFK88/n9J73rRz+H8m7A7+sn2aVrdUB+bl+cDfd99DB/wuPLZWtrcBfs+6o3OovFty7fGzSzlp2r6j6onDfU+Vxh/YLc+vGfoDb+c7lEnVzu8u/GTctiaE5vL5+TOQfxN1YLOtNfeAYjbYZyb4LQqy6UIuWTebrZ9FCgKnO+bFY8SgtMQTcH2ifnaFTxRPQH/s8Z4Pha4ptfcO6Q88ZLz2udmg7B1ibGQkTjx+tnKWa20c1pp3mNRK2WCbqf3kMRP8XhYpdUamPGzg+aV1UBaBg6pNj/HbuXFm3N/7mrvOi55B3cEp8tzJn4Iy6aojp0a34uLK9K+gacTee7MT/hRQtqnTd1NF3Y4cw515rfjaPE8FvLcPvwQbKQD3RnZjZdhNOpQwyOmk6Zyv87HvNjdhqyzqNiifR9R5yieD3iRqR5R3B32XsTUm7x0B9RsXhiRIb5jrB/V9bjdPGKNfWblvPVwc4TdWxs3tErnew55D7OBbHkmi7PA3ETKJRV5unZmMuhjAG1NGidCDCbfLE3uHHsPkFnXn0HdCqDZ5B8TKpaOTguZ9jGTaKNM50Jg8g8BRj/HNsXR8io2M2poaBfX7O6vA8lJa+PRnulF2pQTEbx2nxuRZWq5+MmidoEyVncNH5tyge5lr4bEfmjBWqzTBH3CXZMzpZoOVg4Ant/uYa2xkUBvZCV89xCk6V8diexvWgX+n0gma/zNx+jNVgqJjeSpQPnWb/NmUT9WZvZsqdi4uE/xe9EblqUOOcZLnwmvpbOBnKPkD3/AHsCM7/OjfzPCzeM5NXn2mrtcKNlIgIP7IIHUyfio7Zk+tAUw92FTg3pRNY152jDcl1erji87zoxtVuQ70e+4y1Q2qpXRDD5ayc74Set+vBlwxzsTPcX31Vk5zzHVAXAvL4ja1L8QOcfxBUnKkL028XYnceg1ydGT7YJ2/eRsYXxjdE2XReTiHMZIMuVWajIzu7vCQU6XxB8r2B9RtyLY+cn37yDITf8m1TaiE/SVjEjwp/oRFHc2R2aBWLh3TQSYgzhfrCDeigbG6YVom+J2U7cjahCsjvc1MD3wxmokQF6XSavMef2A/P3X8+Y8ZrF9fVx5eZyAb13KZiMtindqX8hEQq5cOhsx41kLGfxl5Aiv3SsgohETYBMYLkUBTOXiz+i7F5Ay9Ufky3vPfp6Lv5OIO3rHRSazdRdYbp8LzPEc7stF7Vx7nmzr3Ba4BKRvJDvF/oVx6/7iWdO9xCK4M7GNiXneMU04cfWQOehl7VULuZigG37vWcsml0mpzPvZNIo2AjLokSNSDYctZIrIsJQgk1ko8IB4Z7dLW0M5FDkoQ+vMHIjiKxrwevpUiGCbkGcuOPGW0xhXH3VWptCW3KqjS6bIjqF4ufWmoeDukJ1zucnPGhkBAXItP2JCDpJ48gOHEuOJLlc1hO6vE1g2GiYD47Zp+Cvz7clnbipw5HO/aQKmojz2njYe1s8oVVMn6va4DYq4ewfgBhsR3AGqva0plt1h5Ha8TNUzKduQ60jgq8fawIdVr11yVSuMPlE0OlZVrhnEvriux6B8WCIhrJmwnxx7gEmPSy4GwO0op9BbTP4xzGNvYq+mP7fGtzMvJ0mq4LJUmIC4b9fNRQpw2ru4vu7YLxFqJB8SV4eqRLtAvlB995xC7xP1ozMtuccygGMOEPAmI+3Mh+r1dlkpbPqDOs+PY+XEq/o4hEqsjcRm5bG1RT6AsU/1iLgNiZUdmbcL3YrFDDBsuDVe1DFlHsYJigjf3KDuHsXbc/xSV10R0DV15GGv8gfw41qdUtiOhdJ5ywsi1nVUvl072IEiXATH9w8czMtoZL3ifIQvd9Y4DQbF/lHXeXaLzTTn7fRtxLNVQPUhrbfxcL1OhxoukEh/7UGcmjJHRv9TYyPQDYgapjMUNfhxTX44WQbE/lHXeEucwG5mqJdLsGE9Fx9pH4lJZj8AwfaCcAAxZLo1deJUFZ2wkHhBz9QgBcemsHXyGNS7fEOWgdRWqJ1HdMF0n+J2UAwPXfWJdUNshts7tZ8Ex/ubJV6BaLD9K6B8O5TcrJw3Wxu0ZD/QPCwTEyo5MjDuxMIAExLs4Ny89xdDfYMwI3iQNE/3Dfp3vlFCzgVa/+zr8kAR5fpTQPxyqspKkATZSKiCmf7gbnChZrgE8hjOC4kF8CeBkYqTdQ/9wfmOaCz7PePgJ8WbH+oifUa+sDBXgKCcN6B9Ox0YGC4gZpG6wQ5wf9x4cMMqn++P7wB7l4C3FcmnabiBVvnkeX3aIy/QHKAU+TGXoH0YWQgGxcjCMIwOu8NHHd244aGuIXmow0jI6T9mOhHIO93HLkvc2ttwTDz78AaqM8k4auL7JQf0AtuTPunAREKuXS8fov1JPIkCYgNhy+fz8moDDrcgX1q+MYaI3avi4gntCXIdHxVh+HBMwKtuRUFVGJA2wkVIBsfKiJqsOKSq+94LtXw19xV2pjJ+sKkbaPfQPD9cR4JZvgdYLJdN5ccxa5LTg/OML+ofFYq2hATF3YgGEWex2l8LuVvxm2C3uwu8Eb8kbplp8jqVgR9ghdovVsZRKgy99oJxUdV0KvM8ucK7EC5yxIRAQKzsyTwTEILjY7e/6tXXWcIKPC15dGhJ1w5TiTuJHcXk+Ma7ZcWbQr9CPY5KOyr5zKH8HGeUTa61LCIi5bgkg/FyyCmZmKKPuEhRjmNLVe8oyTenE7jVL3QnfDP4B+NOx6pWV9A+Hl5F60liCkneI6R8GF8Q8LMA6wHYn4xcC42CGVdlIpxgw0XZDQJzaGqFUGobog0OVBfQPH2cXamSURawlExD/OODfVoarR3LnyVCKd4g/EnHizlpH7rN5uW6Ik0v9GBP1uyNzHpvS7cid4QaDoVAqjT/g2x/gUMa87YLrdaKu0/8qISBWHqQ1iv1oB+s3xCA1r8/bwLhpg+MKsfwjg5EDR5dgwz3KpWCpXSXxF9NpEJRK4w8Q7O2HcunwSYOPLJkwnBQ6SBi942CXUZOn1rn7pXVgLhGJk7JcAmKcw21Sa7shyduftaFU+hAVInAiQ2U5hvKdSRrgd0gFxDgyBBHQH5tsuAkgY2vAbBng/5mX3eM75nJvTpm2OIcRnMNjodS3PzFLpZ+E1itJ8mEot9yEKpmvDOdK4IcLBcTciTUMpaCkZpl4YdHKdvX8TAMZM7tr/Gv72L+vC5L3iLWQnGFVluc6QT2+NNCH2KXS+APloJxUvWKOHWUX1sjiP/yce0CsPEh3CQQCSpl8+hfcM3uzhubmZbe4CrgG7G6xLan+ZNLrhSSY9JcUSEl303YDKTiwlErjD5BQOEyoykr6h/MKiCdGZAO1b0CMI1NOQJxqiY/qdS1WwX3Z8d9D7RZvc9UGxZuS6nWmjsgHDNM/zHEOpZxDAnW/pHCqtNIOccr+QOr6pDZUVirPsWNw3T/8wegz2uHzZsPfwk8Ki20mJrMmsflnA+GH5+dRLCiu2u98SN43kd/LGu6F+Dp/T6ZDuMhIFgtHjlnV6oZF+3Rdw8oyrBLVMbmtW59PKskh/IHh/sBKwB+YCa+Vh4BjqaxTXCc8HjLSt1OHc2Ta+nSzFLJcTNhhNILKcJSoUVEKilcd5X4RWe5VRoHg0ID4JrNg4MF0v6963P6bi3cMddfgYiosuxVOdxbzPxWbNkF2vZkK+QPKNmQeaTxLtgujDPXujem+KVm3dm3xzoZS7VLgfe4hVi+XTqFceS0mNxsY2ZKH88hZ4It3jN3mtOZfTNql6PMehrpplcf/zMvBL08R5qktKfzajn9jyqXO7H02yQ77bM5VuH/zMz+Z1wMUD83drqVitN34gZOmj+MsIVnhD/TXX/UOf+A3k1YpukJJ9z7oHw5vF3I8XbreWgfLdo3+9eZnfjavN1BUqdvirrtcKT2zhCaGovxiBEQjc9yux8qk25/TOJD9YyuHmO84Fl7/QzLclWFH7dBTgv5Lqe1mn8PBfNQolcYfKMcfmBgqK3O3C64THlN09cHWr+hZLiZs2YmFkEawMcf13KYcFI87vkPqgfFIdO4OSYYRZLgtR1eXZ8oH45C80Sn33Ua1nDa0P9ClpzIlf2AuvGZCtYio2wXXzNDXQXqS/+Wkx4RVxZZHLRP6PktROV4Y/zvtG8PXtYd2U1adCiPjvg94c2LfY/vZVYR19JspqzSzMrCP0sqlU577a6bjXs4SHb9bUXmG9ge66OKxGX52hMtgrxT9XqKMfPjzOZwwnXUMpXzAziKxwVQvoVk5VmBVa1hd7KamEhSHWi83Jnz5mpouGFLmOjNkY/c9XXudaLvxy4o5KVMqvR0M4A987w+4OGU3tj9QGSorc9dbPq7LvEFn762UjM4DE9YZuZwgtwnG+uyCbo5P96EIYxvBaSQlcRHIgKkFiXVB75qyYaLtxj84Ujql0tvkIOcV/sB3NAQe2duFMXo86ONlPXc5Zboy2qWDy8S+jy3bujLal5BvMtu1eT2t1j5/tn8+vVF4VmlsTq4de3ZQrBGyp+Z+iyCTcaTdiFH73vZZt/Prtv3TNT8XtP5/MuBKrrXwu6bWdrOLO5PfqehDSbVUepsc/IFN21KK/oD9/TFOxubk5Pztwh0yCUr0FpPGaGeHU4RT5PI7CXNk0quksFneRTvfXGQyx0Zv12IIZGrdVd7QduOfGfNSplQ6Fx8Lf2A3VFZiF/rAet39VLGV9cKwve4jeGJy52UEFYKnTYA8a3ckqg7zdWbcnpqtsP4JiN0ZJpzDMLstzE2dUmn8gXz9gbG4rELdhfvAfCIgjr3B+WNHI8v2ultyKZtOHbtDsCnf8r0zo7BORu2cezvv1ub1lFr755/t30/Na4kb6x/emy/HUBnabiAsCqXS2/7ApYmzi1kSF63eCrGelf3mdQCfCbsAcvJWz3KlvNjUT5tWOhzCZ0BXI+Ns741lh9jNzrtyi8iDmNPA/NQplcaO5OcPbKCy8jANdgEd3uHxtoF40kFJq3Jn0r6b8cpwd2QIRm1g48MIVkanv7A03h7m0vcz4Hu67rxzuEw4ngqfm9amfhWdZ/gD2v5ALr5zqMoq9XvpIROZnzBhk+ArczyYEbww7nvKFkanT600/nDwGX8hxnfpeno5zmE4Sk/iKJVK4w/EDYp92e5a3C8I5Tsr24Vrgu3gds2bXi9hh1jBkbk0ZIVDMXZsBOdGt7e2BC4RQRKGyfe1Krk4h64oeYf4q7gziT+QR1Cs7DeHqqzELkAy8j7JfFErTViywuGD4qE0Rufk2VKDYReBASXTw/Wq8sGBqbfdvMd9ofPSjtUsk6AewvoDrgMzWkTyTxr4TDyuWZrf4XNH/qiAWL1cWiVTfskCCG4ELwb++zliTJo/HH3OE6L8DvqH06ZUW3KWyXtcGhJxSv7AW0aGyspjoB1zN3+yLMPKPPcdYrW+rzPme1CankbQVy8yuFWcS4efBcNkgh0hIPbN18yCyHPUTFAmDoPiWlwWV4F+j7Kcrj1/PgmxxPww9YviFRfbwnCseurXc1wgs+LW/gqZ/vt0bTdQv1pOMfE1KmxOrjJ1ArE1mtcNzQvS70MSEMrzxDcVa/E/j/f2xEM7xMrZmyejubOjfDqmKnahNR5+FuJlt12vfbK1r5RWLq2oj0uzIblWV53jDwSnceB8K5+ZEKoihjaa/awNbZRBZX4oIKa+P44jQ+l0eC6OCHTpG9ZYPz5KDa8RbW/dWuMcRqGUJM7XjN/V6rNPqJzgzE3/xHfVPqpQLp2OP7BkKf6rB6Pr+AfD9npMhUyZRDqltiPx9VDKM/O0HkfI9p/nsTC5KV+pdmMolc4pQEP/hH/6BMVNQfq9VHsayi5MWIP/PIsQwj7JOMulnlk5N5RpxuBijwKndC1tfF658hQwc56TXlUuHUwiKz2A2wLmYynVVOeG3aJYiYiuZwhQCoxdcMUVfmc4W7YvIK6FhbfOJJj8zdBDEFrRfdozp+x4XCImubFzxR+ImeuWIBlyLpV+j0+GJHkMm9I1IKF/GLvgOigunegyUD7t+CKjiWBLMx4NJRMhSu+qDgaPMUnrCeWElF42Py5IXuptN7WhVDo3KmxPsPnVpyx2LP7eFXbUSxn90DVf8lp8SEHxPjJhCYpNOf0JXcuiRoYrskpc703Bcn4szJBXGdgNEjP5gT+Qnj+wYUrggV3wQMnXr11gSMt2ZDCCOrtAE3YNi1OWK2SNcygCB+cRFPOEm1tUVmIXSCJktsGpPGFXGEGeIxWbq12GUWtIkWsZmcMxhgnnUITc7EWppdK79BDJWHfVL3XhCahQbUfYhX6U6mOOYita5esacr8ndlTwDlUKJVGHsniUUZexzks0TlVBwViTib3I7eqlkkul8QfS9gdqAo/s7ULsA9NKW+tJJEDJcqVvBC8wZL2ywCHmR23KuAO09GClpDHuWiqmvos+ysRW5GQnZsS/RYyzqj+gnCQNFXiQNBi+6VJSlWj0Dc4JE1aGxlBC3aXUJfTcIDB278CktENU0u5MV8OEc5gGM8NOAf4ATwh/YGUIPLAL/impdTL6BudcWHg3BRrBiqDroBKrI48RgbGbtZ1isquUoLirYaLtJg0mmcw/SqXxB1L2B0bicgnlI2EXCIqlNjiVnbtZwYZwSnb4uxLPJkFn5YJx6rwrnPp9sCUExaOO8iArnQZ1BnOvZLuOP6DhD6gnnkLZSZIGBMUyG5xMWG3oLdYJoKaGE0JTLHMfwtzku6uCc6hrEyiVLtcfmBv8gVkAO6Is50Wg+YhdIBkvlQhtxBUfvFAVGBinuCN8bJaPXePvM4Oqya06w0RHV8NE201aUCqNP1CiPzANmFBV1vmhNhCwC/6YZbiGo/uAykpzgd0r0hDemHyuSJkUHhwrB8Jvs7azjMax65jQdpMWN4wF4A94lStJp7ztwlRkfedy7WcSG5xkufIktxLdhzbbWGU8ZpvgOPey6sf2PXMcy6qdp+qBMc4hATGl0vgDKduQecS12xB4YBcSos4gMI6+wcmELYNxazwejGbgNCl0zKatkshl13Fh8tnZP8YBbQQz5FZHzHAO5ZlhzwF/wBvKu+4XJA2ytQuV6NpexVrXP7wRnrKDOjPQxxjaifcxUQdk+fzcPj9Xz88dw/WfcbNZwA/tn5XAd16343nd/vlU6NhVW2uuTuy73bVjc9/+ue7xGbXRLXu373uZ4ZybGq2rpL5iz6P6A6eJruG71n6k5g80RrfCadk+vsEuxF/bv7djkJKv/9Su5dst/yOab/gDNgBaRluB1mmr4EMq+XW7IO4DKuncxs4+P2/9PeYJzcs347lmmPY6Ch/aMasCrbXt9bZmvRWhH5ScdChTN+EPAPil2vIRTwP6indtsLsJfu9S8wv/X4ABAEz//XUzGru/AAAAAElFTkSuQmCC",
+      "summary": "lalala",
+      "description": "lalala",
+      "price": 0,
+      "event_category": "6",
+      "location": "Jakarta Convention Center",
+      "city": "1",
+      "datetime_start": [
+        "2023-08-16",
+        "07:00"
+      ],
+      "datetime_end": [
+        "2023-08-16",
+        "07:00"
+      ],
+      "discount": 0,
+      "count": 0,
+      "max": 0,
+      "userId": "10",
+      "id": 21
+    }
+  ],
+  "tickets": [
+    {
+      "eventId": 16,
+      "userId": 3,
+      "price": 50000,
+      "id": 1
+    },
+    {
+      "eventId": 11,
+      "userId": 2,
+      "price": 100000,
+      "id": 2
+    },
+    {
+      "eventId": 12,
+      "userId": 2,
+      "price": 0,
+      "id": 3
+    },
+    {
+      "eventId": 7,
+      "userId": 1,
+      "price": 50000,
+      "id": 4
+    },
+    {
+      "eventId": 1,
+      "userId": 6,
+      "price": 0,
+      "id": 5
+    },
+    {
+      "eventId": 2,
+      "userId": 6,
+      "price": 0,
+      "id": 6
+    },
+    {
+      "eventId": 5,
+      "userId": 6,
+      "price": 59500,
+      "id": 7
+    },
+    {
+      "eventId": 5,
+      "userId": 9,
+      "price": 59500,
+      "id": 9
+    },
+    {
+      "eventId": 19,
+      "userId": 10,
+      "price": 50000,
+      "id": 11
+    },
+    {
+      "eventId": 2,
+      "userId": 1,
+      "price": 0,
+      "id": 14
+    },
+    {
+      "eventId": 5,
+      "userId": 1,
+      "price": 70000,
+      "id": 15
+    },
+    {
+      "eventId": 11,
+      "userId": 8,
+      "price": 100000,
+      "id": 16
+    },
+    {
+      "eventId": 5,
+      "userId": 8,
+      "price": 59500,
+      "id": 17
+    },
+    {
+      "eventId": 15,
+      "userId": 8,
+      "price": 50000,
+      "id": 18
+    },
+    {
+      "eventId": 6,
+      "userId": 8,
+      "price": 0,
+      "id": 19
+    },
+    {
+      "eventId": 1,
+      "userId": 10,
+      "price": 0,
+      "id": 20
+    },
+    {
+      "eventId": 5,
+      "userId": 10,
+      "price": 70000,
+      "id": 21
+    },
+    {
+      "eventId": 5,
+      "userId": 11,
+      "price": 59500,
+      "id": 22
+    },
+    {
+      "eventId": 11,
+      "userId": 10,
+      "price": 95000,
+      "id": 23
+    },
+    {
+      "eventId": 5,
+      "userId": 12,
+      "price": 70000,
+      "id": 24
+    },
+    {
+      "eventId": 5,
+      "userId": 13,
+      "price": 59500,
+      "id": 25
+    },
+    {
+      "eventId": 5,
+      "userId": 14,
+      "price": 70000,
+      "id": 26
+    },
+    {
+      "eventId": 7,
+      "userId": 11,
+      "price": 50000,
+      "id": 27
+    },
+    {
+      "eventId": 7,
+      "userId": 13,
+      "price": 40000,
+      "id": 28
+    },
+    {
+      "eventId": 15,
+      "userId": 15,
+      "price": 50000,
+      "id": 29
+    },
+    {
+      "eventId": 15,
+      "userId": 16,
+      "price": 45000,
+      "id": 30
+    },
+    {
+      "eventId": 15,
+      "userId": 17,
+      "price": 45000,
+      "id": 31
+    }
+  ],
+  "ref_code": [
+    {
+      "eventId": 6,
+      "userId": 1,
+      "code": 123456,
+      "id": 1
+    },
+    {
+      "eventId": 5,
+      "userId": 7,
+      "code": 123456,
+      "id": 2
+    },
+    {
+      "eventId": 5,
+      "userId": 6,
+      "code": 578219,
+      "id": 3
+    },
+    {
+      "eventId": 5,
+      "userId": 9,
+      "code": 213199,
+      "id": 5
+    },
+    {
+      "eventId": 19,
+      "userId": 10,
+      "code": 305672,
+      "id": 6
+    },
+    {
+      "eventId": 5,
+      "userId": 1,
+      "code": 950502,
+      "id": 9
+    },
+    {
+      "eventId": 11,
+      "userId": 8,
+      "code": 185430,
+      "id": 10
+    },
+    {
+      "eventId": 5,
+      "userId": 8,
+      "code": 743701,
+      "id": 11
+    },
+    {
+      "eventId": 15,
+      "userId": 8,
+      "code": 826190,
+      "id": 12
+    },
+    {
+      "eventId": 5,
+      "userId": 10,
+      "code": 860462,
+      "id": 13
+    },
+    {
+      "eventId": 5,
+      "userId": 11,
+      "code": 235618,
+      "id": 14
+    },
+    {
+      "eventId": 11,
+      "userId": 10,
+      "code": 362508,
+      "id": 15
+    },
+    {
+      "eventId": 5,
+      "userId": 12,
+      "code": 651452,
+      "id": 16
+    },
+    {
+      "eventId": 5,
+      "userId": 13,
+      "code": 695404,
+      "id": 17
+    },
+    {
+      "eventId": 5,
+      "userId": 14,
+      "code": 430236,
+      "id": 18
+    },
+    {
+      "eventId": 7,
+      "userId": 11,
+      "code": 210359,
+      "id": 19
+    },
+    {
+      "eventId": 7,
+      "userId": 13,
+      "code": 836928,
+      "id": 20
+    },
+    {
+      "eventId": 15,
+      "userId": 15,
+      "code": 896243,
+      "id": 21
+    },
+    {
+      "eventId": 15,
+      "userId": 16,
+      "code": 409763,
+      "id": 22
+    },
+    {
+      "eventId": 15,
+      "userId": 17,
+      "code": 137525,
+      "id": 23
+    }
+  ],
+  "event_categories": [
+    {
+      "name": "Music & Entertainment",
+      "id": 1
+    },
+    {
+      "name": "Arts and Culture",
+      "id": 2
+    },
+    {
+      "name": "Business",
+      "id": 3
+    },
+    {
+      "name": "Education",
+      "id": 4
+    },
+    {
+      "name": "Healthcare",
+      "id": 5
+    },
+    {
+      "name": "Comedy",
+      "id": 6
+    },
+    {
+      "name": "Holiday",
+      "id": 7
+    },
+    {
+      "name": "Technology",
+      "id": 8
+    }
+  ],
+  "event_cities": [
+    {
+      "name": "Jakarta Pusat",
+      "id": 1
+    },
+    {
+      "name": "Jakarta Barat",
+      "id": 2
+    },
+    {
+      "name": "Jakarta Utara",
+      "id": 3
+    },
+    {
+      "name": "Jakarta Selatan",
+      "id": 4
+    },
+    {
+      "name": "Jakarta Timur",
+      "id": 5
+    }
+  ]
 }

@@ -56,21 +56,22 @@ export default function EventDetailPage() {
     };
 
     const onRefCode = () => {
-        availableRefCode.map((v) => {
+        for (let v of availableRefCode) {
             if (Number(v.code) === Number(inputRefCode.current.value)) {
                 const diskon = event.price * (event.discount / 100);
                 setStatusRefCode("code found");
                 setRefCodedOwner(v.userId);
                 setRefCodeUsed(true);
-                return setDiscountRefCode(diskon);
+                setDiscountRefCode(diskon);
+                break;
             } else {
                 setRefCodeUsed(false);
                 setDiscountRefCode(0);
                 setRefCodedOwner(null);
                 setStatusRefCode("code is not found");
             }
-        });
-    };
+        };
+    }
 
     const onPoints = () => {
         if (!usePoints) {
@@ -171,6 +172,7 @@ export default function EventDetailPage() {
             userId: Number(userId),
             price: fp,
         };
+
         let pointAkhir = 0;
         if (usePoints - (event.price - discountRefCode) > 0) {
             pointAkhir = usePoints - (event.price - discountRefCode);
