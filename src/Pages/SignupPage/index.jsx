@@ -40,7 +40,7 @@ export default function SignupPage() {
             const res = await axios.get(
                 `http://localhost:5000/users?email=${email}`
             );
-            if (fullname !== "") {
+            if (fullname !== "" && email !== "" && password !== "") {
                 if (res.data.length) {
                     return toast.error("Email already registered!");
                 }
@@ -48,7 +48,7 @@ export default function SignupPage() {
                     return toast.error("Password minimum of 6 characters!");
                 }
             } else {
-                return toast.error("Please fill in your fullname!");
+                return toast.error("Fill all the required information!");
             }
             await postData();
             toast.success("Successfully registered!");
