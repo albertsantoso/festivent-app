@@ -5,12 +5,12 @@ import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { onLogout } from "../../Redux/Features/Users";
 import DropdownItemsWithIcon from "../AccountDropdown";
-import { GiHamburgerMenu } from "react-icons/gi"
 import { useState } from "react";
 
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
     const fullname = useSelector((state) => state.users.fullname)
+    const points = useSelector((state) => state.users.points)
     const dispatch = useDispatch();
 
     const [menuOpen, setMenuOpen] = useState(false)

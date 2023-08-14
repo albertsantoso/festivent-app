@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default function DropdownItemsWithIcon({ handleFunctionLogout, dismissMenu }) {
     const fullname = useSelector((state) => state.users.fullname);
     const email = useSelector((state) => state.users.email);
+    const points = useSelector((state) => state.users.points);
 
     return (
         <>
@@ -19,8 +20,11 @@ export default function DropdownItemsWithIcon({ handleFunctionLogout, dismissMen
                                         <span className="block text-lg font-bold">
                                             {fullname}
                                         </span>
-                                        <span className="block text-l font-medium">
+                                        <span className="block text-l font-medium mb-2">
                                             {email}
+                                        </span>
+                                        <span className="block text-sm font-medium">
+                                            Your point(s): <strong>{points}</strong>
                                         </span>
                                     </Dropdown.Header>
                                     <Link to={"/dashboard"} onClick={dismissMenu}>
