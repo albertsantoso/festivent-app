@@ -46,3 +46,9 @@ button {
         background-position: 0% 50%;
     }
 }
+
+.bg-frosted-glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
