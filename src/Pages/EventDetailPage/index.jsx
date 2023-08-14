@@ -171,6 +171,7 @@ export default function EventDetailPage() {
             userId: Number(userId),
             price: fp,
         };
+
         let pointAkhir = 0;
         if (usePoints - (event.price - discountRefCode) > 0) {
             pointAkhir = usePoints - (event.price - discountRefCode);
