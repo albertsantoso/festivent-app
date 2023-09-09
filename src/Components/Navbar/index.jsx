@@ -20,7 +20,7 @@ export default function Navbar() {
 
     const onPleaseLogin = () => {
         Swal.fire({
-            title: `Please login first!`,
+            title: `Please login first.`,
             confirmButtonText: 'OK',
         }).then((result) => {
             if (result.isConfirmed) navigate("/login")
