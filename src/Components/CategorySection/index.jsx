@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import CategoryCard from "../CategoryCard";
 import SectionHeading from "../SectionHeading";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 export default function CategorySection() {
     const [eventCategories, setEventCategories] = useState(null);

@@ -3,7 +3,6 @@ import SectionHeading from "../SectionHeading";
 import { useEffect, useState } from "react";
 import EventCard from "../EventCard";
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa"
 
 export default function FeedEventsSection() {
     const [events, setEvents] = useState(null);

@@ -8,11 +8,10 @@ import SignupPage from "./Pages/SignupPage";
 import EventDetailPage from "./Pages/EventDetailPage";
 import CreateEvent from "./Pages/CreateEventPage";
 import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { checkLogin } from "./Redux/Features/Users";
 import AllEventsPageFiltering from "./Pages/AllEventsPageFiltering";
 import UserDashboard from "./Pages/UserDashboard";
-import axios from "axios";
 
 function App() {
     const { pathname } = useLocation();

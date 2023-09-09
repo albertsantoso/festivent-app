@@ -1,10 +1,8 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
-import PrimaryButton from "../../Components/PrimaryButton";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import FestiventLogo from "../../Assets/Logo/festivent-logo-black.png"
 
 export default function CreateEvent() {
     const [eventCategories, setEventCategories] = useState(null);

@@ -10,11 +10,10 @@ import { useState } from "react";
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
     const fullname = useSelector((state) => state.users.fullname)
-    const points = useSelector((state) => state.users.points)
     const dispatch = useDispatch();
 
     const [menuOpen, setMenuOpen] = useState(false)
-    
+
     return (
         <>
             <section className={`Navbar fixed z-10 top-0 left-0 right-0 bg-white shadow-lg`}>

@@ -3,7 +3,7 @@ import ConcertImage from "./../../Assets/Images/concert_login.jpg";
 import "./SignupPage.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
 import { setEmail, setFullname } from "../../Redux/Features/Users";

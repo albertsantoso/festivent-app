@@ -17,7 +17,7 @@ export const eventsSlice = createSlice({
 
 export const fetchEventsAsync = () => async (dispatchEvent) => {
     try {
-        const response = await axios.get("http://localhost:5004/events")
+        const response = await axios.get("http://localhost:5000/events")
         console.log("🚀 ~ file: index.js:21 ~ fetchEventsAsync ~ response:", response)
         dispatchEvent(setEvent(response.data))
         console.log("🚀 ~ file: index.js:23 ~ fetchEventsAsync ~ response.data:", response.data)
