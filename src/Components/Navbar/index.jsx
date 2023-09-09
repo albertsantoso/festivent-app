@@ -1,18 +1,31 @@
 import FestiventLogoBlack from "./../../Assets/Logo/festivent-logo-black.png";
 import PrimaryButton from "../PrimaryButton";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { onLogout } from "../../Redux/Features/Users";
 import DropdownItemsWithIcon from "../AccountDropdown";
 import { useState } from "react";
+import Swal from "sweetalert2";
+
 
 export default function Navbar() {
     const email = useSelector((state) => state.users.email);
     const fullname = useSelector((state) => state.users.fullname)
     const dispatch = useDispatch();
 
-    const [menuOpen, setMenuOpen] = useState(false)
+    const navigate = useNavigate()
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const onPleaseLogin = () => {
+        Swal.fire({
+            title: `Please login first.`,
+            confirmButtonText: 'OK',
+        }).then((result) => {
+            if (result.isConfirmed) navigate("/login")
+        })
+    }
 
     return (
         <>
@@ -47,9 +60,9 @@ export default function Navbar() {
                                     </Link>
                                 ) : (
                                     <>
-                                        <Link onClick={() => alert("Please login first")} to={"/login"}>
+                                        <button onClick={onPleaseLogin}>
                                             <PrimaryButton buttonText="Create an Event" bgColor="bg-gradient-animation-1" textColor="white" customStyle={"hover:scale-[1.04] active:scale-[.95]"} />
-                                        </Link>
+                                        </button>
                                     </>
                                 )}
                             </div>
@@ -81,7 +94,7 @@ export default function Navbar() {
                                         </Link>
                                     ) : (
                                         <>
-                                            <Link onClick={() => alert("Please login first")} to={"/login"}>
+                                            <Link onClick={onPleaseLogin}>
                                                 <PrimaryButton buttonText="Create an Event" bgColor="bg-gradient-animation-1" textColor="white" customStyle={"hover:scale-[1.04] active:scale-[.95]"} />
                                                 {/* <span>
                                                 Create an event
