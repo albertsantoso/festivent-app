@@ -94,7 +94,7 @@ export default function Navbar() {
                                         </Link>
                                     ) : (
                                         <>
-                                            <Link onClick={() => alert("Please login first")} to={"/login"}>
+                                            <Link onClick={onPleaseLogin}>
                                                 <PrimaryButton buttonText="Create an Event" bgColor="bg-gradient-animation-1" textColor="white" customStyle={"hover:scale-[1.04] active:scale-[.95]"} />
                                                 {/* <span>
                                                 Create an event

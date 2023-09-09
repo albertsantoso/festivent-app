@@ -7,6 +7,7 @@ import { FaCreditCard } from "react-icons/fa";
 import { RiPaypalFill } from "react-icons/ri";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default function EventDetailPage() {
     const [openModal, setOpenModal] = useState(undefined);
@@ -147,8 +148,12 @@ export default function EventDetailPage() {
     };
 
     const belumLogin = () => {
-        alert("Please login first");
-        navigate("/login");
+        Swal.fire({
+            title: `Please login first.`,
+            confirmButtonText: 'OK',
+        }).then((result) => {
+            if (result.isConfirmed) navigate("/login")
+        })
     };
 
     const handleClick1 = () => setOpenModal("default1");
